@@ -19,6 +19,8 @@ from job_search.config import DISPLAY_DAYS
 
 REGIONS = ["Україна", "Закордон", "Не вказано"]
 
+WORKFLOW_URL = "https://github.com/ostd6212/quietfeed/actions/workflows/scrape-and-publish.yml"
+
 SITE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site"
 )
@@ -170,6 +172,8 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   .header h1 {{ font-size: 24px; font-weight: 700; color: #f1f5f9; letter-spacing: -0.3px; }}
   .header h1 span {{ color: #38bdf8; }}
   .header-meta {{ margin-top: 8px; font-size: 13px; color: #64748b; }}
+  .refresh-btn {{ display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; background: #38bdf8; color: #0f172a; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px; text-decoration: none; transition: background 0.2s; }}
+  .refresh-btn:hover {{ background: #7dd3fc; }}
 
   .stats {{ max-width: 900px; margin: 24px auto; padding: 0 24px; display: flex; gap: 12px; }}
   .stat {{ background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 16px 20px; flex: 1; }}
@@ -230,6 +234,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   <div class="header-inner">
     <h1>Job <span>Radar</span></h1>
     <div class="header-meta">Оновлено: {generated_at}</div>
+    <a class="refresh-btn" href="{WORKFLOW_URL}" target="_blank" rel="noopener">↻ Оновити вакансії</a>
   </div>
 </div>
 
