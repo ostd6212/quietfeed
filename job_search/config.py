@@ -79,6 +79,7 @@ SOURCES = [
     {"name": "Lever", "fetch": sources.fetch_lever, "rate_limited": False},
     {"name": "Ashby", "fetch": sources.fetch_ashby, "rate_limited": False},
     {"name": "SmartRecruiters", "fetch": sources.fetch_smartrecruiters, "rate_limited": False},
+    {"name": "Workable", "fetch": sources.fetch_workable, "rate_limited": False},
 ]
 
 

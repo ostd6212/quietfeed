@@ -4,11 +4,12 @@
 Each fetch_X() returns list[dict] shaped:
     {"title": str, "url": str, "source": str, "description": str | None}
 
-`description` is None for Djinni/DOU/Work.ua/Greenhouse -- their search-
-results responses don't include full job body text, so run.py does a
-second per-job page fetch for those specifically. Every other source
-includes the description inline in its API/RSS response, so no second
-fetch is needed (or wanted -- it would just be extra load for no reason).
+`description` is None for Djinni/DOU/Work.ua/Greenhouse/SmartRecruiters/
+Workable -- their search-results responses don't include full job body
+text, so run.py does a second per-job page fetch for those specifically.
+Every other source includes the description inline in its API/RSS
+response, so no second fetch is needed (or wanted -- it would just be
+extra load for no reason).
 """
 
 import os
@@ -588,6 +589,49 @@ def fetch_smartrecruiters() -> list[dict] | None:
                 "title": j.get("name", ""),
                 "url": f"https://jobs.smartrecruiters.com/{company}/{j.get('id', '')}",
                 "source": "SmartRecruiters",
+                "description": None,
+            })
+        time.sleep(0.3)
+    return jobs if any_success else None
+
+
+# ============================================================
+# Workable -- curated per-company public boards, same shape as Greenhouse.
+# Verified live (2026-07-25): apply.workable.com/api/v1/widget/accounts/{slug}
+# needs no auth. Hit rate on guessed slugs is much lower than Greenhouse/
+# Ashby (most companies that size have migrated to a bigger ATS), so this
+# list stays short until more real slugs are found.
+# ============================================================
+_WORKABLE_COMPANIES = ["huggingface", "flosum", "recurly"]
+
+
+def fetch_workable() -> list[dict] | None:
+    jobs = []
+    any_success = False
+    for company in _WORKABLE_COMPANIES:
+        try:
+            resp = requests.get(
+                f"https://apply.workable.com/api/v1/widget/accounts/{company}",
+                timeout=15,
+            )
+            if resp.status_code == 404:
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"    ⚠ Workable fetch error ({company}): {e}")
+            continue
+        any_success = True
+        for j in data.get("jobs", []):
+            if not j.get("shortlink") or not j.get("telecommuting"):
+                continue
+            jobs.append({
+                "title": j.get("title", ""),
+                "url": j["shortlink"],
+                "source": "Workable",
+                # The widget response has no job body text; run.py's
+                # HTML-scrape fallback (triggered by description=None)
+                # fetches it from the shortlink page instead.
                 "description": None,
             })
         time.sleep(0.3)
