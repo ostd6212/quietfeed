@@ -4,11 +4,11 @@
 Each fetch_X() returns list[dict] shaped:
     {"title": str, "url": str, "source": str, "description": str | None}
 
-`description` is None for Djinni/DOU/Work.ua -- their search-results pages
-don't include job body text, so run.py does a second per-job page fetch for
-those three specifically. Every other source includes the description
-inline in its API/RSS response, so no second fetch is needed (or wanted --
-it would just be extra load for no reason).
+`description` is None for Djinni/DOU/Work.ua/Greenhouse -- their search-
+results responses don't include full job body text, so run.py does a
+second per-job page fetch for those specifically. Every other source
+includes the description inline in its API/RSS response, so no second
+fetch is needed (or wanted -- it would just be extra load for no reason).
 """
 
 import os
@@ -398,3 +398,56 @@ def fetch_adzuna() -> list[dict] | None:
             "description": extract_text(j.get("description", ""), MAX_DESC),
         })
     return jobs
+
+
+# ============================================================
+# Greenhouse -- curated per-company public boards, zero auth, zero ToS risk
+# ============================================================
+# Verified live (2026-07-25): boards-api.greenhouse.io/v1/boards/{slug}/jobs
+# works with no auth for any company using Greenhouse's public job board,
+# returning every open role with an absolute_url to the public listing page.
+# This is a fundamentally different source shape from the aggregators above:
+# instead of a keyword search across a board, it's a curated list of
+# specific companies worth targeting directly (all B2B SaaS/fintech/dev-tools
+# companies with a track record of TAM/CS/Solutions/Support hiring). No
+# published rate limit, but a short delay between companies is kept anyway
+# to be a polite, low-load client.
+_GREENHOUSE_COMPANIES = [
+    "gitlab", "stripe", "datadog", "twilio", "figma", "intercom", "pagerduty",
+    "mongodb", "elastic", "gusto", "airtable", "okta", "calendly", "lattice",
+    "smartsheet", "cloudflare", "fastly", "newrelic", "sumologic", "asana",
+    "amplitude", "dropbox",
+]
+
+
+def fetch_greenhouse() -> list[dict] | None:
+    jobs = []
+    any_success = False
+    for company in _GREENHOUSE_COMPANIES:
+        try:
+            resp = requests.get(
+                f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs",
+                params={"content": "false"},
+                timeout=15,
+            )
+            if resp.status_code == 404:
+                # Company no longer on Greenhouse / wrong slug -- not a
+                # transient failure, just skip it without counting against
+                # any_success for the *other* companies in the list.
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"    ⚠ Greenhouse fetch error ({company}): {e}")
+            continue
+        any_success = True
+        for j in data.get("jobs", []):
+            if j.get("absolute_url"):
+                jobs.append({
+                    "title": j.get("title", ""),
+                    "url": j["absolute_url"],
+                    "source": "Greenhouse",
+                    "description": None,
+                })
+        time.sleep(0.3)
+    return jobs if any_success else None
