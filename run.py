@@ -12,7 +12,7 @@ workflow), data/jobs.json (committed back to main by the workflow).
 import time
 from datetime import datetime, timezone
 
-from job_search import config, render, scoring, sources, storage
+from job_search import config, render, scoring, sources, status, storage
 from job_search.profile import build_profile_text, load_profile
 
 
@@ -56,6 +56,7 @@ def main():
 
     jobs_db = storage.load_jobs()
 
+    status.publish("fetching")
     print("[ 1/4 ] Fetching sources...")
     matched, stats = fetch_all()
 
@@ -69,6 +70,8 @@ def main():
 
     print(f"\n  {len(new_jobs)} new vacancies out of {len(matched)} matched this run "
           f"({len(jobs_db)} already tracked)")
+
+    status.publish("scoring", found=len(new_jobs), scored=0)
 
     if new_jobs:
         print("\n[ 2/4 ] Fetching full text for HTML-scraped sources...")
@@ -109,6 +112,9 @@ def main():
                 jobs_db[job["url"]] = {**job, **analysis, "first_seen": now_iso}
                 print(f"    → {job['title'][:45]} — {analysis.get('score', '?')}/10")
 
+            scored_so_far = min(batch_start + config.BATCH_SIZE, len(new_jobs))
+            status.publish("scoring", found=len(new_jobs), scored=scored_so_far)
+
             if batch_start + config.BATCH_SIZE < len(new_jobs):
                 print("  ⏳ Waiting 10s before next batch...")
                 time.sleep(10)
@@ -131,6 +137,12 @@ def main():
           f"{len(jobs_db)} total tracked, {good} scored 7+")
     print(f"{'=' * 55}\n")
 
+    status.publish("idle", found=len(new_jobs), scored=len(new_jobs))
+
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        status.publish("error")
+        raise

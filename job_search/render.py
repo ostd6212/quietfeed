@@ -20,6 +20,7 @@ from job_search.config import DISPLAY_DAYS
 REGIONS = ["Україна", "Закордон", "Не вказано"]
 
 WORKFLOW_URL = "https://github.com/ostd6212/quietfeed/actions/workflows/scrape-and-publish.yml"
+STATUS_URL = "https://raw.githubusercontent.com/ostd6212/quietfeed/main/data/status.json"
 
 SITE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site"
@@ -175,6 +176,13 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   .refresh-btn {{ display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; background: #38bdf8; color: #0f172a; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px; text-decoration: none; transition: background 0.2s; }}
   .refresh-btn:hover {{ background: #7dd3fc; }}
 
+  .progress-panel {{ max-width: 900px; margin: 20px auto 0; padding: 12px 24px; display: none; align-items: center; gap: 12px; }}
+  .progress-text {{ font-size: 13px; color: #94a3b8; white-space: nowrap; }}
+  .progress-track {{ flex: 1; height: 6px; background: #1e293b; border: 1px solid #334155; border-radius: 4px; overflow: hidden; }}
+  .progress-bar-fill {{ height: 100%; width: 0; background: #38bdf8; transition: width 0.4s ease; }}
+  .progress-bar-fill.indeterminate {{ animation: progress-pulse 1.2s ease-in-out infinite; }}
+  @keyframes progress-pulse {{ 0% {{ opacity: .35; }} 50% {{ opacity: 1; }} 100% {{ opacity: .35; }} }}
+
   .stats {{ max-width: 900px; margin: 24px auto; padding: 0 24px; display: flex; gap: 12px; }}
   .stat {{ background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 16px 20px; flex: 1; }}
   .stat-num {{ font-size: 28px; font-weight: 700; color: #f1f5f9; }}
@@ -236,6 +244,11 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
     <div class="header-meta">Оновлено: {generated_at}</div>
     <a class="refresh-btn" href="{WORKFLOW_URL}" target="_blank" rel="noopener">↻ Оновити вакансії</a>
   </div>
+</div>
+
+<div class="progress-panel" id="progress-panel">
+  <span class="progress-text" id="progress-text"></span>
+  <div class="progress-track"><div class="progress-bar-fill" id="progress-bar-fill"></div></div>
 </div>
 
 <div class="stats">
@@ -305,6 +318,48 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   }});
 
   applyFilters();
+}})();
+
+(function () {{
+  var STALE_MS = 20 * 60 * 1000;
+  var panel = document.getElementById('progress-panel');
+  var textEl = document.getElementById('progress-text');
+  var barEl = document.getElementById('progress-bar-fill');
+
+  function render(status) {{
+    if (!status) {{ panel.style.display = 'none'; return; }}
+    var age = Date.now() - new Date(status.updated_at).getTime();
+    if (status.stage === 'idle' || status.stage === 'error' || age > STALE_MS) {{
+      panel.style.display = 'none';
+      return;
+    }}
+
+    var found = status.found || 0;
+    var scored = status.scored || 0;
+    var text, pct;
+    if (status.stage === 'fetching' || found === 0) {{
+      text = 'Пошук нових вакансій…';
+      pct = null;
+    }} else {{
+      pct = Math.round(scored / found * 100);
+      text = 'Знайдено ' + found + ', проскоровано ' + scored + ' (' + pct + '%)';
+    }}
+
+    panel.style.display = 'flex';
+    textEl.textContent = text;
+    barEl.style.width = (pct === null ? 100 : pct) + '%';
+    barEl.classList.toggle('indeterminate', pct === null);
+  }}
+
+  function poll() {{
+    fetch('{STATUS_URL}?t=' + Date.now(), {{cache: 'no-store'}})
+      .then(function (r) {{ return r.ok ? r.json() : null; }})
+      .then(render)
+      .catch(function () {{ panel.style.display = 'none'; }});
+  }}
+
+  poll();
+  setInterval(poll, 15000);
 }})();
 </script>
 </body>
