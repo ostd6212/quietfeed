@@ -179,10 +179,19 @@ def _extract_dou_jobs(html: str) -> list[dict]:
     return jobs
 
 
+# "remote+" prefix confirmed live (2026-07-25): work.ua treats "remote" as
+# just another free-text token in the keyword slug, and it reliably biases
+# results toward listings actually tagged for remote work (verified: job
+# pages returned this way say "work remote" in their own <title>, versus an
+# unprefixed search that surfaced a plain office job in Kyiv). Work.ua has
+# no structured remote flag/URL param, so this text bias plus the
+# description-based verification in run.py (REMOTE_VERIFY_SOURCES) is the
+# two-layer filter for this source specifically.
 _WORKUA_KEYWORDS = [
-    "technical+account+manager", "solution+consultant", "implementation+consultant",
-    "customer+success+manager", "technical+support+engineer", "technical+consultant",
-    "integration+specialist", "onboarding+manager",
+    "remote+technical+account+manager", "remote+solution+consultant",
+    "remote+implementation+consultant", "remote+customer+success+manager",
+    "remote+technical+support+engineer", "remote+technical+consultant",
+    "remote+integration+specialist", "remote+onboarding+manager",
 ]
 
 
@@ -391,11 +400,19 @@ def fetch_adzuna() -> list[dict] | None:
         return None
     jobs = []
     for j in data.get("results", []):
+        # Adzuna has no structured remote flag -- confirmed live. Require
+        # "remote" in the title or description as a text-based gate before
+        # this job is even considered, since the user wants remote-only,
+        # no exceptions, and Adzuna listings are mostly on-site by default.
+        title = j.get("title", "")
+        desc_raw = j.get("description", "")
+        if "remote" not in (title + " " + desc_raw).lower():
+            continue
         jobs.append({
-            "title": _strip_tags(j.get("title", "")),
+            "title": _strip_tags(title),
             "url": j.get("redirect_url", ""),
             "source": "Adzuna",
-            "description": extract_text(j.get("description", ""), MAX_DESC),
+            "description": extract_text(desc_raw, MAX_DESC),
         })
     return jobs
 
@@ -417,6 +434,14 @@ _GREENHOUSE_COMPANIES = [
     "mongodb", "elastic", "gusto", "airtable", "okta", "calendly", "lattice",
     "smartsheet", "cloudflare", "fastly", "newrelic", "sumologic", "asana",
     "amplitude", "dropbox",
+    # Verified live (2026-07-25), same criteria as above.
+    "affirm", "airbnb", "algolia", "anthropic", "attentive", "bark", "block",
+    "boxinc", "braze", "carvana", "checkr", "chime", "coinbase", "coursera",
+    "cultureamp", "databricks", "discord", "doximity", "duolingo", "everlaw",
+    "instacart", "iterable", "khanacademy", "klaviyo", "lyft", "mixpanel",
+    "netskope", "outschool", "peloton", "pinterest", "reddit", "remotecom",
+    "squarespace", "tanium", "temporaltechnologies", "twitch", "typeform",
+    "udemy", "vercel", "webflow", "zscaler",
 ]
 
 
@@ -442,6 +467,13 @@ def fetch_greenhouse() -> list[dict] | None:
             continue
         any_success = True
         for j in data.get("jobs", []):
+            # Confirmed live (2026-07-25): location.name is a real, reliable
+            # signal here ("Remote, Italy" vs "San Francisco, CA") -- most
+            # of these companies' listings are on-site, so this check
+            # matters a lot, not just a formality.
+            location_name = (j.get("location") or {}).get("name", "")
+            if "remote" not in location_name.lower():
+                continue
             if j.get("absolute_url"):
                 jobs.append({
                     "title": j.get("title", ""),
@@ -449,6 +481,115 @@ def fetch_greenhouse() -> list[dict] | None:
                     "source": "Greenhouse",
                     "description": None,
                 })
+        time.sleep(0.3)
+    return jobs if any_success else None
+
+
+def fetch_himalayas() -> list[dict] | None:
+    # No working search/category filter -- confirmed live that `search=`
+    # and `categories=` both return the same unfiltered feed regardless of
+    # value, same situation as Remotive. TITLE_KEYWORDS does the filtering.
+    try:
+        resp = requests.get("https://himalayas.app/jobs/api", params={"limit": 100}, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    ⚠ Himalayas fetch error: {e}")
+        return None
+    jobs = []
+    for j in data.get("jobs", []):
+        jobs.append({
+            "title": j.get("title", ""),
+            "url": j.get("applicationLink", ""),
+            "source": "Himalayas",
+            "description": extract_text(j.get("description", ""), MAX_DESC),
+        })
+    return jobs
+
+
+# ============================================================
+# Lever, Ashby, SmartRecruiters -- curated per-company public ATS boards,
+# same rationale as Greenhouse above: zero auth, zero ToS risk, and each
+# slug below was verified live (2026-07-25) to return real postings.
+# ============================================================
+_LEVER_COMPANIES = [
+    "netomi", "RouteThis", "jobgether", "conversica", "Sprinto",
+    "fetchpackage", "tonkean", "palantir",
+    # Verified live (2026-07-25) -- most large orgs migrated off Lever, so
+    # the hit rate here is much lower than Greenhouse/Ashby.
+    "spotify", "wealthfront", "outreach",
+]
+
+
+def fetch_lever() -> list[dict] | None:
+    jobs = []
+    any_success = False
+    for company in _LEVER_COMPANIES:
+        try:
+            resp = requests.get(
+                f"https://api.lever.co/v0/postings/{company}",
+                params={"mode": "json"},
+                timeout=15,
+            )
+            if resp.status_code == 404:
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"    ⚠ Lever fetch error ({company}): {e}")
+            continue
+        if not isinstance(data, list):
+            continue  # {"ok": false, ...} for boards that no longer exist
+        any_success = True
+        for j in data:
+            # Confirmed live (2026-07-25): workplaceType is a real, clean
+            # enum here ("remote" / "hybrid" / "onsite") -- e.g. Palantir's
+            # board was 101 onsite + 185 hybrid + only 1 remote, so this
+            # check matters a lot, not just a formality.
+            if j.get("workplaceType") != "remote":
+                continue
+            jobs.append({
+                "title": j.get("text", ""),
+                "url": j.get("hostedUrl", ""),
+                "source": "Lever",
+                "description": extract_text(j.get("descriptionPlain", ""), MAX_DESC),
+            })
+        time.sleep(0.3)
+    return jobs if any_success else None
+
+
+_SMARTRECRUITERS_COMPANIES = ["Flywire1", "MicroStrategy1", "Freshworks", "Visa"]
+
+
+def fetch_smartrecruiters() -> list[dict] | None:
+    jobs = []
+    any_success = False
+    for company in _SMARTRECRUITERS_COMPANIES:
+        try:
+            resp = requests.get(
+                f"https://api.smartrecruiters.com/v1/companies/{company}/postings",
+                params={"limit": 100},
+                timeout=15,
+            )
+            if resp.status_code == 404:
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"    ⚠ SmartRecruiters fetch error ({company}): {e}")
+            continue
+        any_success = True
+        for j in data.get("content", []):
+            # Confirmed live (2026-07-25): location.remote is a real
+            # boolean here, cleaner than guessing from free text.
+            if not (j.get("location") or {}).get("remote"):
+                continue
+            jobs.append({
+                "title": j.get("name", ""),
+                "url": f"https://jobs.smartrecruiters.com/{company}/{j.get('id', '')}",
+                "source": "SmartRecruiters",
+                "description": None,
+            })
         time.sleep(0.3)
     return jobs if any_success else None
 
@@ -470,3 +611,54 @@ def fetch_workingnomads() -> list[dict] | None:
             "description": extract_text(j.get("description", ""), MAX_DESC),
         })
     return jobs
+
+
+# ============================================================
+# Ashby -- curated per-company public boards, same shape as Greenhouse
+# ============================================================
+# Verified live (2026-07-25): api.ashbyhq.com/posting-api/job-board/{slug}
+# works with no auth, 404s cleanly for a wrong/unused slug (a reliable
+# validity signal, unlike SmartRecruiters/Workable which return 200 for
+# any slug -- tried both, couldn't distinguish real accounts from guesses,
+# so left out for now). Each job has a proper `isRemote` boolean, the
+# cleanest remote signal of any source here -- no text heuristics needed.
+_ASHBY_COMPANIES = [
+    "ramp", "linear", "notion", "vanta", "substack", "watershed", "runway",
+    "modal", "posthog", "perplexity", "openai",
+    # Verified live (2026-07-25), same criteria -- Ashby is the fastest-
+    # growing ATS among AI-native/dev-tool startups so the hit rate here
+    # is high.
+    "elevenlabs", "cohere", "langchain", "supabase", "workos", "gamma",
+    "harvey", "sierra", "cursor", "replit", "fireworks", "baseten",
+    "pinecone", "deepgram", "sardine",
+]
+
+
+def fetch_ashby() -> list[dict] | None:
+    jobs = []
+    any_success = False
+    for company in _ASHBY_COMPANIES:
+        try:
+            resp = requests.get(
+                f"https://api.ashbyhq.com/posting-api/job-board/{company}",
+                timeout=15,
+            )
+            if resp.status_code == 404:
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"    ⚠ Ashby fetch error ({company}): {e}")
+            continue
+        any_success = True
+        for j in data.get("jobs", []):
+            if not j.get("isRemote"):
+                continue
+            jobs.append({
+                "title": j.get("title", ""),
+                "url": j.get("jobUrl", ""),
+                "source": "Ashby",
+                "description": extract_text(j.get("descriptionPlain") or "", MAX_DESC),
+            })
+        time.sleep(0.3)
+    return jobs if any_success else None

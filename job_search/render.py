@@ -11,10 +11,13 @@ Two things this does that the original script didn't:
     opened, instead of buried in a log or an unread mailbox.
 """
 
+import json
 import os
 from datetime import datetime, timedelta, timezone
 
 from job_search.config import DISPLAY_DAYS
+
+REGIONS = ["Україна", "Закордон", "Не вказано"]
 
 SITE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site"
@@ -57,7 +60,7 @@ def _job_card(job: dict) -> str:
     )
 
     return f"""
-    <div class="card">
+    <div class="card" data-url="{job['url']}">
         <div class="card-header">
             <div class="score-badge" style="background:{color}">{score}</div>
             <div class="card-title-block">
@@ -140,6 +143,17 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
     total = len(visible)
     good = len([j for j in visible if isinstance(j.get("score"), (int, float)) and j["score"] >= 7])
 
+    jobs_meta = [
+        {
+            "url": j["url"],
+            "score": j.get("score") if isinstance(j.get("score"), (int, float)) else 0,
+            "region": j.get("region") or "Не вказано",
+        }
+        for j in visible
+    ]
+    jobs_json = json.dumps(jobs_meta, ensure_ascii=False)
+    region_options = "".join(f'<option value="{r}">{r}</option>' for r in REGIONS)
+
     return f"""<!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -162,7 +176,16 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   .stat-num {{ font-size: 28px; font-weight: 700; color: #f1f5f9; }}
   .stat-label {{ font-size: 12px; color: #64748b; margin-top: 2px; }}
 
+  .filter-bar {{ max-width: 900px; margin: 0 auto 20px; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }}
+  .filter-bar select {{ background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 8px 12px; font-size: 13px; font-family: inherit; cursor: pointer; }}
+  .filter-bar select:focus {{ outline: none; border-color: #38bdf8; }}
+  .filter-label {{ font-size: 12px; color: #64748b; }}
+  .filter-reset {{ background: none; border: 1px solid #334155; color: #94a3b8; border-radius: 8px; padding: 8px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }}
+  .filter-reset:hover {{ border-color: #38bdf8; color: #38bdf8; }}
+  .filter-count {{ margin-left: auto; font-size: 13px; color: #64748b; }}
+
   .cards {{ max-width: 900px; margin: 0 auto; padding: 0 24px 24px; display: flex; flex-direction: column; gap: 16px; }}
+  .card.hidden {{ display: none; }}
 
   .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 24px; transition: border-color 0.2s; }}
   .card:hover {{ border-color: #38bdf8; }}
@@ -216,11 +239,69 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   <div class="stat"><div class="stat-num">{len(source_stats)}</div><div class="stat-label">Джерел перевірено</div></div>
 </div>
 
-<div class="cards">
+<div class="filter-bar">
+  <span class="filter-label">Скор від</span>
+  <select id="filter-score">
+    <option value="0">Будь-який</option>
+    <option value="5">5+</option>
+    <option value="7">7+</option>
+    <option value="8">8+</option>
+  </select>
+  <span class="filter-label">Регіон</span>
+  <select id="filter-region">
+    <option value="all">Всі</option>
+    {region_options}
+  </select>
+  <button class="filter-reset" id="filter-reset">Скинути фільтри</button>
+  <span class="filter-count" id="filter-count"></span>
+</div>
+
+<div class="cards" id="cards">
 {cards}
 </div>
 
 {_status_panel(source_stats)}
+
+<script type="application/json" id="jobs-data">{jobs_json}</script>
+<script>
+(function () {{
+  var jobsByUrl = {{}};
+  JSON.parse(document.getElementById('jobs-data').textContent).forEach(function (j) {{
+    jobsByUrl[j.url] = j;
+  }});
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
+  var scoreSelect = document.getElementById('filter-score');
+  var regionSelect = document.getElementById('filter-region');
+  var resetBtn = document.getElementById('filter-reset');
+  var countEl = document.getElementById('filter-count');
+
+  function applyFilters() {{
+    var minScore = parseInt(scoreSelect.value, 10) || 0;
+    var region = regionSelect.value;
+    var visibleCount = 0;
+
+    cards.forEach(function (card) {{
+      var job = jobsByUrl[card.getAttribute('data-url')];
+      var match = job && job.score >= minScore && (region === 'all' || job.region === region);
+      card.classList.toggle('hidden', !match);
+      if (match) visibleCount++;
+    }});
+
+    countEl.textContent = 'Показано ' + visibleCount + ' з ' + cards.length;
+  }}
+
+  scoreSelect.addEventListener('change', applyFilters);
+  regionSelect.addEventListener('change', applyFilters);
+  resetBtn.addEventListener('click', function () {{
+    scoreSelect.value = '0';
+    regionSelect.value = 'all';
+    applyFilters();
+  }});
+
+  applyFilters();
+}})();
+</script>
 </body>
 </html>"""
 

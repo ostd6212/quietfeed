@@ -77,6 +77,20 @@ def main():
                 html = sources.fetch_url(job["url"])
                 job["description"] = sources.extract_text(html) if html else ""
 
+        # Some sources (config.REMOTE_VERIFY_SOURCES) have no reliable
+        # server-side remote filter -- double-check against the actual
+        # fetched page text before spending a Groq call on what might
+        # turn out to be an office job that only matched on title.
+        before = len(new_jobs)
+        new_jobs = [
+            j for j in new_jobs
+            if j["source"] not in config.REMOTE_VERIFY_SOURCES
+            or config.has_remote_signal(j["description"])
+        ]
+        if before != len(new_jobs):
+            print(f"  Dropped {before - len(new_jobs)} non-remote listing(s) after verification")
+
+    if new_jobs:
         print(f"\n[ 3/4 ] Scoring {len(new_jobs)} vacancies with AI "
               f"(Groq, batch of {config.BATCH_SIZE})...")
         now_iso = datetime.now(timezone.utc).isoformat()

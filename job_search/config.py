@@ -49,6 +49,20 @@ TITLE_KEYWORDS = [
 # constraint and can run every scheduled tick.
 RATE_LIMITED_HOURS_UTC = {0, 6, 12, 18}
 
+# Sources with no structured remote flag and no reliable server-side remote
+# filter -- run.py double-checks these against the actual fetched job text
+# after filling in the description, since a keyword-title match alone isn't
+# enough (confirmed live: an unfiltered Work.ua query surfaced a plain
+# office job in Kyiv that only matched on title). Every other source is
+# either an inherently remote-only board, or already enforces remote via a
+# structured field/URL param inside its own fetch_X() function.
+REMOTE_VERIFY_SOURCES = {"Work.ua"}
+
+
+def has_remote_signal(text: str) -> bool:
+    t = (text or "").lower()
+    return "remote" in t or "віддал" in t or "дистанц" in t
+
 SOURCES = [
     {"name": "Djinni", "fetch": sources.fetch_djinni, "rate_limited": False},
     {"name": "DOU", "fetch": sources.fetch_dou, "rate_limited": False},
@@ -61,6 +75,10 @@ SOURCES = [
     {"name": "Adzuna", "fetch": sources.fetch_adzuna, "rate_limited": True},
     {"name": "Greenhouse", "fetch": sources.fetch_greenhouse, "rate_limited": False},
     {"name": "Working Nomads", "fetch": sources.fetch_workingnomads, "rate_limited": False},
+    {"name": "Himalayas", "fetch": sources.fetch_himalayas, "rate_limited": False},
+    {"name": "Lever", "fetch": sources.fetch_lever, "rate_limited": False},
+    {"name": "Ashby", "fetch": sources.fetch_ashby, "rate_limited": False},
+    {"name": "SmartRecruiters", "fetch": sources.fetch_smartrecruiters, "rate_limited": False},
 ]
 
 
