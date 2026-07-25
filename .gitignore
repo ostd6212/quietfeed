@@ -1,0 +1,6 @@
+site/
+data/candidate_profile.local.json
+__pycache__/
+*.pyc
+.DS_Store
+.env
