@@ -451,3 +451,22 @@ def fetch_greenhouse() -> list[dict] | None:
                 })
         time.sleep(0.3)
     return jobs if any_success else None
+
+
+def fetch_workingnomads() -> list[dict] | None:
+    try:
+        resp = requests.get("https://www.workingnomads.com/api/exposed_jobs/", timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    ⚠ Working Nomads fetch error: {e}")
+        return None
+    jobs = []
+    for j in data:
+        jobs.append({
+            "title": j.get("title", ""),
+            "url": j.get("url", ""),
+            "source": "Working Nomads",
+            "description": extract_text(j.get("description", ""), MAX_DESC),
+        })
+    return jobs

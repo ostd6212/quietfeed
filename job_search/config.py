@@ -60,6 +60,7 @@ SOURCES = [
     {"name": "Jobicy", "fetch": sources.fetch_jobicy, "rate_limited": False},
     {"name": "Adzuna", "fetch": sources.fetch_adzuna, "rate_limited": True},
     {"name": "Greenhouse", "fetch": sources.fetch_greenhouse, "rate_limited": False},
+    {"name": "Working Nomads", "fetch": sources.fetch_workingnomads, "rate_limited": False},
 ]
 
 
