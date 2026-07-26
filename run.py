@@ -71,6 +71,11 @@ def main():
     print(f"\n  {len(new_jobs)} new vacancies out of {len(matched)} matched this run "
           f"({len(jobs_db)} already tracked)")
 
+    if len(new_jobs) > config.MAX_NEW_JOBS_PER_RUN:
+        print(f"  Capping to {config.MAX_NEW_JOBS_PER_RUN} for this run "
+              f"({len(new_jobs) - config.MAX_NEW_JOBS_PER_RUN} deferred to next run)")
+        new_jobs = new_jobs[:config.MAX_NEW_JOBS_PER_RUN]
+
     status.publish("scoring", found=len(new_jobs), scored=0)
 
     if new_jobs:

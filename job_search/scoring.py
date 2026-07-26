@@ -62,7 +62,13 @@ def analyze_batch_with_groq(jobs_batch: list[dict], profile_text: str) -> list[d
                 timeout=60,
             )
             if resp.status_code == 429:
-                retry_after = int(resp.headers.get("retry-after", 30))
+                # Capped at 60s: Groq's retry-after reflects whatever window
+                # was exceeded, and for a daily/token quota that can be
+                # hours -- sleeping the raw value is what stacked up into a
+                # 6h+ hang once run volume grew (see MAX_NEW_JOBS_PER_RUN).
+                # A bounded wait plus the 3-attempt cap below means a batch
+                # gives up and moves on instead of blocking the whole run.
+                retry_after = min(int(resp.headers.get("retry-after", 30)), 60)
                 print(f"    ⏳ Rate limit hit, waiting {retry_after}s...")
                 time.sleep(retry_after + 2)
                 continue
