@@ -114,6 +114,8 @@ def main():
 
             for job, analysis in zip(batch, analyses):
                 analysis = analysis or {}
+                if job["source"] in config.UKRAINE_ONLY_SOURCES:
+                    analysis["region"] = "Україна"
                 jobs_db[job["url"]] = {**job, **analysis, "first_seen": now_iso}
                 print(f"    → {job['title'][:45]} — {analysis.get('score', '?')}/10")
 

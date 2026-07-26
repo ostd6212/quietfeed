@@ -198,6 +198,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
 
   .cards {{ max-width: 900px; margin: 0 auto; padding: 0 24px 24px; display: flex; flex-direction: column; gap: 16px; }}
   .card.hidden {{ display: none; }}
+  .filter-empty {{ max-width: 900px; margin: 0 auto 24px; padding: 40px 24px; text-align: center; color: #6b7280; font-size: 14px; }}
 
   .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 24px; transition: border-color 0.2s; }}
   .card:hover {{ border-color: #38bdf8; }}
@@ -277,6 +278,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
 <div class="cards" id="cards">
 {cards}
 </div>
+<div class="filter-empty" id="filter-empty" style="display:none">Немає вакансій за цими фільтрами.</div>
 
 {_status_panel(source_stats)}
 
@@ -293,6 +295,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   var regionSelect = document.getElementById('filter-region');
   var resetBtn = document.getElementById('filter-reset');
   var countEl = document.getElementById('filter-count');
+  var emptyEl = document.getElementById('filter-empty');
 
   function applyFilters() {{
     var minScore = parseInt(scoreSelect.value, 10) || 0;
@@ -307,6 +310,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
     }});
 
     countEl.textContent = 'Показано ' + visibleCount + ' з ' + cards.length;
+    emptyEl.style.display = (visibleCount === 0 && cards.length > 0) ? 'block' : 'none';
   }}
 
   scoreSelect.addEventListener('change', applyFilters);

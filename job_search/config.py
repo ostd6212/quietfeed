@@ -24,6 +24,11 @@ BATCH_SIZE = 5
 # scheduled run instead of being lost.
 MAX_NEW_JOBS_PER_RUN = 150
 
+# These sources are Ukrainian job boards by construction -- every listing on
+# them targets Ukraine, so region is known from the source itself rather than
+# left to the LLM to infer per-listing from free-text.
+UKRAINE_ONLY_SOURCES = {"DOU", "Djinni", "Work.ua"}
+
 # How many days of scored history to show on the page, and how long to keep
 # in data/jobs.json before pruning. Display window is shorter than retention
 # so the page doesn't grow unbounded while still surviving a few missed checks.
