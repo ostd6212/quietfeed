@@ -7,6 +7,7 @@ This file is safe to have in a public repo.
 """
 
 from job_search import sources
+from job_search.keywords import load_keywords
 
 GROQ_MODEL = "llama-3.3-70b-versatile"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
@@ -41,23 +42,12 @@ RETENTION_DAYS = 90
 # these APIs return clearly irrelevant titles, so this allowlist -- not the
 # upstream search -- is what actually keeps signal-to-noise reasonable before
 # a job is worth spending a Groq call on.
-TITLE_KEYWORDS = [
-    # original set
-    "technical account", "solution", "consultant",
-    "customer success", "implementation", "pre-sales", "crm", "billing",
-    "support engineer", "integrat",
-    # explicitly missing synonyms
-    "onboarding", "client partner", "renewal", "solutions engineer",
-    # adjacent CS/TAM-family titles
-    "account manager", "customer experience", "partner success",
-    # adjacent support-family titles
-    "technical support", "product support", "support specialist",
-    # adjacent solutions/professional-services family
-    "solutions consultant", "solutions architect", "professional services",
-    "deployment specialist", "deployment engineer",
-    # matches KEY_EXPERIENCE background (incident/escalation management)
-    "escalation", "incident manager",
-]
+#
+# Lives in data/keywords.json, not here, so the site's "Keywords" panel can
+# edit it via the GitHub API without anyone touching this file. Loaded fresh
+# on every run.py invocation (a new process each cron tick), so an edit made
+# on the site takes effect on the very next scheduled run.
+TITLE_KEYWORDS = load_keywords()
 
 # Sources whose upstream ToS/quota explicitly caps request frequency
 # (Remotive: "we advise max. 4 times a day" in its own API response;

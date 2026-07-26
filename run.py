@@ -132,7 +132,7 @@ def main():
 
     print("\n[ 4/4 ] Rendering site...")
     generated_at = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
-    html = render.generate_html(list(jobs_db.values()), stats, generated_at)
+    html = render.generate_html(list(jobs_db.values()), stats, generated_at, config.TITLE_KEYWORDS)
     render.write_site(html)
 
     good = len([

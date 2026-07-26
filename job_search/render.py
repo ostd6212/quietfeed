@@ -22,6 +22,15 @@ REGIONS = ["Україна", "Закордон", "Не вказано"]
 WORKFLOW_URL = "https://github.com/ostd6212/quietfeed/actions/workflows/scrape-and-publish.yml"
 STATUS_URL = "https://raw.githubusercontent.com/ostd6212/quietfeed/main/data/status.json"
 
+# Repo/path the Keywords panel's JS writes to via the GitHub Contents API --
+# see the inline <script> in generate_html for why a static GitHub Pages
+# site can still persist an edit (CORS-enabled REST API + a token the user
+# supplies themselves, kept in their own browser's localStorage).
+GH_OWNER = "ostd6212"
+GH_REPO = "quietfeed"
+GH_KEYWORDS_PATH = "data/keywords.json"
+GH_BRANCH = "main"
+
 SITE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site"
 )
@@ -116,7 +125,9 @@ def _status_panel(source_stats: list[dict]) -> str:
     </div>"""
 
 
-def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: str) -> str:
+def generate_html(
+    all_jobs: list[dict], source_stats: list[dict], generated_at: str, keywords: list[str]
+) -> str:
     cutoff = datetime.now(timezone.utc) - timedelta(days=DISPLAY_DAYS)
     visible = []
     for job in all_jobs:
@@ -155,6 +166,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
         for j in visible
     ]
     jobs_json = json.dumps(jobs_meta, ensure_ascii=False)
+    keywords_json = json.dumps(keywords, ensure_ascii=False)
     region_options = "".join(f'<option value="{r}">{r}</option>' for r in REGIONS)
 
     return f"""<!DOCTYPE html>
@@ -231,6 +243,25 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   .description summary:hover {{ color: #94a3b8; }}
   .description p {{ margin-top: 10px; font-size: 13px; color: #64748b; line-height: 1.6; white-space: pre-wrap; }}
 
+  .keywords-panel {{ max-width: 900px; margin: 0 auto 24px; padding: 16px 24px; background: #1e293b; border: 1px solid #334155; border-radius: 10px; }}
+  .keywords-header {{ display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }}
+  .keywords-title {{ font-size: 13px; font-weight: 600; color: #f1f5f9; }}
+  .keywords-hint {{ font-size: 12px; color: #64748b; }}
+  .keywords-list {{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }}
+  .keyword-chip {{ display: inline-flex; align-items: center; gap: 6px; background: #0f172a; border: 1px solid #334155; border-radius: 999px; padding: 5px 6px 5px 12px; font-size: 13px; color: #cbd5e1; }}
+  .keyword-chip button {{ background: none; border: none; color: #64748b; cursor: pointer; font-size: 15px; line-height: 1; padding: 2px 6px; border-radius: 999px; }}
+  .keyword-chip button:hover {{ background: #ef4444; color: #fff; }}
+  .keywords-add {{ display: flex; gap: 8px; margin-bottom: 12px; }}
+  .keywords-add input {{ flex: 1; background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 8px 12px; font-size: 13px; font-family: inherit; }}
+  .keywords-add input:focus {{ outline: none; border-color: #38bdf8; }}
+  .keywords-add button, .keywords-actions button {{ background: #38bdf8; color: #0f172a; border: none; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-family: inherit; white-space: nowrap; }}
+  .keywords-add button:hover, .keywords-actions button:hover {{ background: #7dd3fc; }}
+  .keywords-actions {{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
+  .keywords-actions button.secondary {{ background: none; border: 1px solid #334155; color: #94a3b8; }}
+  .keywords-actions button.secondary:hover {{ background: none; border-color: #38bdf8; color: #38bdf8; }}
+  .keywords-actions button:disabled {{ opacity: 0.5; cursor: not-allowed; }}
+  .keywords-status {{ font-size: 12px; color: #64748b; }}
+
   .status-panel {{ max-width: 900px; margin: 0 auto 48px; padding: 20px 24px; }}
   .status-title {{ font-size: 12px; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }}
   .status-row {{ display: flex; gap: 10px; align-items: center; font-size: 12px; color: #64748b; padding: 3px 0; }}
@@ -258,6 +289,23 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
   <div class="stat"><div class="stat-num">{len(source_stats)}</div><div class="stat-label">Джерел перевірено</div></div>
 </div>
 
+<div class="keywords-panel">
+  <div class="keywords-header">
+    <span class="keywords-title">Ключові слова пошуку</span>
+    <span class="keywords-hint">Вакансія проходить у список, якщо назва містить хоча б одне слово</span>
+  </div>
+  <div class="keywords-list" id="keywords-list"></div>
+  <div class="keywords-add">
+    <input type="text" id="keyword-input" placeholder="Нове ключове слово…" maxlength="60">
+    <button id="keyword-add-btn">Додати</button>
+  </div>
+  <div class="keywords-actions">
+    <button id="keyword-save-btn" disabled>Зберегти зміни</button>
+    <button class="secondary" id="keyword-token-btn">Токен GitHub</button>
+    <span class="keywords-status" id="keyword-status"></span>
+  </div>
+</div>
+
 <div class="filter-bar">
   <span class="filter-label">Скор від</span>
   <select id="filter-score">
@@ -283,6 +331,7 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
 {_status_panel(source_stats)}
 
 <script type="application/json" id="jobs-data">{jobs_json}</script>
+<script type="application/json" id="keywords-data">{keywords_json}</script>
 <script>
 (function () {{
   var jobsByUrl = {{}};
@@ -364,6 +413,130 @@ def generate_html(all_jobs: list[dict], source_stats: list[dict], generated_at: 
 
   poll();
   setInterval(poll, 15000);
+}})();
+
+(function () {{
+  var OWNER = '{GH_OWNER}';
+  var REPO = '{GH_REPO}';
+  var PATH = '{GH_KEYWORDS_PATH}';
+  var BRANCH = '{GH_BRANCH}';
+  var TOKEN_KEY = 'jobRadarGhToken';
+
+  var original = JSON.parse(document.getElementById('keywords-data').textContent);
+  var current = original.slice();
+
+  var listEl = document.getElementById('keywords-list');
+  var inputEl = document.getElementById('keyword-input');
+  var addBtn = document.getElementById('keyword-add-btn');
+  var saveBtn = document.getElementById('keyword-save-btn');
+  var tokenBtn = document.getElementById('keyword-token-btn');
+  var statusEl = document.getElementById('keyword-status');
+
+  function isDirty() {{
+    if (current.length !== original.length) return true;
+    for (var i = 0; i < current.length; i++) {{ if (current[i] !== original[i]) return true; }}
+    return false;
+  }}
+
+  function render() {{
+    listEl.innerHTML = '';
+    current.forEach(function (kw, idx) {{
+      var chip = document.createElement('span');
+      chip.className = 'keyword-chip';
+      var text = document.createElement('span');
+      text.textContent = kw;
+      var del = document.createElement('button');
+      del.type = 'button';
+      del.textContent = '×';
+      del.title = 'Видалити';
+      del.addEventListener('click', function () {{
+        current.splice(idx, 1);
+        render();
+      }});
+      chip.appendChild(text);
+      chip.appendChild(del);
+      listEl.appendChild(chip);
+    }});
+    saveBtn.disabled = !isDirty();
+    if (!isDirty()) statusEl.textContent = '';
+  }}
+
+  addBtn.addEventListener('click', function () {{
+    var v = inputEl.value.trim().toLowerCase();
+    if (!v) return;
+    if (current.indexOf(v) === -1) current.push(v);
+    inputEl.value = '';
+    render();
+  }});
+  inputEl.addEventListener('keydown', function (e) {{
+    if (e.key === 'Enter') {{ e.preventDefault(); addBtn.click(); }}
+  }});
+
+  function getToken(forcePrompt) {{
+    var t = localStorage.getItem(TOKEN_KEY);
+    if (t && !forcePrompt) return t;
+    t = window.prompt(
+      'Встав GitHub Personal Access Token (fine-grained, права Contents: Read and write лише на репозиторій ' +
+        OWNER + '/' + REPO + ').\\n\\nЗберігається тільки в localStorage цього браузера і використовується ' +
+        'лише для запитів напряму до api.github.com.',
+      ''
+    );
+    if (t) {{ t = t.trim(); localStorage.setItem(TOKEN_KEY, t); }}
+    return t || null;
+  }}
+
+  tokenBtn.addEventListener('click', function () {{ getToken(true); }});
+
+  function b64EncodeUtf8(str) {{
+    return btoa(unescape(encodeURIComponent(str)));
+  }}
+
+  saveBtn.addEventListener('click', function () {{
+    var token = getToken(false);
+    if (!token) {{ statusEl.textContent = 'Токен не задано.'; return; }}
+
+    saveBtn.disabled = true;
+    statusEl.textContent = 'Зберігаю…';
+
+    var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + PATH;
+
+    fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
+      .then(function (r) {{
+        if (!r.ok) throw new Error('Не вдалось прочитати поточний файл (' + r.status + ')');
+        return r.json();
+      }})
+      .then(function (fileInfo) {{
+        var content = b64EncodeUtf8(JSON.stringify(current, null, 2));
+        return fetch(apiUrl, {{
+          method: 'PUT',
+          headers: {{
+            Authorization: 'token ' + token,
+            Accept: 'application/vnd.github+json',
+            'Content-Type': 'application/json',
+          }},
+          body: JSON.stringify({{
+            message: 'chore: update keywords via site UI',
+            content: content,
+            sha: fileInfo.sha,
+            branch: BRANCH,
+          }}),
+        }});
+      }})
+      .then(function (r) {{
+        if (!r.ok) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
+        original = current.slice();
+        statusEl.textContent = 'Збережено ✓ Діятиме з наступного запуску.';
+        render();
+      }})
+      .catch(function (err) {{
+        statusEl.textContent = 'Помилка: ' + err.message;
+      }})
+      .finally(function () {{
+        saveBtn.disabled = !isDirty();
+      }});
+  }});
+
+  render();
 }})();
 </script>
 </body>
