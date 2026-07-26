@@ -13,6 +13,7 @@ import time
 from datetime import datetime, timezone
 
 from job_search import config, render, scoring, sources, status, storage
+from job_search.scoring import QuotaExhausted
 from job_search.profile import build_profile_text, load_profile
 
 
@@ -110,7 +111,12 @@ def main():
             print(f"  Batch [{batch_num}/{total_batches}]: "
                   f"{', '.join(j['title'][:25] for j in batch)}")
 
-            analyses = scoring.analyze_batch_with_groq(batch, profile_text)
+            try:
+                analyses = scoring.analyze_batch_with_groq(batch, profile_text)
+            except QuotaExhausted as e:
+                print(f"    ⚠ {e} -- stopping scoring for this run, "
+                      f"{len(new_jobs) - batch_start} vacancy(ies) deferred to next run")
+                break
 
             for job, analysis in zip(batch, analyses):
                 analysis = analysis or {}

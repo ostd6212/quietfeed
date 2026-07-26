@@ -11,6 +11,13 @@ import requests
 from job_search.config import GROQ_MODEL, GROQ_URL
 
 
+class QuotaExhausted(Exception):
+    """All retries for a batch were rejected with 429 -- the API quota for
+    this run is spent, not just a transient per-minute limit. The caller
+    should stop scoring entirely rather than burn the same wait on every
+    remaining batch."""
+
+
 def analyze_batch_with_groq(jobs_batch: list[dict], profile_text: str) -> list[dict | None]:
     """Score a batch (typically 5) of vacancies in one Groq request."""
     api_key = os.environ["GROQ_API_KEY"]
@@ -45,6 +52,7 @@ def analyze_batch_with_groq(jobs_batch: list[dict], profile_text: str) -> list[d
   }}
 ]"""
 
+    rate_limited_attempts = 0
     for attempt in range(3):
         try:
             resp = requests.post(
@@ -68,6 +76,11 @@ def analyze_batch_with_groq(jobs_batch: list[dict], profile_text: str) -> list[d
                 # 6h+ hang once run volume grew (see MAX_NEW_JOBS_PER_RUN).
                 # A bounded wait plus the 3-attempt cap below means a batch
                 # gives up and moves on instead of blocking the whole run.
+                rate_limited_attempts += 1
+                if rate_limited_attempts >= 3:
+                    raise QuotaExhausted(
+                        "Groq rejected 3/3 attempts with 429 -- quota exhausted"
+                    )
                 retry_after = min(int(resp.headers.get("retry-after", 30)), 60)
                 print(f"    ⏳ Rate limit hit, waiting {retry_after}s...")
                 time.sleep(retry_after + 2)
@@ -80,6 +93,8 @@ def analyze_batch_with_groq(jobs_batch: list[dict], profile_text: str) -> list[d
             if isinstance(results, list):
                 return results
             return [None] * len(jobs_batch)
+        except QuotaExhausted:
+            raise
         except Exception as e:
             if attempt < 2:
                 print(f"    ⚠ Retry {attempt + 1}/3: {e}")
