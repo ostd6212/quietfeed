@@ -30,6 +30,16 @@ GH_OWNER = "ostd6212"
 GH_REPO = "quietfeed"
 GH_KEYWORDS_PATH = "data/keywords.json"
 GH_BRANCH = "main"
+GH_WORKFLOW_FILE = "scrape-and-publish.yml"
+
+# A run this long is almost certainly stuck, not just slow -- worst case
+# under MAX_NEW_JOBS_PER_RUN=150 is roughly 150 sequential HTML fetches
+# (~37min at the 15s timeout) plus 30 Groq batches at the 60s-capped
+# rate-limit backoff (~90min), so ~2h with real margin. Past that, three
+# consecutive runs got stuck for hours (2026-07-25/26) before this cap
+# existed, and there was no way to tell from the page -- just GitHub's
+# Actions tab.
+STUCK_THRESHOLD_MIN = 120
 
 SITE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site"
@@ -188,9 +198,19 @@ def generate_html(
   .refresh-btn {{ display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; background: #38bdf8; color: #0f172a; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px; text-decoration: none; transition: background 0.2s; }}
   .refresh-btn:hover {{ background: #7dd3fc; }}
 
-  .progress-panel {{ max-width: 900px; margin: 20px auto 0; padding: 12px 24px; display: none; align-items: center; gap: 12px; }}
-  .progress-text {{ font-size: 13px; color: #94a3b8; white-space: nowrap; }}
-  .progress-track {{ flex: 1; height: 6px; background: #1e293b; border: 1px solid #334155; border-radius: 4px; overflow: hidden; }}
+  .run-status-panel {{ max-width: 900px; margin: 20px auto 0; padding: 12px 24px; }}
+  .run-status-row {{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
+  .run-status-dot {{ width: 9px; height: 9px; border-radius: 50%; background: #64748b; flex-shrink: 0; }}
+  .run-status-dot.running {{ background: #38bdf8; animation: dot-pulse 1.2s ease-in-out infinite; }}
+  .run-status-dot.stuck, .run-status-dot.error {{ background: #ef4444; }}
+  .run-status-dot.ok {{ background: #22c55e; }}
+  @keyframes dot-pulse {{ 0% {{ opacity: .4; }} 50% {{ opacity: 1; }} 100% {{ opacity: .4; }} }}
+  .run-status-text {{ font-size: 13px; color: #94a3b8; flex: 1; min-width: 220px; }}
+  .run-action-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 12px; padding: 6px 12px; border-radius: 7px; cursor: pointer; font-family: inherit; white-space: nowrap; }}
+  .run-action-btn:hover {{ border-color: #38bdf8; color: #38bdf8; }}
+  .run-action-btn.danger:hover {{ border-color: #ef4444; color: #ef4444; }}
+  .run-action-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
+  .progress-track {{ margin-top: 10px; height: 6px; background: #1e293b; border: 1px solid #334155; border-radius: 4px; overflow: hidden; display: none; }}
   .progress-bar-fill {{ height: 100%; width: 0; background: #38bdf8; transition: width 0.4s ease; }}
   .progress-bar-fill.indeterminate {{ animation: progress-pulse 1.2s ease-in-out infinite; }}
   @keyframes progress-pulse {{ 0% {{ opacity: .35; }} 50% {{ opacity: 1; }} 100% {{ opacity: .35; }} }}
@@ -278,9 +298,14 @@ def generate_html(
   </div>
 </div>
 
-<div class="progress-panel" id="progress-panel">
-  <span class="progress-text" id="progress-text"></span>
-  <div class="progress-track"><div class="progress-bar-fill" id="progress-bar-fill"></div></div>
+<div class="run-status-panel">
+  <div class="run-status-row">
+    <span class="run-status-dot" id="run-status-dot"></span>
+    <span class="run-status-text" id="run-status-text">Перевірка стану пайплайна…</span>
+    <button class="run-action-btn" id="run-restart-btn">↻ Перезапустити</button>
+    <button class="run-action-btn danger" id="run-cancel-btn" style="display:none">⛔ Скасувати</button>
+  </div>
+  <div class="progress-track" id="progress-track"><div class="progress-bar-fill" id="progress-bar-fill"></div></div>
 </div>
 
 <div class="stats">
@@ -373,46 +398,156 @@ def generate_html(
   applyFilters();
 }})();
 
+// Shared by the run-status panel and the Keywords panel below -- both need
+// a token to write to the repo (Actions dispatch/cancel, or Contents PUT).
+// A plain top-level function (not IIFE-wrapped) so both can call it.
+function jobRadarGetToken(forcePrompt) {{
+  var TOKEN_KEY = 'jobRadarGhToken';
+  var t = localStorage.getItem(TOKEN_KEY);
+  if (t && !forcePrompt) return t;
+  t = window.prompt(
+    'Встав GitHub Personal Access Token (fine-grained, права Contents: Read and write ' +
+      'та Actions: Read and write лише на репозиторій {GH_OWNER}/{GH_REPO}).\\n\\n' +
+      'Зберігається тільки в localStorage цього браузера і використовується лише для ' +
+      'запитів напряму до api.github.com.',
+    ''
+  );
+  if (t) {{ t = t.trim(); localStorage.setItem(TOKEN_KEY, t); }}
+  return t || null;
+}}
+
 (function () {{
   var STALE_MS = 20 * 60 * 1000;
-  var panel = document.getElementById('progress-panel');
-  var textEl = document.getElementById('progress-text');
+  var STUCK_MS = {STUCK_THRESHOLD_MIN} * 60 * 1000;
+  var OWNER = '{GH_OWNER}';
+  var REPO = '{GH_REPO}';
+  var WORKFLOW_FILE = '{GH_WORKFLOW_FILE}';
+
+  var dotEl = document.getElementById('run-status-dot');
+  var textEl = document.getElementById('run-status-text');
+  var restartBtn = document.getElementById('run-restart-btn');
+  var cancelBtn = document.getElementById('run-cancel-btn');
+  var trackEl = document.getElementById('progress-track');
   var barEl = document.getElementById('progress-bar-fill');
 
-  function render(status) {{
-    if (!status) {{ panel.style.display = 'none'; return; }}
+  var latestRun = null; // {{id, status, conclusion, started_at}}
+
+  function fmtMinutes(ms) {{
+    var m = Math.round(ms / 60000);
+    return m < 1 ? 'менше хвилини' : m + ' хв';
+  }}
+
+  function renderProgress(status) {{
+    if (!status) {{ trackEl.style.display = 'none'; return; }}
     var age = Date.now() - new Date(status.updated_at).getTime();
     if (status.stage === 'idle' || status.stage === 'error' || age > STALE_MS) {{
-      panel.style.display = 'none';
+      trackEl.style.display = 'none';
       return;
     }}
-
     var found = status.found || 0;
     var scored = status.scored || 0;
-    var text, pct;
-    if (status.stage === 'fetching' || found === 0) {{
-      text = 'Пошук нових вакансій…';
-      pct = null;
-    }} else {{
-      pct = Math.round(scored / found * 100);
-      text = 'Знайдено ' + found + ', проскоровано ' + scored + ' (' + pct + '%)';
-    }}
-
-    panel.style.display = 'flex';
-    textEl.textContent = text;
+    var pct = (status.stage === 'fetching' || found === 0) ? null : Math.round(scored / found * 100);
+    trackEl.style.display = 'block';
     barEl.style.width = (pct === null ? 100 : pct) + '%';
     barEl.classList.toggle('indeterminate', pct === null);
+    if (found > 0) {{
+      textEl.textContent = 'Знайдено ' + found + ', проскоровано ' + scored + ' (' + pct + '%)';
+    }}
   }}
 
-  function poll() {{
+  function renderRunStatus(run) {{
+    latestRun = run;
+    cancelBtn.style.display = 'none';
+    if (!run) {{
+      dotEl.className = 'run-status-dot';
+      textEl.textContent = 'Статус запуску невідомий (не вдалось отримати дані з GitHub).';
+      return;
+    }}
+    var started = run.run_started_at || run.created_at;
+    var elapsed = Date.now() - new Date(started).getTime();
+
+    // GitHub's non-terminal statuses: queued, pending, requested, waiting,
+    // in_progress -- anything that isn't 'completed' yet. Only 'in_progress'
+    // has a meaningful start time to measure "stuck" against; the others
+    // are just waiting for a runner.
+    if (run.status !== 'completed') {{
+      var running = run.status === 'in_progress';
+      var stuck = running && elapsed > STUCK_MS;
+      dotEl.className = 'run-status-dot ' + (stuck ? 'stuck' : 'running');
+      textEl.textContent = (running ? 'Виконується… (' + fmtMinutes(elapsed) + ')' : 'У черзі…') +
+        (stuck ? ' ⚠ Схоже, зависло — можна скасувати і перезапустити.' : '');
+      cancelBtn.style.display = 'inline-block';
+    }} else if (run.conclusion === 'success') {{
+      dotEl.className = 'run-status-dot ok';
+      textEl.textContent = 'Останній запуск успішний, ' + fmtMinutes(Date.now() - new Date(run.updated_at).getTime()) + ' тому.';
+    }} else {{
+      dotEl.className = 'run-status-dot error';
+      textEl.textContent = 'Останній запуск: ' + (run.conclusion || 'невідомо') + ', ' +
+        fmtMinutes(Date.now() - new Date(run.updated_at).getTime()) + ' тому.';
+    }}
+  }}
+
+  function pollStatusJson() {{
     fetch('{STATUS_URL}?t=' + Date.now(), {{cache: 'no-store'}})
       .then(function (r) {{ return r.ok ? r.json() : null; }})
-      .then(render)
-      .catch(function () {{ panel.style.display = 'none'; }});
+      .then(renderProgress)
+      .catch(function () {{ trackEl.style.display = 'none'; }});
   }}
 
-  poll();
-  setInterval(poll, 15000);
+  function pollRunStatus() {{
+    var token = localStorage.getItem('jobRadarGhToken');
+    var headers = {{Accept: 'application/vnd.github+json'}};
+    if (token) headers.Authorization = 'token ' + token;
+    fetch('https://api.github.com/repos/' + OWNER + '/' + REPO + '/actions/workflows/' + WORKFLOW_FILE + '/runs?per_page=1', {{headers: headers}})
+      .then(function (r) {{ return r.ok ? r.json() : null; }})
+      .then(function (data) {{ renderRunStatus(data && data.workflow_runs && data.workflow_runs[0]); }})
+      .catch(function () {{ renderRunStatus(null); }});
+  }}
+
+  restartBtn.addEventListener('click', function () {{
+    var token = jobRadarGetToken(false);
+    if (!token) return;
+    restartBtn.disabled = true;
+    fetch('https://api.github.com/repos/' + OWNER + '/' + REPO + '/actions/workflows/' + WORKFLOW_FILE + '/dispatches', {{
+      method: 'POST',
+      headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json'}},
+      body: JSON.stringify({{ref: '{GH_BRANCH}'}}),
+    }})
+      .then(function (r) {{
+        if (!r.ok) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
+        textEl.textContent = 'Запуск поставлено в чергу…';
+        setTimeout(pollRunStatus, 3000);
+      }})
+      .catch(function (err) {{ textEl.textContent = 'Помилка перезапуску: ' + err.message; }})
+      .finally(function () {{ restartBtn.disabled = false; }});
+  }});
+
+  cancelBtn.addEventListener('click', function () {{
+    if (!latestRun) return;
+    var token = jobRadarGetToken(false);
+    if (!token) return;
+    cancelBtn.disabled = true;
+    fetch('https://api.github.com/repos/' + OWNER + '/' + REPO + '/actions/runs/' + latestRun.id + '/cancel', {{
+      method: 'POST',
+      headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}},
+    }})
+      .then(function (r) {{
+        if (!r.ok && r.status !== 202) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
+        textEl.textContent = 'Скасування запиту надіслано…';
+        setTimeout(pollRunStatus, 3000);
+      }})
+      .catch(function (err) {{ textEl.textContent = 'Помилка скасування: ' + err.message; }})
+      .finally(function () {{ cancelBtn.disabled = false; }});
+  }});
+
+  pollStatusJson();
+  pollRunStatus();
+  setInterval(pollStatusJson, 15000);
+  // 90s, not 60s: unauthenticated GitHub API is capped at 60 req/hr per IP,
+  // and this page may share an IP/NAT with other traffic. Once a token is
+  // saved (pollRunStatus sends it when present), the limit jumps to 5000/hr
+  // and this interval stops mattering.
+  setInterval(pollRunStatus, 90000);
 }})();
 
 (function () {{
@@ -420,7 +555,6 @@ def generate_html(
   var REPO = '{GH_REPO}';
   var PATH = '{GH_KEYWORDS_PATH}';
   var BRANCH = '{GH_BRANCH}';
-  var TOKEN_KEY = 'jobRadarGhToken';
 
   var original = JSON.parse(document.getElementById('keywords-data').textContent);
   var current = original.slice();
@@ -472,27 +606,14 @@ def generate_html(
     if (e.key === 'Enter') {{ e.preventDefault(); addBtn.click(); }}
   }});
 
-  function getToken(forcePrompt) {{
-    var t = localStorage.getItem(TOKEN_KEY);
-    if (t && !forcePrompt) return t;
-    t = window.prompt(
-      'Встав GitHub Personal Access Token (fine-grained, права Contents: Read and write лише на репозиторій ' +
-        OWNER + '/' + REPO + ').\\n\\nЗберігається тільки в localStorage цього браузера і використовується ' +
-        'лише для запитів напряму до api.github.com.',
-      ''
-    );
-    if (t) {{ t = t.trim(); localStorage.setItem(TOKEN_KEY, t); }}
-    return t || null;
-  }}
-
-  tokenBtn.addEventListener('click', function () {{ getToken(true); }});
+  tokenBtn.addEventListener('click', function () {{ jobRadarGetToken(true); }});
 
   function b64EncodeUtf8(str) {{
     return btoa(unescape(encodeURIComponent(str)));
   }}
 
   saveBtn.addEventListener('click', function () {{
-    var token = getToken(false);
+    var token = jobRadarGetToken(false);
     if (!token) {{ statusEl.textContent = 'Токен не задано.'; return; }}
 
     saveBtn.disabled = true;
