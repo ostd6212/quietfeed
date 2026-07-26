@@ -6591,5 +6591,219 @@
       "Невідома зарплата"
     ],
     "first_seen": "2026-07-26T18:56:00.449997+00:00"
+  },
+  "https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-ai-solution-architect-nurnberg-mittelfranken-171944": {
+    "title": "AI Solution Architect (m/w/d)",
+    "url": "https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-ai-solution-architect-nurnberg-mittelfranken-171944",
+    "source": "Arbeitnow",
+    "description": "Als IT-Dienstleister treiben wir die Digitalisierung des öffentlichen Sektors voran und schaffen echten Mehrwert für Millionen Menschen in Deutschland. Wir können vieles richtig gut, aber eben noch nicht alles. Darum suchen wir immer wieder neue Kolleg:innen, die mit ihren Ideen, ihrem Können und Engagement etwas bewegen wollen. Fühlst du dich angesprochen? Dann gestalte Deine Welt zum Besseren und werde Teil unseres Customer Cluster Environment, Transportation & Energy. DEINE MISSION Als AI Solution Architect (m/w/d) gestaltest du die KI-/ML-Gesamtarchitektur für komplexe Enterprise-Umgebungen auf Azure. Du verbindest fundiertes Know-how in ML-Engineering, RAG-Architekturen und MLOps mit einem starken Verständnis für Governance, Compliance und technische Führung. Damit trägst du dazu bei, KI-Lösungen produktionsreif, skalierbar und regelkonform umzusetzen. Deine Aufgaben: Entwurf und Weiterentwicklung der KI-/ML-Gesamtarchitektur auf Azure als Enterprise-KI-Plattform Technische Leitung von ML-Pipeline-Projekten, insbesondere in den Bereichen Training, Deployment, Monitoring und Drift Detection, sowie Konzeption und Optimierung von RAG-Architekturen, beispielsweise hinsichtlich Chunking, Retrieval, Guardrails und Context Orchestration Definition von MLOps-Strategien einschließlich CI/CD für Modelle, Experiment-Tracking und Model Registry Technische Führung und Koordination eines interdisziplinären Teams aus ML/AI Engineers, LLM Engineers und MLOps Engineers Beratung zu AI Gov",
+    "score": 2,
+    "summary": "Компанія Virtual7 GmbH шукає AI Solution Architect, але ця посада не підходить кандидату, оскільки це роль пов'язана з розробкою штучного інтелекту, а не технічної підтримки чи консультування. Компанія працює в сфері ІТ-дienstleister, але це не відповідає бажаному напрямку кандидата - B2B SaaS, fintech, billing.",
+    "role_type": "AI Solution Architect",
+    "company_type": "ІТ-дienstleister",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Не підходить роль",
+      "Не відповідає напрямку компанії"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-senior-implementation-manager-hospital-berlin-350508": {
+    "title": "Senior Implementation Manager (Hospital) (m/w/d)",
+    "url": "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-senior-implementation-manager-hospital-berlin-350508",
+    "source": "Arbeitnow",
+    "description": "Über Recare Als eines der führenden deutschen HealthTech-Unternehmen gestalten wir das Entlassmanagement neu – technologiegetrieben, patientenzentriert und frei von Bürokratie. Neben unserer marktführenden SaaS-Plattform entwickeln wir KI-Lösungen, die Prozesse in Kliniken und bei Nachversorgern radikal vereinfachen, Fachkräfte entlasten und den Fokus zurück auf die Patientinnen und Patienten legen. Bereits heute vernetzen wir zwei Drittel aller deutschen Krankenhäuser mit über 650 Rehakliniken und 25.000 Pflege- und Homecare-Anbietern. Mit aktuell rund 100 Mitarbeitenden wachsen wir weiter – und suchen Menschen mit Haltung, die das Gesundheitssystem mit uns verbessern wollen. Das erwartet dich als unser Senior Implementation Manager (Hospital) (m/w/d): Arbeit mit Purpose – deine Tätigkeit hat positiven Einfluss auf Patientinnen und Patienten, ihre Angehörigen und medizinische Fachkräfte im Gesundheitswesen. Unternehmenskultur – wir setzen auf flache Hierarchien, die eine hohe Performance und eine starke Teamdynamik fördern. Wir pflegen einen Umgang, der von gegenseitigem Respekt, Loyalität und Anerkennung geprägt ist, und streben gemeinsam nach unseren Zielen und erwarten das Gleiche von dir. Flexibilität – möchtest du dein Kind aus der Kita abholen? Machst du gerne Sport in der Mittagspause? Wir unterstützen dich dabei. Wir sind ein Remote-freundliches Unternehmen, bei dem du flexible Arbeitszeiten hast. Nach Absprache kannst du gerne auch Workations machen. Edenred-Karte –",
+    "score": 6,
+    "summary": "Компанія Recare Deutschland GmbH шукає Senior Implementation Manager, ця посада частково підходить кандидату, оскільки це роль пов'язана з імплементацією рішень у сфері охорони здоров'я. Компанія працює в сфері HealthTech, що частково відповідає бажаному напрямку кандидата. Однак, не rõ, чи відповідає компанія вимогам кандидата щодо зарплати та умов роботи.",
+    "role_type": "Senior Implementation Manager",
+    "company_type": "HealthTech",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Частково підходить роль",
+      "Відповідає частково напрямку компанії"
+    ],
+    "cons": [
+      "Не rõ про зарплату",
+      "Не rõ про умови роботи"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/2d7466d0-618a-4888-9a7b-2242695d390c": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/2d7466d0-618a-4888-9a7b-2242695d390c",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Jobgether шукає Integration Manager & Technical Support Specialist, ця посада підходить кандидату, оскільки це роль пов'язана з технічною підтримкою та імплементацією рішень. Компанія працює в сфері, що відповідає бажаному напрямку кандидата - B2B SaaS, fintech, billing. Однак, не rõ, чи відповідає компанія вимогам кандидата щодо зарплати.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Підходить роль",
+      "Відповідає напрямку компанії"
+    ],
+    "cons": [
+      "Не rõ про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/389aec3d-c952-4f3b-becd-c5350c60dba8": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/389aec3d-c952-4f3b-becd-c5350c60dba8",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Jobgether шукає Integration Manager & Technical Support Specialist, ця посада підходить кандидату, оскільки це роль пов'язана з технічною підтримкою та імплементацією рішень. Компанія працює в сфері, що відповідає бажаному напрямку кандидата - B2B SaaS, fintech, billing. Однак, не rõ, чи відповідає компанія вимогам кандидата щодо зарплати.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Підходить роль",
+      "Відповідає напрямку компанії"
+    ],
+    "cons": [
+      "Не rõ про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/3ea23a1e-9a88-43b4-b27e-d3201713601f": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/3ea23a1e-9a88-43b4-b27e-d3201713601f",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Jobgether шукає Integration Manager & Technical Support Specialist, ця посада підходить кандидату, оскільки це роль пов'язана з технічною підтримкою та імплементацією рішень. Компанія працює в сфері, що відповідає бажаному напрямку кандидата - B2B SaaS, fintech, billing. Однак, не rõ, чи відповідає компанія вимогам кандидата щодо зарплати.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Підходить роль",
+      "Відповідає напрямку компанії"
+    ],
+    "cons": [
+      "Не rõ про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4fff99c6-cdff-4ed6-bc42-2dc147c918f4": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/4fff99c6-cdff-4ed6-bc42-2dc147c918f4",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає спеціаліста з інтеграції та технічної підтримки. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "інтеграція"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/57a0b279-8870-4712-88fa-98a0392d2062": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/57a0b279-8870-4712-88fa-98a0392d2062",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає спеціаліста з інтеграції та технічної підтримки. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "інтеграція"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/594d258f-848c-430a-ae1b-4513940474c7": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/594d258f-848c-430a-ae1b-4513940474c7",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає спеціаліста з інтеграції та технічної підтримки. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "інтеграція"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/5b178fcc-d7a6-448e-93fb-533cc943ea54": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/5b178fcc-d7a6-448e-93fb-533cc943ea54",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає спеціаліста з інтеграції та технічної підтримки. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "інтеграція"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
+  },
+  "https://jobs.lever.co/jobgether/5ed405d7-8f73-4db6-99c5-bdfd88817b6c": {
+    "title": "Integration Manager & Technical Support Specialist",
+    "url": "https://jobs.lever.co/jobgether/5ed405d7-8f73-4db6-99c5-bdfd88817b6c",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає спеціаліста з інтеграції та технічної підтримки. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Integration Manager & Technical Support Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "інтеграція"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-26T20:46:00.436523+00:00"
   }
 }
