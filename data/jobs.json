@@ -5737,5 +5737,111 @@
     "source": "Lever",
     "description": "",
     "first_seen": "2026-07-26T08:07:23.633965+00:00"
+  },
+  "https://djinni.co/jobs/820903-web-scraping-support-engineer/": {
+    "title": "Web Scraping Support Engineer",
+    "url": "https://djinni.co/jobs/820903-web-scraping-support-engineer/",
+    "source": "Djinni",
+    "description": "Web Scraping Support Engineer в Massive – Djinni Помилка Відкрити в застосунку Djinni We're Hiring: Web Scraping Support Engineer (Remote) Hello everyone! Massive is looking for a Web Scraping Support Engineer to join our fully remote team. If you dream in selectors, wake up parsing HTML, and genuinely enjoy helping people solve gnarly data extraction problems — this one's for you. What is Massive? Massive is an infrastructure company powering data-driven innovation at scale . We operate a global proxy network , build managed APIs for search engines (SERP) , and Web Unblocking API to bypass anti-bot measures for large-scale data collection and processing. Why This Role Is Different Most support roles are reactive. This one isn't. You're the person customers trust when their scraping pipeline breaks at 2 AM, when a target site changes its structure overnight, when nothing works and nobody knows why. You don't just answer tickets — you solve problems that other engineers can't. Who We're Looking For Troubleshoots in Their Sleep: Broken selectors, anti-bot walls, rotating proxies, CAPTCHAs, headless browser quirks — you've seen it all and you fix it before your coffee gets cold AI is your best friend - you know how to leverage AI to be 10X faster and more productive Customer-Obsessed & Likable: You're the person customers ask for by name. You explain complex concepts in plain language and people genuinely enjoy working with you Can Scrape Anything, Anywhere: SPAs, paginated APIs, rate-limited endpoints, geo-restricted content — if it's on the web, you know how to extract it Consumes Data for Breakfast: You think in JSON, dream in XPath, and get excited about a well-structured dataset Relentlessly Organized: Your support board is pristine. Every ticket triaged, every follow-up tracked, every edge case documented. Nothing slips through — ever Curious Builder: When you notice the same issue three times, you don't just fix it — you automate the solution so it never comes back What You'll Be Doing Own the support board end-to-end with the support team — triage, prioritize, resolve, and follow up on every ticket Debug complex web scraping issues across proxy configurations, browser automation, and API integrations Help customers build, optimize, and fix their scraping pipelines Reproduce issues, identify root causes, and escalate bugs with full context to engineering Write documentation and guides that reduce repeat tickets Bonus Points Experience with Puppeteer, Playwright, Selenium or similar browser automation Hands-on with proxy networks and IP rotation strategies Familiarity with anti-bot systems (Cloudflare, Akamai, PerimeterX, DataDome) Working knowledge of Python, Node.js , or scripting languages for data extraction no satisfaction until all the work is done and then some Ready to Scrape the Future With Us? Skip the generic resume. Show us something real — a scraper you built, a gnarly problem you debugged, a support process you transformed. We care about what you can do, not where you went to school. If you read this and thought \"finally, someone gets it\" — trust that feeling. Apply now. Вимоги до володіння мовами Англійська C1 – Просунутий Опубліковано 23 квітня · Оновлено 26 липня 413 переглядів · 52 відгуки Активність рекрутера: Дуже висока Відповідали 4 години тому Подивитись статистику кандидатів що відгукнулись на цю вакансію 👀 Огляд кандидатів Для відгуку на цю та інші вакансії на Djinni увійдіть або зареєструйтеся . від\n        3 років досвіду Також розглядаємо з досвідом 2 роки Тільки віддалено Весь світ Країни, де розглядаємо кандидатів Англійська C1 – Просунутий Customer/Technical Support Зайнятість: Fulltime Домен: SaaS Стартап Активність рекрутера: Дуже висока Відповідали 4 години тому 📊 Середня зарплатна вилка схожих вакансій у аналітиці → Завантаження... We use cookies to improve your experience. Learn more Okay",
+    "score": 2,
+    "summary": "Компанія Massive шукає Web Scraping Support Engineer. Ця робота не підходить кандидату, оскільки це роль підтримки, а не технічного аккаунт-менеджера чи консультанта з рішень. Компанія працює в сфері інфраструктури даних.",
+    "role_type": "Web Scraping Support Engineer",
+    "company_type": "Інфраструктурна компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Україна",
+    "pros": [
+      "Фул-remote робота",
+      "Інфраструктурна компанія"
+    ],
+    "cons": [
+      "Роль підтримки",
+      "Не відповідає профілю кандидата"
+    ],
+    "first_seen": "2026-07-26T12:56:47.996353+00:00"
+  },
+  "https://www.adzuna.co.uk/jobs/details/5781221952?utm_medium=api&utm_source=0743cc53": {
+    "title": "Implementation Consultant",
+    "url": "https://www.adzuna.co.uk/jobs/details/5781221952?utm_medium=api&utm_source=0743cc53",
+    "source": "Adzuna",
+    "description": "Implementation Consultant Location: UK Remote.50-75% UK travel Direct Reporting Line: VP Customer Success Company Description Thingtrax is a VC-backed UK-based AI company transforming how food manufacturers see, understand, and optimise their production lines. Our focus is on deploying Computer Vision AI Agents that automate critical visual inspection tasks on the factory floor, starting with three core use cases: count, quality, and label verification. These AI Agents integrate seamlessly into…",
+    "score": 8,
+    "summary": "Компанія Thingtrax шукає Implementation Consultant. Ця робота підходить кандидату, оскільки це роль консультанта з рішень в сфері AI та виробництва. Компанія працює в Великій Британії.",
+    "role_type": "Implementation Consultant",
+    "company_type": "AI-компанія",
+    "salary": "Не вказана",
+    "remote": "Гібрид",
+    "region": "Закордон",
+    "pros": [
+      "Роль консультанта з рішень",
+      "AI-компанія"
+    ],
+    "cons": [
+      "Гібридна робота"
+    ],
+    "first_seen": "2026-07-26T12:56:47.996353+00:00"
+  },
+  "https://www.adzuna.co.uk/jobs/details/5749919718?utm_medium=api&utm_source=0743cc53": {
+    "title": "Implementation Consultant",
+    "url": "https://www.adzuna.co.uk/jobs/details/5749919718?utm_medium=api&utm_source=0743cc53",
+    "source": "Adzuna",
+    "description": "Title: Implementation Consultant Department: Professional Services Location: Remote in UK About Aria Systems: Aria provides a cloud-based monetization platform for subscription- and usage-based businesses. Aria removes billing bottlenecks and allows companies to rapidly introduce and evolve their offerings, bundles, and promotions. Innovative companies, like Allstate, Honda, Subaru, Dover and Trimble depend on Aria for agility to accelerate their time to revenue, maximize customer value, and ul…",
+    "score": 9,
+    "summary": "Компанія Aria Systems шукає Implementation Consultant. Ця робота підходить кандидату, оскільки це роль консультанта з рішень в сфері монетизації та хмарних технологій. Компанія працює в сфері B2B SaaS.",
+    "role_type": "Implementation Consultant",
+    "company_type": "B2B SaaS-компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Роль консультанта з рішень",
+      "B2B SaaS-компанія",
+      "Фул-remote робота"
+    ],
+    "cons": [],
+    "first_seen": "2026-07-26T12:56:47.996353+00:00"
+  },
+  "https://www.adzuna.co.uk/jobs/details/5661481943?utm_medium=api&utm_source=0743cc53": {
+    "title": "Senior Implementation Consultant",
+    "url": "https://www.adzuna.co.uk/jobs/details/5661481943?utm_medium=api&utm_source=0743cc53",
+    "source": "Adzuna",
+    "description": "\"At Klipboard we've introduced a flexible hybrid work policy, where employees spend three days in the office and two days working from home. This approach promotes a balanced work environment that combines office collaboration with the comfort and convenience of remote work.\" Klipboard’s brand is designed to bring together our expertise across distribution, automotive, retail, rental, transport management, manufacturing, and field service management. Our passion is to provide customers with an …",
+    "score": 4,
+    "summary": "Компанія Klipboard шукає Senior Implementation Consultant. Ця робота частково підходить кандидату, оскільки це роль консультанта з рішень, але компанія працює в сфері розподілу та управління, а не в сфері B2B SaaS чи фінтех.",
+    "role_type": "Senior Implementation Consultant",
+    "company_type": "Компанія з розподілу та управління",
+    "salary": "Не вказана",
+    "remote": "Гібрид",
+    "region": "Закордон",
+    "pros": [
+      "Роль консультанта з рішень"
+    ],
+    "cons": [
+      "Гібридна робота",
+      "Не відповідає сфері діяльності кандидата"
+    ],
+    "first_seen": "2026-07-26T12:56:47.996353+00:00"
+  },
+  "https://jobs.lever.co/jobgether/f5cdad35-9e1c-4dca-8eba-cceaff3dc303": {
+    "title": "Global Senior NetSuite Consultant",
+    "url": "https://jobs.lever.co/jobgether/f5cdad35-9e1c-4dca-8eba-cceaff3dc303",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Jobgether шукає Global Senior NetSuite Consultant. Ця робота підходить кандидату, оскільки це роль консультанта з рішень в сфері хмарних технологій. Компанія працює в сфері B2B SaaS.",
+    "role_type": "Global Senior NetSuite Consultant",
+    "company_type": "B2B SaaS-компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Роль консультанта з рішень",
+      "B2B SaaS-компанія"
+    ],
+    "cons": [
+      "Не вказано про роботу",
+      "Не вказано про регіони діяльності"
+    ],
+    "first_seen": "2026-07-26T12:56:47.996353+00:00"
   }
 }
