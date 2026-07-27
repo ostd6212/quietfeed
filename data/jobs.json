@@ -8943,5 +8943,420 @@
       "відсутня інформація про зарплату"
     ],
     "first_seen": "2026-07-27T16:09:16.297257+00:00"
+  },
+  "https://www.arbeitnow.com/jobs/companies/365-heroes-gmbh/senior-cloud-consultant-nuremberg-107492": {
+    "title": "Senior Cloud Consultant (m/w/d)",
+    "url": "https://www.arbeitnow.com/jobs/companies/365-heroes-gmbh/senior-cloud-consultant-nuremberg-107492",
+    "source": "Arbeitnow",
+    "description": "Werde Teil der 365 Heroes! Wir glauben daran, dass moderne Zusammenarbeit mehr ist als nur Technologie. Wir helfen Unternehmen dabei, Microsoft 365 intelligent einzusetzen – von der ersten Strategie bis zum erfolgreichen Betrieb. Dafür suchen wir einen Senior Cloud Consultant (m/w/d), der Kunden nicht nur technisch begleitet, sondern als echter Trusted Advisor auf Augenhöhe agiert. Aufgaben Deine Aufgaben ● Planung und Umsetzung von Microsoft-365-Projekten ● Beratung von Kunden rund um Modern Workplace ● Konzeption und Implementierung von SharePoint Online und Microsoft Teams ● Einführung und Optimierung von Microsoft Intune und Endpoint Management ● Umsetzung von Microsoft Defender- und Security-Konzepten ● Unterstützung bei Governance-, Compliance- und Security-Anforderungen ● Durchführung von Workshops und Kundenpräsentationen ● Technische Projektleitung sowie Steuerung von Kundenprojekten ● Migrationen nach Microsoft 365 (SharePoint, Teams, OneDrive) ● Dokumentation von Lösungen und Best Practices ● Unterstützung unseres Sales-Teams bei Presales-Terminen ● Wissensaustausch innerhalb des Teams und Mentoring jüngerer Consultants Qualifikation Das bringst du mit ● Mehrjährige Erfahrung als Microsoft-365- oder Cloud-Consultant ● Sehr gute Kenntnisse in mehreren der folgenden Bereiche: ● SharePoint Online ● Microsoft Teams ● Microsoft 365 Administration ● Microsoft Intune ● Microsoft Defender ● Entra ID (Azure AD) ● Exchange Online ● OneDrive ● Purview (von Vorteil) ● Erfahrun",
+    "score": 4,
+    "summary": "Компанія 365 Heroes шукає Senior Cloud Consultant, але ця робота не підходить кандидату через відсутність інформації про зарплату та вимогу проживання в Німеччині. Компанія займається впровадженням Microsoft 365 для підприємств.",
+    "role_type": "Cloud Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Опыт роботи з Microsoft 365",
+      "Возможность работать з великими підприємствами"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Вимога проживання в Німеччині"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://databricks.com/company/careers/open-positions/job?gh_jid=8585599002": {
+    "title": "Senior Solutions Architect (Large Retail Account)",
+    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8585599002",
+    "source": "Greenhouse",
+    "description": "Senior Solutions Architect (Large Retail Account) - Databricks Skip to main content Overview Culture Benefits Diversity Engineering Research Students & new grads Back to search results Senior Solutions Architect (Large Retail Account) Remote - United Kingdom Apply now JOB ID: FEQ427R333 Location: Remote, United Kingdom - The candidates can be based near Manchester or Leeds area Industry: Retail/CPG (UKI Enterprise) Recruiter: Dina Hussain At Databricks, our core values are at the heart of everything we do. A culture of proactiveness and a customer-centric mindset guides us in creating a unified platform that makes data science and analytics accessible to everyone. We aim to inspire our customers to make informed decisions that push their business forward. We provide a user-friendly and intuitive platform that makes it easy to turn insights into action and fosters a culture of creativity, experimentation, and continuous improvement. You will be a vital part of this mission, utilising your technical expertise to demonstrate how our Lakehouse Platform can help customers address their complex data challenges. You'll work with a collaborative, customer-focused team who values innovation and creativity, using your skills to create customised solutions to help our customers achieve their goals and guide their businesses forward. Join us in our quest to change how people work with data and make a better world! Reporting to the Manager, Field Engineering. The impact you will have: Engage with some of Databricks’s largest and most complex customers across the UK & Ireland, defining their technical strategies and supporting them in adopting Databricks to achieve their business objectives. Collaborate with Databricks leadership, account teams and field engineers to define and execute customer engagement strategies. Demonstrate our Builder Culture to the highest standards, putting our principle of “show, not tell” into practice, supported by the full breadth of the latest in AI tooling and processes, to inspire customers and Bricksters on the art of the possible. Coach junior Solutions Architects and teams on use case prioritisation and building technical champions. You will influence stakeholders at all organisational levels through complex engagements with the broader cloud ecosystem and third-party applications, ensuring they are excited by the Databricks vision and solution strategy. Be a 'champion’ for both customers and colleagues, operating as an expert solution architect and trusted advisor for significant data analytics architecture, design, and adoption of the Databricks Lakehouse platform. Contribute to Databricks' technical community engagement by developing customer-facing collateral and leading workshops, seminars, and meet-ups. Opportunity to continue your development in one of four tracks - technical specialisation, industry vertical thought leadership, strategic customer vision, and people management. What we look for: We are seeking a highly motivated and technically skilled individual to join our UK&I Enterprise Solutions Architecture team, which focuses on engaging with our largest and most complex customers, supporting them in executing strategic business change. This role offers the opportunity to be based in the London Office, with regular collaboration across the UK&I region and close alignment with our London-based team. Core Technical Qualifications: Hands-on experience in technical pre-sales or consultancy, with a strong background in Data Science - traditional Machine Learning, Deep Learning, Artificial Intelligence or Generative AI. Demonstrated ability to architect end-to-end Data & AI solutions, with specific expertise in modern Generative AI concepts (e.g., fine-tuning, RAG, MLOps for LLMs), using either open source and/or ISV tools such as Dataiku, Domino, DataRobot etc. Hands-on experience and enthusiasm for building with AI-based development tooling such as Genie Code, Claude Code, Cursor etc. Strong prof",
+    "score": 8,
+    "summary": "Компанія Databricks шукає Senior Solutions Architect для великого рітейл-аккаунту. Ця робота підходить кандидату через можливість фул-ремотної роботи та відповідність його досвіду та навичок. Компанія займається розробкою платформи для даних та аналітики.",
+    "role_type": "Solutions Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Фул-ремотна робота",
+      "Відповідність досвіду та навичок кандидата"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://himalayas.app/companies/human-resources-team/jobs/m-a-integration-associate-4026147092": {
+    "title": "M&A Integration Associate",
+    "url": "https://himalayas.app/companies/human-resources-team/jobs/m-a-integration-associate-4026147092",
+    "source": "Himalayas",
+    "description": "AI Fire is a leading provider of fire and life safety services in the U.S. offering national account services via its vendor network at Academy Fire and serving local and regional customers through Impact Fire’s employed technicians across 45+ district offices nationwide. AI Fire has completed over 45 acquisitions and will continue to build upon its well-established acquisition and integration model with its new private equity partner. Benefits of joining AI Fire When you join AI Fire you will receive: Competitive compensation Pay is on a weekly cycle, every Friday Career Advancement Opportunities Competitive benefits, including healthcare, dental, vision, life insurance, paid time off and holidays Company paid short and long-term disability Immediately vested in our 401(k) company match Full-time employees participate in our Shared Ownership Program which offers a monetary bonus aligned to the company's long-term success. This program fosters an ownership mindset and ensures that every employee meaningfully shares in the success they help create. Exceptional guidance and support from our managers Collaborative culture & environment Opportunity to work alongside some of the best talent in the fire protection industry This individual will play a key role in integration planning and execution efforts for AI Fire’s numerous acquisitions. The Integration Associate will coordinate with a cross-functional integration team to ensure all relevant tasks are completed, including activi",
+    "score": 2,
+    "summary": "Компанія AI Fire шукає M&A Integration Associate, але ця робота не підходить кандидату через відсутність інформації про зарплату та вимогу проживання в США. Компанія займається наданням послуг з пожежної безпеки.",
+    "role_type": "M&A Integration Associate",
+    "company_type": "Сервісна компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Возможность работать з великими підприємствами"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Вимога проживання в США"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://himalayas.app/companies/sharecare/jobs/sr-billing-specialist-remote": {
+    "title": "Sr. Billing Specialist - Remote",
+    "url": "https://himalayas.app/companies/sharecare/jobs/sr-billing-specialist-remote",
+    "source": "Himalayas",
+    "description": "Job Description: Sharecare is the leading digital health company that helps people – no matter where they areintheir health journey – unify and manage all their health in one place. Our comprehensive and data-driven virtual health platform is designed to help people, providers, employers, health plans, government organizations, and communitiesoptimizeindividual and population-wide well-being by driving positive behavior change. Driven by our philosophy that we are all together better, at Sharecare , we are committed to supportingeach individualthrough the lens of their personal health and making high-quality care more accessible and affordable for everyone. To learn more, visit www.sharecare.com . Job Summary: We are looking for a competent Billing specialist to undertake a variety of financial and non-financial tasksin order tohelp guarantee the company’s revenues.You willaidthe processing of invoices along with the issuing of necessary back-up details and provide direct, real-time support by having a strong understanding of company policies, processes, and department process flows. Essential JobFunctions: Daily review and processing of data files for monthly invoicing. Review and approve invoices for completeness and accuracy. Work with the leadership team to stay updated on product knowledge, internalprocessesand be informed of any changes in company/ departmental policies or procedures. Serve as a subject matter expert (SME) related to department processes and systems. As",
+    "score": 6,
+    "summary": "Компанія Sharecare шукає Sr. Billing Specialist для роботи з рахунками та оплатами. Ця робота підходить кандидату через можливість фул-ремотної роботи, але не відповідає його досвіду та навичкам. Компанія займається розробкою цифрової платформи для охорони здоров'я.",
+    "role_type": "Billing Specialist",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Фул-ремотна робота",
+      "Возможность работать з великими підприємствами"
+    ],
+    "cons": [
+      "Не відповідає досвіду та навичкам кандидата"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://himalayas.app/companies/remote/jobs/payroll-lead-implementations-denmark-nordics": {
+    "title": "Payroll Lead, Implementations - Denmark (Nordics)",
+    "url": "https://himalayas.app/companies/remote/jobs/payroll-lead-implementations-denmark-nordics",
+    "source": "Himalayas",
+    "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage international teams. With our core values at heart and future focused work culture, our team works tirelessly on ambitious problems, asynchronously, around the world. You can find Remote rs working from 6 different continents (Antarctica left to go!) and all of our positions are fully remote. With Innovation as one of the core values, we have built Automation and AI capabilities into the requirements for every role. We encourage every member of the Remote team to bring their talents, experiences and culture to the table to help us build the best-in-class HR platform. If you are energetic, curious, motivated and ambitious, be part of our world. Apply now and define the future of work! What this job can offer you This is an exciting time to join Remote and make a personal difference in the global employment space as a Global Payroll Country for the Nordics , joining our Implementation team. What you bring Extensive payroll experience in a client payroll environment. Expert legislative knowledge in said region with specialism in Denmark. Payroll implementation experience. Strong communication skills for explaining payroll processes and issues to customers and other stakeholders. Strong experience of using Intega payroll software in Denmark Deep knowledge in using local payroll tool",
+    "score": 5,
+    "summary": "Компанія Remote шукає Payroll Lead для впровадження систем оплати праці. Ця робота підходить кандидату через можливість фул-ремотної роботи, але не відповідає його досвіду та навичкам. Компанія займається розробкою платформи для управління міжнародними командами.",
+    "role_type": "Payroll Lead",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Фул-ремотна робота",
+      "Возможность работать з великими підприємствами"
+    ],
+    "cons": [
+      "Не відповідає досвіду та навичкам кандидата"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/b82f5dbb-7fc9-4b3c-9afe-ff40b42d23f1": {
+    "title": "Associate Solutions Designer",
+    "url": "https://jobs.lever.co/jobgether/b82f5dbb-7fc9-4b3c-9afe-ff40b42d23f1",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки та роботи з клієнтами. Однак відсутність інформації про зарплату та конкретні обов'язки робить цю вакансію менш привабливою.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід роботи з клієнтами",
+      "можливість розвитку у сфері успіху клієнтів"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невизначеність обов'язків"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/315c3629-8a48-4a47-8844-34a19b486df5": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/315c3629-8a48-4a47-8844-34a19b486df5",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки. Однак відсутність інформації про зарплату та конкретні обов'язки робить цю вакансію менш привабливою.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід роботи з клієнтами"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невизначеність обов'язків"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/43a58cf2-13a1-444f-9347-054e96e39477": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/43a58cf2-13a1-444f-9347-054e96e39477",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки. Однак відсутність інформації про зарплату та конкретні обов'язки робить цю вакансію менш привабливою.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід роботи з клієнтами"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невизначеність обов'язків"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/5fa5e302-6603-4a9e-974e-702ec7f00780": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/5fa5e302-6603-4a9e-974e-702ec7f00780",
+    "source": "Lever",
+    "description": "",
+    "score": 3,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки. Однак відсутність інформації про зарплату та конкретні обов'язки робить цю вакансію менш привабливою.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід роботи з клієнтами"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невизначеність обов'язків"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/6edd42da-cb23-451f-84bd-d4b92640d538": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/6edd42da-cb23-451f-84bd-d4b92640d538",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія пропонує роль Associate Solutions Designer, що не підходить кандидату через відсутність досвіду у сфері дизайну рішень. Відсутність інформації про зарплату та конкретні обов'язки робить цю вакансію менш привабливою.",
+    "role_type": "Associate Solutions Designer",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "відсутність досвіду у сфері дизайну рішень",
+      "невизначеність обов'язків"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/869bbd64-bba5-4b03-84d1-cdaccc8198bd": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/869bbd64-bba5-4b03-84d1-cdaccc8198bd",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки та успіху клієнтів. Однак відсутність інформації про зарплату та тип компанії може бути певним мінусом.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "роль успіху клієнтів"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невідомий тип компанії"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/cdb212de-7d4b-4e0c-8d2b-797b3f2b9623": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/cdb212de-7d4b-4e0c-8d2b-797b3f2b9623",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки та успіху клієнтів. Однак відсутність інформації про зарплату та тип компанії може бути певним мінусом.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "роль успіху клієнтів"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невідомий тип компанії"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/e8821973-0012-4b88-90a3-febaab6a790d": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/e8821973-0012-4b88-90a3-febaab6a790d",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки та успіху клієнтів. Однак відсутність інформації про зарплату та тип компанії може бути певним мінусом.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "роль успіху клієнтів"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невідомий тип компанії"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/ef670d9b-9c4d-42a9-a978-80487e8d01d9": {
+    "title": "Customer Success Specialist",
+    "url": "https://jobs.lever.co/jobgether/ef670d9b-9c4d-42a9-a978-80487e8d01d9",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія пропонує роль Customer Success Specialist, що частково підходить кандидату через наявність досвіду у сфері технічної підтримки та успіху клієнтів. Однак відсутність інформації про зарплату та тип компанії може бути певним мінусом.",
+    "role_type": "Customer Success Specialist",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "роль успіху клієнтів"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "невідомий тип компанії"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/11caca8f-60be-4d10-9f7d-e7ab7d7b63ae": {
+    "title": "D365 Business Central Senior Manufacturing Consultant",
+    "url": "https://jobs.lever.co/jobgether/11caca8f-60be-4d10-9f7d-e7ab7d7b63ae",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль D365 Business Central Senior Manufacturing Consultant, що не повністю підходить кандидату через відсутність досвіду у сфері виробництва та певних технічних навичок. Однак компанія може бути продуктовою компанією, що частково відповідає вимогам кандидата.",
+    "role_type": "D365 Business Central Senior Manufacturing Consultant",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "продуктова компанія",
+      "технічна роль"
+    ],
+    "cons": [
+      "відсутність досвіду у сфері виробництва",
+      "невідомий тип компанії"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1e06ccc9-eb8d-4297-b34b-7f41b2a2c240": {
+    "title": "Director, Solution and Product Marketing",
+    "url": "https://jobs.lever.co/jobgether/1e06ccc9-eb8d-4297-b34b-7f41b2a2c240",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія шукає директора з маркетингу рішень і продуктів. Ця посада не підходить кандидату, оскільки це керівна посада в маркетингу, а не технічна роль. Компанія не вказана, тому важко оцінити її тип.",
+    "role_type": "Директор маркетингу",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не технічна роль",
+      "Немає інформації про компанію"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/3a9aea62-85b9-4bba-be37-d734fa0c9131": {
+    "title": "Director, Solution and Product Marketing",
+    "url": "https://jobs.lever.co/jobgether/3a9aea62-85b9-4bba-be37-d734fa0c9131",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Director, Solution and Product Marketing based in Saudi Arabia.\nThis role offers the opportunity to shape market strategy and define the narrative for innovative enterprise technology solutions at a global scale.\nYou will sit at the intersection of product strategy, solution positioning, and go-to-market execution, helping organizations understand the value of complex platforms.\nWorking closely with Product, Sales, Engineering, and Marketing teams, you will transform technical capabilities into compelling business outcomes.\nThe position combines strategic storytelling, market influence, team leadership, and operational execution.\nYou will play a key role in building category leadership, enabling sales teams, and driving adoption among enterprise customers.\nThis is an ideal opportunity for an experienced product marketing leader who thrives in high-growth environments and enjoys creating meaningful business impact through technology.",
+    "score": 1,
+    "summary": "Компанія шукає директора з маркетингу рішень і продуктів у Саудівській Аравії. Ця посада не підходить кандидату, оскільки це керівна посада в маркетингу, а не технічна роль, і вимагає перебування в Саудівській Аравії.",
+    "role_type": "Директор маркетингу",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Не технічна роль",
+      "Вимагає перебування в Саудівській Аравії"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/43549275-6e64-4a56-92f4-b1b7a959c4dd": {
+    "title": "Director, Solution and Product Marketing",
+    "url": "https://jobs.lever.co/jobgether/43549275-6e64-4a56-92f4-b1b7a959c4dd",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія шукає директора з маркетингу рішень і продуктів. Ця посада не підходить кандидату, оскільки це керівна посада в маркетингу, а не технічна роль. Компанія не вказана, тому важко оцінити її тип.",
+    "role_type": "Директор маркетингу",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не технічна роль",
+      "Немає інформації про компанію"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/462afe61-8e24-44a8-9f04-dcc9d3b77da2": {
+    "title": "Director, Solution and Product Marketing",
+    "url": "https://jobs.lever.co/jobgether/462afe61-8e24-44a8-9f04-dcc9d3b77da2",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія шукає директора з маркетингу рішень і продуктів. Ця посада не підходить кандидату, оскільки це керівна посада в маркетингу, а не технічна роль. Компанія не вказана, тому важко оцінити її тип.",
+    "role_type": "Директор маркетингу",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не технічна роль",
+      "Немає інформації про компанію"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
+  },
+  "https://jobs.lever.co/jobgether/47f7cacb-08f8-4f6a-8910-bc0bb2e71cb0": {
+    "title": "Director, Solution and Product Marketing",
+    "url": "https://jobs.lever.co/jobgether/47f7cacb-08f8-4f6a-8910-bc0bb2e71cb0",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія шукає директора з маркетингу рішень і продуктів. Ця посада не підходить кандидату, оскільки це керівна посада в маркетингу, а не технічна роль. Компанія не вказана, тому важко оцінити її тип.",
+    "role_type": "Директор маркетингу",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не технічна роль",
+      "Немає інформації про компанію"
+    ],
+    "first_seen": "2026-07-27T19:12:47.565568+00:00"
   }
 }
