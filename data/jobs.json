@@ -7441,5 +7441,336 @@
       "неясна структура компанії"
     ],
     "first_seen": "2026-07-27T01:52:25.477468+00:00"
+  },
+  "https://djinni.co/jobs/833228-solution-architect-bpm-camunda-integration/": {
+    "title": "Solution Architect Bpm Camunda Integration",
+    "url": "https://djinni.co/jobs/833228-solution-architect-bpm-camunda-integration/",
+    "source": "Djinni",
+    "description": "Solution Architect (BPM / Camunda / Integration) в ITExpert – Djinni Помилка Відкрити в застосунку Djinni Фінансова компанія у пошуку Solution Architect для роботи над масштабним проєктом цифрової трансформації — автоматизацією процесів онбордингу корпоративних клієнтів. Команда працює над розвитком нового рішення для автоматизації бізнес-процесів у банківському домені. У фокусі — побудова архітектури на базі Camunda BPM, інтеграція з внутрішніми системами та створення надійних механізмів взаємодії із зовнішніми реєстрами. Формат роботи — повністю віддалений. Основні задачі: • Проєктування цільової архітектури рішень на базі Camunda BPM та її інтеграція в існуючу IT-екосистему • Побудова інтеграційної стратегії між BPM-рішенням та ключовими корпоративними системами • Визначення підходів до взаємодії сервісів залежно від навантаження та критичності процесів (REST, SOAP, MQ, gRPC) • Проєктування безпечних шлюзів для роботи із зовнішніми державними та приватними реєстрами • Участь у розробці внутрішніх стандартів моделювання процесів (BPMN 2.0, DMN) • Взаємодія з розробниками та технічними командами щодо архітектурних рішень і якості реалізації Вимоги: • Досвід прийняття архітектурних рішень на рівні Solution/System Architecture для проєктів автоматизації бізнес-процесів (BPM) • Досвід роботи з Java стеком (досвід роботи з Camunda 8 буде суттєвою перевагою) Що пропонують: • Медичне страхування • 24 календарні дні оплачуваної відпустки • Техніку для комфортної роботи • Доступ до консультацій корпоративного психолога • Корпоративне навчання та розвиток професійних навичок Етапи спілкування: • Зустріч із технічними архітекторами • Фінальна розмова із представником IT-напряму Необхідний досвід з навичками Spring Boot 3 роки Camunda 3 роки Вимоги до володіння мовами Англійська B1 – Середній Українська Носій мови Опубліковано 22 червня · Оновлено 27 липня 56 переглядів · 2 відгуки Активність рекрутера: Дуже висока Відповідали 2 тижні тому Для відгуку на цю та інші вакансії на Djinni увійдіть або зареєструйтеся . від\n        8 років досвіду Також розглядаємо з досвідом 7 років Тільки віддалено Україна Країни, де розглядаємо кандидатів Англійська B1 – Середній Українська Носій мови Software Architect Spring Boot 3 роки Camunda 3 роки Зайнятість: Fulltime Домен: Fintech Продуктова компанія Активність рекрутера: Дуже висока Відповідали 2 тижні тому 📊 Середня зарплатна вилка схожих вакансій у аналітиці → Завантаження... We use cookies to improve your experience. Learn more Okay",
+    "score": 2,
+    "summary": "Компанія ITExpert шукає Solution Architect для роботи над проєктом цифрової трансформації. Роль не підходить кандидату, оскільки це позиція архітектора, а не технічного аккаунт-менеджера чи консультанта.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Україна",
+    "pros": [
+      "Фул-Remote",
+      "Продуктова компанія"
+    ],
+    "cons": [
+      "Не підходить роль",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/c325db0c-2182-4751-85c2-4adfee69a6ce": {
+    "title": "AI Implementation Intern",
+    "url": "https://jobs.lever.co/Sprinto/c325db0c-2182-4751-85c2-4adfee69a6ce",
+    "source": "Lever",
+    "description": "Sprinto is an AI-native GRC platform that helps organisations manage risks, audits, vendor oversight, and continuous monitoring from a single connected platform. With a team of 350+ employees serving 3,000+ customers across 75+ countries, Sprinto combines scale with expertise to deliver trust and compliance. Backed by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised $31.8M in funding to fuel our mission. Trusted by leading organisations including Whatfix, Anaconda, Ultrahuman, WeWork, AI Foundation, and HackerRank, Sprinto supports 300+ integrations and 200+ global security standards, including SOC 2, ISO 27001, GDPR, HIPAA, and PCI-DSS.\n \nFounded in 2020 by second-time entrepreneurs Girish Redekar and Raghuveer Kancherla, Sprinto is recognised as a Leader on G2 in Compliance Automation and has been named a LinkedIn Top Startup multiple years in a row.\n \nSprint With Sprinters\nAt Sprinto, your work has purpose — and your life has space. We are a workplace where you’re empowered to execute on your most ambitious ideas and deliver your best output in a fast-paced, innovative, and supportive environment.\nJoining Sprinto means you will never run alone; you will always have the freedom to take your shot and the support to go farther than you imagined.\n \nWhat The Role Involves?\nWe are seeking a motivated AI Implementation Intern to support the development and enhancement of our AI-powered solutions. This is a 6 months internship, where you'll have the op",
+    "score": 1,
+    "summary": "Компанія Sprinto шукає AI Implementation Intern. Роль не підходить кандидату, оскільки це позиція стажера, а не технічного аккаунт-менеджера чи консультанта.",
+    "role_type": "Intern",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Продуктова компанія"
+    ],
+    "cons": [
+      "Не підходить роль",
+      "Не вказана зарплата",
+      "Не вказано про віддалену роботу"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/640fd9e7-76d3-463a-9c0c-7f31fc3a4c6f": {
+    "title": "Customer Success Manager",
+    "url": "https://jobs.lever.co/Sprinto/640fd9e7-76d3-463a-9c0c-7f31fc3a4c6f",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\n\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\n\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised$31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\n\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\n\nWhat the Role Involves: \nWe’re looking for a Customer Success Manager who’s equal parts relationship builder, strategic thinker, and commercial operator. In this role, you’ll be the face of Sprinto for our customers in the US — ensuring they see value from d",
+    "score": 8,
+    "summary": "Компанія Sprinto шукає Customer Success Manager. Роль підходить кандидату, оскільки це позиція менеджера успіху клієнтів, яка відповідає його досвіду та навичкам.",
+    "role_type": "Customer Success Manager",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Підходить роль",
+      "Продуктова компанія"
+    ],
+    "cons": [
+      "Не вказана зарплата",
+      "Не вказано про віддалену роботу"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/11a4a6e1-e891-48d1-b6b5-9cd71262b23f": {
+    "title": "Lead Product support Engineer",
+    "url": "https://jobs.lever.co/Sprinto/11a4a6e1-e891-48d1-b6b5-9cd71262b23f",
+    "source": "Lever",
+    "description": "About Sprinto\nSprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers. Trusted by over 3,000 organizations across 75 countries, Sprinto helps companies stay audit-ready, manage real-time risk, and scale fearlessly — with 300+ native integrations and support for 200+ global security standards including SOC 2, ISO 27001, GDPR, and HIPAA.\n\nLife as a Sprinter\nNobody succeeds at Sprinto by staying in their lane.\nWe are organized around problems, not job titles. Sprinters take ownership beyond their role, solve hard problems, and care deeply about the impact they create. If something can be improved, fixed, or built, we don't wait for permission — we step in.\nBeing remote means we rely less on proximity and more on trust. We write things down, communicate openly, and move quickly — because great teams aren't built by sitting together, they're built by pulling in the same direction.\nWe believe progress beats perfection, feedback is a gift, and doing the right thing matters, even when nobody is watching. And while we move with urgency, we never move alone.\nWhere You Come In\nSprinto's support team operates at the intersection of customer trust and technical complexity. Our customers are navigating compliance, audits, and security programs — and when something breaks, they need it resolved fast, clearly, and completely.\nYou'll be a player-coach on our global support team — roughly 50% hands-on ticket work, 50% shift",
+    "score": 6,
+    "summary": "Компанія Sprinto шукає Lead Product Support Engineer. Роль частково підходить кандидату, оскільки це позиція інженера підтримки продукту, яка відповідає його технічному досвіду, але не зовсім відповідає його бажанням щодо ролі.",
+    "role_type": "Lead Product Support Engineer",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Продуктова компанія",
+      "Технічна роль"
+    ],
+    "cons": [
+      "Не зовсім підходить роль",
+      "Не вказана зарплата",
+      "Не вказано про віддалену роботу"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/9246976f-5d9c-4065-842d-476a093a588a": {
+    "title": "Program Manager, Customer Experience",
+    "url": "https://jobs.lever.co/Sprinto/9246976f-5d9c-4065-842d-476a093a588a",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\n\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\n\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised$31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\n\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\n\nWhat the Role Involves: The Program Manager, Customer Experience will build and scale the programs that make Sprinto's customer journey more predictable, efficient, and valuable, by identifying friction across handoffs, onboarding, implementation, adoption, ",
+    "score": 5,
+    "summary": "Компанія Sprinto шукає Program Manager, Customer Experience. Роль частково підходить кандидату, оскільки це позиція менеджера програми, яка відповідає його досвіду у сфері управління проєктами, але не зовсім відповідає його бажанням щодо ролі.",
+    "role_type": "Program Manager",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Продуктова компанія",
+      "Роль менеджера"
+    ],
+    "cons": [
+      "Не зовсім підходить роль",
+      "Не вказана зарплата",
+      "Не вказано про віддалену роботу"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/b6bc258e-181a-4531-9146-968c71a05a43": {
+    "title": "Senior Consultant: Trust Assurance",
+    "url": "https://jobs.lever.co/Sprinto/b6bc258e-181a-4531-9146-968c71a05a43",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\n\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\n\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised$31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\n\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\n\nThe Role: Sprinto is building a Managed Services wing that will evolve from framework digitisation into a broader services portfolio, including implementation consulting, risk & privacy assessments, policy reviews, internal audits, and security assurance pro",
+    "score": 6,
+    "summary": "Sprinto - це компанія, що пропонує платформу для автоматизації завдань з підтримки довіри. Роль Senior Consultant: Trust Assurance підходить кандидату через наявність досвіду у сфері технічної підтримки та знання SQL, але відсутність інформації про зарплату та вимоги до рівня англійської мови можуть бути недоліками.",
+    "role_type": "Senior Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "знання SQL"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "вимоги до рівня англійської мови"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/c91737f8-fe10-4422-9dc8-6dd8d3486866": {
+    "title": "Senior GRC Consultant - Standard Frameworks",
+    "url": "https://jobs.lever.co/Sprinto/c91737f8-fe10-4422-9dc8-6dd8d3486866",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised$31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\nLife as a Sprinter : \nNobody succeeds at Sprinto by staying in their lane.\nWe are organized around problems, not job titles. Sprinters take ownership beyond their role, solve hard problems, and care deeply about the impact they create. If something can be improv",
+    "score": 6,
+    "summary": "Sprinto - це компанія, що пропонує платформу для автоматизації завдань з підтримки довіри. Роль Senior GRC Consultant - Standard Frameworks підходить кандидату через наявність досвіду у сфері технічної підтримки та знання SQL, але відсутність інформації про зарплату та вимоги до рівня англійської мови можуть бути недоліками.",
+    "role_type": "Senior GRC Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "знання SQL"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "вимоги до рівня англійської мови"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/a10de789-94e2-46a2-9f9d-bddbcde6e41d": {
+    "title": "Senior GRC Consultant — Federal & Complex Frameworks",
+    "url": "https://jobs.lever.co/Sprinto/a10de789-94e2-46a2-9f9d-bddbcde6e41d",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised$31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\nLife as a Sprinter : \nNobody succeeds at Sprinto by staying in their lane.\nWe are organized around problems, not job titles. Sprinters take ownership beyond their role, solve hard problems, and care deeply about the impact they create. If something can be improv",
+    "score": 6,
+    "summary": "Sprinto - це компанія, що пропонує платформу для автоматизації завдань з підтримки довіри. Роль Senior GRC Consultant — Federal & Complex Frameworks підходить кандидату через наявність досвіду у сфері технічної підтримки та знання SQL, але відсутність інформації про зарплату та вимоги до рівня англійської мови можуть бути недоліками.",
+    "role_type": "Senior GRC Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "знання SQL"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "вимоги до рівня англійської мови"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/dfe25764-1a79-4f31-ae54-cd9f5ba0f082": {
+    "title": "Senior Privacy Consultant (DPO Advisory)",
+    "url": "https://jobs.lever.co/Sprinto/dfe25764-1a79-4f31-ae54-cd9f5ba0f082",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised$31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\nLife as a Sprinter : \nNobody succeeds at Sprinto by staying in their lane.\nWe are organized around problems, not job titles. Sprinters take ownership beyond their role, solve hard problems, and care deeply about the impact they create. If something can be improv",
+    "score": 6,
+    "summary": "Sprinto - це компанія, що пропонує платформу для автоматизації завдань з підтримки довіри. Роль Senior Privacy Consultant (DPO Advisory) підходить кандидату через наявність досвіду у сфері технічної підтримки та знання SQL, але відсутність інформації про зарплату та вимоги до рівня англійської мови можуть бути недоліками.",
+    "role_type": "Senior Privacy Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "знання SQL"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату",
+      "вимоги до рівня англійської мови"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/b325f825-726d-44b4-a622-36063ac04b78": {
+    "title": "Technical Account Manager",
+    "url": "https://jobs.lever.co/Sprinto/b325f825-726d-44b4-a622-36063ac04b78",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Sprinto - це компанія, що пропонує платформу для автоматизації завдань з підтримки довіри. Роль Technical Account Manager підходить кандидату через наявність досвіду у сфері технічної підтримки, знання SQL та наявність відповідної посади.",
+    "role_type": "Technical Account Manager",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "досвід у сфері технічної підтримки",
+      "знання SQL",
+      "відповідна посада"
+    ],
+    "cons": [
+      "відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/Sprinto/6317f326-3e05-4e5f-8f49-80ef4b5ffe34": {
+    "title": "Technical support Engineer",
+    "url": "https://jobs.lever.co/Sprinto/6317f326-3e05-4e5f-8f49-80ef4b5ffe34",
+    "source": "Lever",
+    "description": "Sprinto is an Autonomous Trust Platform that centralizes trust requirements across security frameworks, vendors, and customers.\n\nSprinto autonomously executes tasks needed to maintain trust across compliance, audits, risk management, vendor risk, privacy, and AI governance, enabling organizations to maintain a strong, reliable trust posture without draining operational bandwidth and resources on repetitive tasks.\n\nBacked by top-tier investors such as Accel, Elevation, and Blume Ventures, we’ve raised $31.8M in funding to fuel our mission. Trusted by over 3,000 organizations across 75 countries, Sprinto helps organizations stay audit-ready, manage real-time risks, and scale fearlessly. With 300+ native integrations and AI-driven automation, Sprinto supports 200+ global security standards natively, including SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS, and more. Sprinto's extensible architecture enables organizations to build and support an infinite number of custom integrations and frameworks.\n\nFounded in 2020 by second-time founders Girish Redekar and Raghuveer Kancherla, Sprinto powers compliance for organizations like Whatfix, Encora, Anaconda, Whatnot, Ultrahuman, WeWork, Everstage, AI Foundation, HackerRank, and many more.\nYour Mission:\nBe the technical champion behind Sprinto’s exceptional customer experience. You’ll solve challenging technical issues, support seamless integrations and APIs, and directly impact customer success every day.",
+    "score": 4,
+    "summary": "Sprinto - це компанія, що розробляє платформу довіри для організацій. Роль Technical Support Engineer частково підходить кандидату, оскільки вона пов'язана з технічною підтримкою, але не повністю відповідає бажаній ролі Technical Account Manager. Компанія має хорошу репутацію і фінансується топ-інвесторами.",
+    "role_type": "Technical Support Engineer",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Гарна репутація компанії",
+      "Фінансування топ-інвесторами"
+    ],
+    "cons": [
+      "Роль не повністю відповідає бажаній",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/tonkean/9c2b4b48-34c3-4bc7-a0df-b22628d6c326": {
+    "title": "Customer Success Manager",
+    "url": "https://jobs.lever.co/tonkean/9c2b4b48-34c3-4bc7-a0df-b22628d6c326",
+    "source": "Lever",
+    "description": "Tonkean is the world’s first totally customizable process experience platform. With Tonkean, you can create intelligent, personalized automations that integrate with every app or system your organization uses. You can cultivate an employee experience that democratizes access to innovative technologies traditionally only available to highly trained developers. You can enable employees to focus more fully on high-value tasks, because you can enable them to automate low-value tasks. You can create inbox solutions that automatically analyze, prioritize, and route unstructured requests coming from any source, and you can track the status of action items as employees collaborate across teams to complete them. And you can design processes that employees are guaranteed to adopt and benefit from no matter their technical acumen, because Tonkean meets employees where they are—eliminating the need for change management—and is 100% no-code. \n\nAt Tonkean, we believe that all this—compliance, efficiency, operational excellence—requires high levels of process adoption. But to ensure high levels of process adoption, you need to create processes that provide a great employee experience: that serve employees’ needs, understand their preferences, and solve their problems. \n\nTo that end, you need a barrier-breaking technology partner. That’s what Tonkean seeks to be.\n\nROLE OVERVIEW\n\nWe are seeking a seasoned and empathetic Customer Success Manager to join Tonkean and help shape the future of our",
+    "score": 8,
+    "summary": "Tonkean - це компанія, що розробляє платформу для автоматизації процесів. Роль Customer Success Manager підходить кандидату, оскільки вона пов'язана з успіхом клієнтів і має технічний аспект. Компанія має інноваційну платформу і хорошу репутацію.",
+    "role_type": "Customer Success Manager",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Підходить кандидату",
+      "Інноваційна платформа"
+    ],
+    "cons": [
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/tonkean/2ce218e7-5c24-4933-867e-65e1502563db": {
+    "title": "Senior Implementation Engineer",
+    "url": "https://jobs.lever.co/tonkean/2ce218e7-5c24-4933-867e-65e1502563db",
+    "source": "Lever",
+    "description": "",
+    "score": 7,
+    "summary": "Tonkean - це компанія, що розробляє платформу для автоматизації процесів. Роль Senior Implementation Engineer частково підходить кандидату, оскільки вона пов'язана з технічною реалізацією, але не повністю відповідає бажаній ролі Technical Account Manager. Компанія має хорошу репутацію і інноваційну платформу.",
+    "role_type": "Senior Implementation Engineer",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Гарна репутація компанії",
+      "Інноваційна платформа"
+    ],
+    "cons": [
+      "Роль не повністю відповідає бажаній",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/outreach/721685da-ad4d-4047-a90c-2113631ec185": {
+    "title": "Lead Solutions Consultant",
+    "url": "https://jobs.lever.co/outreach/721685da-ad4d-4047-a90c-2113631ec185",
+    "source": "Lever",
+    "description": "About Outreach\n \nOutreach, founded in 2014, is the only complete agentic AI platform for revenue teams. Outreach infuses agentic AI, conversation intelligence, and assistive AI to power hundreds of use cases across revenue motions. From new logo prospecting to expansions, deal acceleration, driving retention, and forecasting, Outreach AI automates workflows and frees sellers to focus on more strategic conversations and actions. Revenue leaders benefit from connected account visibility, performance insights, and higher forecasting accuracy across every GTM team. World leading enterprise organizations use Outreach to power their revenue teams, including Databricks, SAP, Siemens, and Verizon to name a few.  \n\n\nAbout the Team \nThe Solutions Consulting team is an integral part of Outreach’s Go-To-Market function. We focus on driving measurable business impact for prospects and customers by being both domain experts and trusted advisors. We partner deeply across Sales, Product, Customer Success, Professional Services, and Marketing to architect solutions that help revenue teams unlock the full potential of Outreach. \nAs a Lead Solutions Consultant, you’ll play a pivotal role in advancing the sophistication and effectiveness of our enterprise sales motions. You’ll operate as both a top-performing individual contributor and a multiplier for others, shaping how Outreach wins in the most complex customer environments. \nThe Role \nWorking in a fast-growth environment means no two days ar",
+    "score": 9,
+    "summary": "Outreach - це компанія, що розробляє платформу для автоматизації продажів. Роль Lead Solutions Consultant підходить кандидату, оскільки вона пов'язана з консультуванням клієнтів і має технічний аспект. Компанія має хорошу репутацію і інноваційну платформу.",
+    "role_type": "Lead Solutions Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Підходить кандидату",
+      "Інноваційна платформа",
+      "Гарна репутація компанії"
+    ],
+    "cons": [
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
+  },
+  "https://jobs.lever.co/outreach/08d9a7e4-4fcc-40f3-85ae-549cb1e8c0fc": {
+    "title": "Lead Value Consultant",
+    "url": "https://jobs.lever.co/outreach/08d9a7e4-4fcc-40f3-85ae-549cb1e8c0fc",
+    "source": "Lever",
+    "description": "About Outreach\n \nOutreach, founded in 2014, is the only complete agentic AI platform for revenue teams. Outreach infuses agentic AI, conversation intelligence, and assistive AI to power hundreds of use cases across revenue motions. From new logo prospecting to expansions, deal acceleration, driving retention, and forecasting, Outreach AI automates workflows and frees sellers to focus on more strategic conversations and actions. Revenue leaders benefit from connected account visibility, performance insights, and higher forecasting accuracy across every GTM team. World leading enterprise organizations use Outreach to power their revenue teams, including Databricks, SAP, Siemens, and Verizon to name a few.",
+    "score": 8,
+    "summary": "Outreach - це компанія, що розробляє платформу для автоматизації продажів. Роль Lead Value Consultant підходить кандидату, оскільки вона пов'язана з консультуванням клієнтів і має технічний аспект. Компанія має хорошу репутацію і інноваційну платформу.",
+    "role_type": "Lead Value Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Підходить кандидату",
+      "Інноваційна платформа",
+      "Гарна репутація компанії"
+    ],
+    "cons": [
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-27T05:40:40.948312+00:00"
   }
 }
