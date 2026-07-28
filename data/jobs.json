@@ -11768,5 +11768,220 @@
       "Відсутність інформації про зарплату"
     ],
     "first_seen": "2026-07-28T16:00:12.316275+00:00"
+  },
+  "https://djinni.co/jobs/838502-crm-manager/": {
+    "title": "Crm Manager",
+    "url": "https://djinni.co/jobs/838502-crm-manager/",
+    "source": "Djinni",
+    "description": "CRM Manager в BraveRave – Djinni Помилка Відкрити в застосунку Djinni Ми — міжнародна продуктова iGaming-компанія, яка розвиває власні продукти та активно масштабується на міжнародних ринках. Зараз шукаємо CRM Manager, який/яка допоможе вибудовувати ефективну комунікацію з гравцями на всіх етапах їхнього життєвого циклу та розвивати CRM-напрям продукту. Формат роботи: повністю віддалено Зайнятість: full-time Графік: понеділок–п’ятниця Робочий час: 10:00–18:00 за Києвом або європейським часовим поясом Що потрібно буде робити: • Управляти CRM-комунікаціями на всіх етапах життєвого циклу гравця. • Створювати, налаштовувати та запускати CRM-кампанії різних типів. • Будувати, налаштовувати й оптимізувати автоматизовані CRM-ланцюжки. • Розробляти та налаштовувати бонуси, акції й бонусні програми. • Проводити тестування CRM-кампаній, автоматизацій і бонусної механіки перед запуском. • Контролювати коректність роботи CRM-процесів та оперативно виправляти помилки. • Аналізувати результати CRM-активностей і знаходити можливості для покращення комунікації з гравцями. Наші очікування: • Від 2 років досвіду на позиції CRM Manager. • Обов’язковий досвід роботи в iGaming. • Розуміння принципів сегментації аудиторії та персоналізації комунікацій. • Впевнене володіння Google Docs, Google Sheets / Excel. • Активне використання ChatGPT та інших AI-інструментів у роботі. • Англійська мова на рівні Intermediate або вище. • Уважність до деталей, відповідальність і проактивність. • Системність та вміння працювати з великим обсягом інформації. Буде перевагою: • Досвід роботи з Business WhatsApp і масовими розсилками. • Досвід роботи з CRM-платформами. • Розуміння механік Retention, Reactivation та Loyalty. • Досвід роботи з міжнародними iGaming-продуктами. Ми пропонуємо: • Роботу над міжнародним iGaming-продуктом. • Повністю віддалений формат роботи. • Графік без нічних змін і регулярних переробок. • Можливість безпосередньо впливати на CRM-стратегію продукту. • Команду професіоналів і комфортний онбординг. • Простір для професійного розвитку та кар’єрного зростання. • Стабільну роботу в компанії, яка активно розвивається та масштабується. Якщо ти маєш досвід у CRM та iGaming, любиш працювати з комунікаціями, автоматизаціями й аналітикою та хочеш впливати на розвиток продукту — будемо раді познайомитися 🤝 Необхідний досвід роботи в галузі Gambling 2 роки Вимоги до володіння мовами Англійська B2 – Вище середнього Українська C2 – Вільний Російська C2 – Вільний Опубліковано 21 липня · Оновлено 28 липня 56 переглядів · 16 відгуків Активність рекрутера: Висока Відповідали 8 годин тому Подивитись статистику кандидатів що відгукнулись на цю вакансію 👀 Огляд кандидатів Для відгуку на цю та інші вакансії на Djinni увійдіть або зареєструйтеся . від\n        2 років досвіду Також розглядаємо з досвідом 1 рік Тільки віддалено Весь світ Країни, де розглядаємо кандидатів Англійська B2 – Вище середнього Українська C2 – Вільний Російська C2 – Вільний Marketing Зайнятість: Fulltime Домен: Gambling Продуктова компанія Активність рекрутера: Висока Відповідали 8 годин тому 📊 $1500-3000 Середня зарплатна вилка схожих вакансій у аналітиці → Завантаження... We use cookies to improve your experience. Learn more Okay",
+    "score": 4,
+    "summary": "Компанія BraveRave шукає CRM Manager для розвитку ефективної комунікації з гравцями. Ця роль частково підходить кандидату, оскільки це повністю віддалена робота, але компанія працює в галузі iGaming, яка не є основною сферою інтересів кандидата.",
+    "role_type": "CRM Manager",
+    "company_type": "iGaming",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Україна",
+    "pros": [
+      "повністю віддалена робота",
+      "можливість розвитку CRM-напряму"
+    ],
+    "cons": [
+      "компанія працює в галузі iGaming",
+      "зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://djinni.co/jobs/831936-middle-embedded-vision-integration-engineer/": {
+    "title": "Middle Embedded Vision Integration Engineer",
+    "url": "https://djinni.co/jobs/831936-middle-embedded-vision-integration-engineer/",
+    "source": "Djinni",
+    "description": "Middle Embedded Vision Integration Engineer в Snaga Solutions – Djinni Помилка Відкрити в застосунку Djinni We are looking for a Middle Embedded Vision Integration Engineer to build and integrate camera, sensor, and video pipelines for UAV platforms operating under real-time, weight, and hardware constraints. You will work on connecting cameras, gimbals, and onboard sensors into a cohesive embedded platform - from the companion computer to the flight controller - ensuring reliable, low-latency video and telemetry delivery to targeting, navigation, and ground control systems. This role is ideal for an engineer who already has solid embedded Linux experience and wants to grow into full integration ownership, working on hardware bring-up, driver configuration, and pipeline development under the guidance of senior engineers. You will work directly on defense projects for Ukraine, with a short path from implementation to field testing. What We Offer Direct contribution to defense projects for Ukraine. Mentorship from top experts in vision hardware, UAV systems, and embedded engineering. Hands-on involvement in integration and architecture decisions. Competitive compensation based on experience. Temporary military service exemption for work on defense-critical projects. Requirements Core Technical Skills - Required 3–5 years of commercial embedded software development. Degree in Computer Science, Electrical Engineering, Physics, or similar. Solid Linux embedded development experience (NVIDIA Jetson, Raspberry Pi, ARM SoCs as companion computers). Proficient in C++14/17; Python for tooling and scripting. Hands-on experience with at least one flight stack: ArduPilot, PX4, Betaflight, or INAV. Working knowledge of MAVLink and/or MSP protocols: telemetry, basic command & control. Hands-on experience with camera integration: MIPI CSI, USB3, or RTSP streams. Experience with video pipeline development: GStreamer, V4L2 (DeepStream is a plus). Basic experience connecting companion computers to flight controllers over UART/CAN/Ethernet. Understanding of video downlink constraints: digital vs. analog video, latency budgeting, bandwidth limits. Familiarity with hardware bring-up and peripheral integration (device trees or kernel modules are a plus). Ability to work with moderate supervision and take ownership of well-defined integration tasks. Will Be a Plus Experience with thermal/IR cameras or night-vision imaging. Stabilized gimbal integration. RC link protocols: ExpressLRS, CRSF, SBUS. IMU integration and sensor fusion basics. GPS-denied navigation, visual odometry, or optical flow exposure. ROS/ROS2 experience. Multi-sensor time synchronization (PPS, hardware triggers, PTP). BSP customization or kernel module development. Model deployment pipelines on edge devices (TensorRT, ONNX). QGroundControl/Mission Planner usage or customization. Mission-critical or safety-critical systems experience. Responsibilities Integrate and configure cameras, gimbals, and optical sensors on UAV platforms. Build and maintain low-latency onboard video pipelines and video downlink channels. Integrate companion computers with flight controllers running ArduPilot/PX4/Betaflight via MAVLink/MSP under senior guidance. Implement telemetry, command, and video control channels between drone and ground station. Perform camera calibration and sensor alignment. Collaborate with the CV team to ensure clean, well-timed data delivery to detection, tracking, and navigation modules. Help expose sensor and flight data to higher-level targeting and autonomy subsystems. Participate in hardware selection and system architecture discussions. Support flight testing, debugging, and system maintenance. Contribute to ensuring robustness of deployed systems under field and EW conditions. Ideal Candidate Profile You are a solid embedded engineer comfortable working close to hardware, with hands-on experience connecting cameras and sensors, building video pipelines on edge platforms, and ",
+    "score": 2,
+    "summary": "Компанія Snaga Solutions шукає Middle Embedded Vision Integration Engineer для роботи з UAV-платформами. Ця роль не підходить кандидату, оскільки це роль пов'язана з розробкою та інтеграцією апаратного забезпечення, а не з технічною підтримкою чи консалтингом.",
+    "role_type": "Embedded Vision Integration Engineer",
+    "company_type": "IT-компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Україна",
+    "pros": [],
+    "cons": [
+      "роль не підходить кандидату",
+      "зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobicy.com/jobs/147852-principal-analyst-data-integration": {
+    "title": "Principal Analyst, Data Integration",
+    "url": "https://jobicy.com/jobs/147852-principal-analyst-data-integration",
+    "source": "Jobicy",
+    "description": "At H1, we believe access to the best healthcare information is a basic human right. Our mission is to provide a platform that can optimally inform every doctor interaction globally. This promotes health equity and builds needed trust in healthcare systems. To accomplish this our teams harness the power of data and AI-technology to unlock…",
+    "score": 6,
+    "summary": "Компанія H1 шукає Principal Analyst, Data Integration для роботи з даними та розробки платформи для інформування лікарів. Ця роль частково підходить кандидату, оскільки це пов'язано з роботою з даними та інтеграцією, але компанія працює в галузі охорони здоров'я, яка не є основною сферою інтересів кандидата.",
+    "role_type": "Principal Analyst, Data Integration",
+    "company_type": "охорона здоров'я",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "робота з даними та інтеграцією",
+      "можливість розвитку платформи"
+    ],
+    "cons": [
+      "компанія працює в галузі охорони здоров'я",
+      "зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1e3c8d53-fd00-4ddf-acb7-d8ef08c43bd6": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/1e3c8d53-fd00-4ddf-acb7-d8ef08c43bd6",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає Product Support Analyst для роботи з підтримкою продукту. Ця роль частково підходить кандидату, оскільки це пов'язано з технічною підтримкою, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "робота з технічною підтримкою"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/31ea8f5a-1a65-423d-805b-24de95980015": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/31ea8f5a-1a65-423d-805b-24de95980015",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія шукає Product Support Analyst для роботи з підтримкою продукту. Ця роль частково підходить кандидату, оскільки це пов'язано з технічною підтримкою, але відсутня інформація про компанію та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "робота з технічною підтримкою"
+    ],
+    "cons": [
+      "відсутня інформація про компанію",
+      "зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4f1b2ec7-0cb5-4091-b9b1-20d4e7c91f45": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/4f1b2ec7-0cb5-4091-b9b1-20d4e7c91f45",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Product Support Analyst, але відсутня інформація про компанію та її діяльність. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про remote-робіту та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "можливість розвитку"
+    ],
+    "cons": [
+      "брак інформації про компанію",
+      "незрозуміла remote-політика"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/59363859-6fad-495b-8773-ef14026781d3": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/59363859-6fad-495b-8773-ef14026781d3",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Product Support Analyst, але відсутня інформація про компанію та її діяльність. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про remote-робіту та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "можливість розвитку"
+    ],
+    "cons": [
+      "брак інформації про компанію",
+      "незрозуміла remote-політика"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/6fa9e552-924d-49e1-8ea9-98cc3855625c": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/6fa9e552-924d-49e1-8ea9-98cc3855625c",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Product Support Analyst, але відсутня інформація про компанію та її діяльність. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про remote-робіту та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "можливість розвитку"
+    ],
+    "cons": [
+      "брак інформації про компанію",
+      "незрозуміла remote-політика"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/77e9c6d2-02be-46a2-b0fd-4e82f6bb31e6": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/77e9c6d2-02be-46a2-b0fd-4e82f6bb31e6",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Product Support Analyst, але відсутня інформація про компанію та її діяльність. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про remote-робіту та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "можливість розвитку"
+    ],
+    "cons": [
+      "брак інформації про компанію",
+      "незрозуміла remote-політика"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
+  },
+  "https://jobs.lever.co/jobgether/9a70bb9e-72f4-4ace-a884-d29ec3008be8": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/9a70bb9e-72f4-4ace-a884-d29ec3008be8",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Product Support Analyst, але відсутня інформація про компанію та її діяльність. Роль частково підходить кандидату, оскільки передбачає технічну підтримку, але відсутня інформація про remote-робіту та зарплату.",
+    "role_type": "Product Support Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "технічна підтримка",
+      "можливість розвитку"
+    ],
+    "cons": [
+      "брак інформації про компанію",
+      "незрозуміла remote-політика"
+    ],
+    "first_seen": "2026-07-28T17:25:24.258821+00:00"
   }
 }
