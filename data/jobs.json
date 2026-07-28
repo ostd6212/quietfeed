@@ -11341,5 +11341,220 @@
       "Не повністю відповідає профілю кандидата"
     ],
     "first_seen": "2026-07-28T11:51:15.526118+00:00"
+  },
+  "https://jobs.dou.ua/companies/skelar/vacancies/367515/": {
+    "title": "SRE | Technical Support Engineer",
+    "url": "https://jobs.dou.ua/companies/skelar/vacancies/367515/",
+    "source": "DOU",
+    "description": "SRE | Technical Support Engineer в SKELAR, Київ, Львів, віддалено | DOU × Вхід і реєстрація Вакансії Перша робота Тренди Компанії Рейтинг Топ-50 Відгуки Додати компанію SKELAR Всі вакансії компанії Ми venture builder, який будує міжнародні продуктові IT-компанії за правилами світу венчурних інвестицій. Разом із нашими ко-фаундерами збираємо сильні команди, щоб запускати tech-бізнеси та перемагати на глобальних ринках. Всі вакансії / DevOps / Київ 28 липня 2026 SRE | Technical Support Engineer Київ, Львів, віддалено Що варто знати про SKELAR? Це венчур-білдер — іншими словами, компанія, яка будує компанії. З нами фаундери створюють consumer-бізнеси, які стають лідерами на глобальних ринках EdTech, Mental health, Petcare, FashionTech та інших. Скеларівці будують tech-продукти, які здобувають відзнаки від Product Hunt, The Webby Awards та отримують тисячі позитивних відгуків на TrustPilot. Загалом tech-продуктами наших бізнесів користуються 10+ млн людей у світі. Усе завдяки сильним командам, бо наші спеціалісти — це ключова цінність SKELAR. Для професійної реалізації ми створили середовище з експертизою та необмеженими можливостями — і шукаємо тих, хто прагне викликів. Зараз ми в пошуку SRE | Technical Support Engineer, який долучиться до нашої команди. Команда відповідає за стабільність роботи систем: ми моніторимо сервіси, швидко реагуємо на інциденти, аналізуємо причини збоїв і комунікуємо з іншими командами для вирішення проблем. Це відповідальна роль, адже від нашої роботи залежить досвід десятків тисяч користувачів. Які виклики чекають на тебе: Моніторити роботу продуктів та інфраструктури в режимі 24/7. Оперативно виявляти, аналізувати та ескалювати інциденти, що впливають на користувачів або бізнес. Взаємодіяти з командами розробки, інфраструктури, підтримки та іншими технічними командами під час вирішення інцидентів. Вести журнал подій та документувати ключові інциденти. Розвивати та підтримувати систему моніторингу й алертингу, покращуючи якість спостереження за сервісами. Допомагати у проведенні технічних розслідувань та аналізі причин виникнення проблем. Консультувати нетехнічні команди щодо роботи внутрішніх сервісів та технічних процесів. Що нам важливо: Знання Linux та впевнена робота з командним рядком. Розуміння основ комп’ютерних мереж (TCP/IP, DNS, HTTP, базовий networking). Навички troubleshooting та вміння аналізувати технічні проблеми. Базове знання SQL (написання SELECT-запитів). Вміння працювати в команді та ефективно комунікувати з різними стейкхолдерами. Аналітичне мислення, уважність до деталей та відповідальність. Готовність працювати у змінному графіку (3/3, включно з нічними змінами). Будемо плюсом: Досвід роботи зі скриптам (Bash, Python, інші мови) Досвід користування системами відстеження помилок (YouTrack, Jira та інше) Досвід користування моніторинговими сервісами (Prometheus, Grafana, DataDog) Досвід роботи в сфері технічної підтримки та моніторингу. У SKELAR ми побудували середовище для професійної самореалізації: SKELAR Platform . Це операційне ядро венчур-білдера, що допомагає фаундерам швидше проходити шлях від нуля до одиниці. Так команди бізнесів фокусуються на продукті — а 10+ команд в складі Platform закривають функції Legal, Finance, HR, Admin, Talent Acquisition, Employer Branding, IT та інші. Нетворк та обмін досвідом як частина культури. Серед наших колег — кофаундери, які запустили не один бізнес, а також найсильніші спеціалісти на ринку. Тож ми маємо доступ до необхідної експертизи на відстані витягнутої руки. Ексклюзивна доменна освіта. Ми створили власні навчальні програми для тіммейтів на вибір — від 2-місячної школи для менеджерів-початківців до інтенсивів про AI та професійних клубів з розробки, продакт-менеджменту тощо. Вплив на системну допомогу Україні. Маємо благодійний фонд SKELAR foundation, який створили самі скеларівці — і завдяки кожному співробітнику втілюємо важливі соціальні проєкти. Наприклад, заснували перший у Європі акселератор для ветеранів і формуємо майдан",
+    "score": 4,
+    "summary": "Компанія SKELAR шукає Technical Support Engineer. Ця роль частково підходить кандидату, оскільки вона пов'язана з технічною підтримкою, але не зовсім відповідає бажаній ролі Technical Account Manager. Компанія є венчур-білдером, який будує міжнародні продуктові IT-компанії.",
+    "role_type": "Technical Support Engineer",
+    "company_type": "Венчур-білдер",
+    "salary": "Не вказана",
+    "remote": "Віддалено",
+    "region": "Україна",
+    "pros": [
+      "Віддалена робота",
+      "Венчур-білдер з міжнародними проєктами"
+    ],
+    "cons": [
+      "Не зовсім відповідає бажаній ролі",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://remoteOK.com/remote-jobs/remote-junior-account-manager-future-beauty-brands-formerly-ppi-beauty-1135518": {
+    "title": "Junior Account Manager",
+    "url": "https://remoteOK.com/remote-jobs/remote-junior-account-manager-future-beauty-brands-formerly-ppi-beauty-1135518",
+    "source": "RemoteOK",
+    "description": "JOB PURPOSE : We are seeking an ambitious and commercially minded Junior Account Manager to join our Sales team and support the management of key national retail accounts. Reporting to the National Account Manager, you will play an integral role in analyzing sales data, developing strategic customer partnerships, driving profitable sales growth, and delivering exceptional customer service across a portfolio of grocery/retail customers. The ideal candidate for this role will have sales analytics experience within the consumer/beauty product industry. In addition, this individual will support smaller grocery accounts working closely with the National Sales Manager to whom the position reports. This role provides an excellent opportunity to develop a career in Account Management. You will work collaboratively with internal teams including Marketing, Category, Supply Chain, Finance, Customer Service, and Demand Planning to execute customer strategies, deliver business objectives, and support the continued growth of our wholesale retail partnerships. ESSENTIAL FUNCTIONS : Achievement of targets . Monthly, quarterly, annual sales and profit targets. Ensure flawless implementation of all new product development and achievement of required distribution objectives. Responsibility for the development , maintenance, and implementation of all administration. Preparing reviews for all accounts within his/her responsibility, including strategic planning and resource allocation to achieve a",
+    "score": 2,
+    "summary": "Компанія Future Beauty Brands шукає Junior Account Manager. Ця роль не підходить кандидату, оскільки вона орієнтована на початківців і не відповідає бажаній ролі Technical Account Manager. Компанія працює в сфері краси та роздрібної торгівлі.",
+    "role_type": "Junior Account Manager",
+    "company_type": "Роздрібна торгівля",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Можливість розвитку кар'єри"
+    ],
+    "cons": [
+      "Не відповідає бажаній ролі",
+      "Орієнтована на початківців"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/5f4aa49a-2607-4d5d-8dc3-f37dd4805d29": {
+    "title": "Client Partner, Platform Sales",
+    "url": "https://jobs.lever.co/jobgether/5f4aa49a-2607-4d5d-8dc3-f37dd4805d29",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Jobgether шукає Client Partner, Platform Sales. Ця роль частково підходить кандидату, оскільки вона пов'язана з продажами та партнерством, але не зовсім відповідає бажаній ролі Technical Account Manager. Компанія працює в сфері платформних продажів.",
+    "role_type": "Client Partner",
+    "company_type": "Платформні продажі",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Партнерство з клієнтами",
+      "Платформні продажі"
+    ],
+    "cons": [
+      "Не зовсім відповідає бажаній ролі",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/18a49913-76cd-477d-acae-ac77bcdb9de5": {
+    "title": "Pre-Sales Director, North America",
+    "url": "https://jobs.lever.co/jobgether/18a49913-76cd-477d-acae-ac77bcdb9de5",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Jobgether шукає Pre-Sales Director, North America. Ця роль підходить кандидату, оскільки вона пов'язана з передпродажною діяльністю та керівництвом, і відповідає бажаній ролі Pre-sales Specialist. Компанія працює в сфері передпродажної діяльності.",
+    "role_type": "Pre-Sales Director",
+    "company_type": "Передпродажна діяльність",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Передпродажна діяльність",
+      "Керівництво"
+    ],
+    "cons": [
+      "Зарплата не вказана",
+      "Орієнтована на ринок Північної Америки"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/6fde928c-312b-46ea-b09f-ff2272fb26f8": {
+    "title": "Presales Solutions Architect",
+    "url": "https://jobs.lever.co/jobgether/6fde928c-312b-46ea-b09f-ff2272fb26f8",
+    "source": "Lever",
+    "description": "",
+    "score": 7,
+    "summary": "Компанія Jobgether шукає Presales Solutions Architect. Ця роль підходить кандидату, оскільки вона пов'язана з архітектурою рішень та передпродажною діяльністю, і відповідає бажаній ролі Solution Consultant. Компанія працює в сфері передпродажної діяльності.",
+    "role_type": "Presales Solutions Architect",
+    "company_type": "Передпродажна діяльність",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Архітектура рішень",
+      "Передпродажна діяльність"
+    ],
+    "cons": [
+      "Зарплата не вказана",
+      "Не зовсім відповідає бажаній ролі"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/49192afd-7cd0-45e7-ba2e-7c7bb498b2db": {
+    "title": "Principal .NET Engineer (Distributed Systems / Banking Integration)",
+    "url": "https://jobs.lever.co/jobgether/49192afd-7cd0-45e7-ba2e-7c7bb498b2db",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія шукає Principal .NET Engineer, що не підходить кандидату, оскільки він не хоче займатися чистим програмуванням. Компанія займається банківськими системами, що частково відповідає інтересам кандидата.",
+    "role_type": "Pure coding / software development",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Банківські системи"
+    ],
+    "cons": [
+      "Чисте програмування",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/d84a960f-129d-4e80-96ec-adf802ef854c": {
+    "title": "Principal Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/d84a960f-129d-4e80-96ec-adf802ef854c",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія шукає Principal Solution Architect, що частково підходить кандидату, оскільки ця роль пов'язана з технічною консультацією. Компанія займається рішеннями для бізнесу, що відповідає інтересам кандидата.",
+    "role_type": "Solution Consultant",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна консультація",
+      "Довіряючі рішення для бізнесу"
+    ],
+    "cons": [
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4e3c3a92-80ca-43c1-964b-f08c1f3bf583": {
+    "title": "Principal, NetSuite Consultant",
+    "url": "https://jobs.lever.co/jobgether/4e3c3a92-80ca-43c1-964b-f08c1f3bf583",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія шукає Principal, NetSuite Consultant, що частково підходить кандидату, оскільки ця роль пов'язана з консультацією та впровадженням рішень. Компанія займається рішеннями для бізнесу, що відповідає інтересам кандидата.",
+    "role_type": "Implementation Consultant",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Консультація та впровадження рішень",
+      "Довіряючі рішення для бізнесу"
+    ],
+    "cons": [
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/590e7821-d399-4a3a-b628-a4397adef776": {
+    "title": "Principal, Solutions Architect",
+    "url": "https://jobs.lever.co/jobgether/590e7821-d399-4a3a-b628-a4397adef776",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія шукає Principal, Solutions Architect, що частково підходить кандидату, оскільки ця роль пов'язана з технічною консультацією. Компанія займається рішеннями для бізнесу, що відповідає інтересам кандидата.",
+    "role_type": "Solution Consultant",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна консультація",
+      "Довіряючі рішення для бізнесу"
+    ],
+    "cons": [
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
+  },
+  "https://jobs.lever.co/jobgether/09754687-6bb9-4328-89a3-7146c20f8307": {
+    "title": "Product Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/09754687-6bb9-4328-89a3-7146c20f8307",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія шукає Product Support Analyst, що частково підходить кандидату, оскільки ця роль пов'язана з технічною підтримкою. Компанія займається рішеннями для бізнесу, що відповідає інтересам кандидата, але ця роль може бути нижчого рівня, ніж очікує кандидат.",
+    "role_type": "Technical Support",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна підтримка",
+      "Довіряючі рішення для бізнесу"
+    ],
+    "cons": [
+      "Нижчий рівень",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-28T13:29:57.571092+00:00"
   }
 }
