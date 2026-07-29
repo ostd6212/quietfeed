@@ -14535,5 +14535,211 @@
       "Відсутня інформація про зарплату"
     ],
     "first_seen": "2026-07-29T15:46:32.711509+00:00"
+  },
+  "https://djinni.co/jobs/840083-integrations-software-engineer-id77772/": {
+    "title": "Integrations Software Engineer Id77772",
+    "url": "https://djinni.co/jobs/840083-integrations-software-engineer-id77772/",
+    "source": "Djinni",
+    "description": "Integrations Software Engineer ID77772 в AgileEngine – Djinni Помилка Відкрити в застосунку Djinni Why join us If you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you! :) About the role We are looking for a Software Engineer to join an Integrations team building and scaling mission-critical systems that connect a public safety platform with third-party tools including 911 call centers, state databases, and external agency systems. You will design and build integration workflows using Java and Spring Boot, develop REST, SOAP, and GraphQL API integrations, and contribute to reliable data pipeline architecture supporting Records Management, Computer-Aided Dispatch, and Booking products. The role is backend-focused and emphasizes clean, testable, and well-documented integration solutions. What you will do Build and maintain integrations between the platform and third-party client systems; Develop integration workflows using modern integration platforms and custom services with Java; Enhance Records Management System (RMS), Computer-Aided Dispatch (CAD), and Booking products with scalable integration capabilities; Design secure, reusable, and well-architected cloud-based integration solutions; Write tests, debug production issues, and improve system quality and reliability; Contribute to technical documentation and automated build and deployment processes that improve engineering efficiency; Participate in code reviews and contribute through a pull request-based development process; Collaborate with engineers, product managers, and cross-functional partners to deliver robust integration solutions. Must haves Bachelor’s degree in Computer Science, a related technical field, or equivalent practical experience; 3+ years of professional software engineering experience ; Strong experience with Java and the Java ecosystem, including Spring Boot ; Experience designing and building integrations with RESTful APIs , SOAP , and GraphQL ; Familiarity with database technologies and proficiency with SQL ; Experience with automated testing and Agile development methodologies; Ability to write clean, maintainable, and easy-to-understand code; Strong collaboration skills and the ability to build cooperative working relationships with teammates; Upper-intermediate English level. Nice to haves Experience with React ; Familiarity with AWS , Kubernetes , Docker , and Terraform ; Experience with integration platforms such as Prismatic, Boomi, Workato, or similar tools; Exposure to event-driven architectures and distributed systems. The benefits of joining us Professional growth Accelerate your professional journey with mentorship, TechTalks, and personalized growth roadmaps Competitive compensation We match your ever-growing skills, talent, and contributions with competitive USD-based compensation and budgets for education, fitness, and team activities A selection of exciting projects Join projects with modern solutions development and top-tier clients that include Fortune 500 enterprises and leading product brands Flextime Tailor your schedule for an optimal work-life balance, by having the options of working from home and going to the office – whatever makes you the happiest and most productive. Meet Our Recruitment Process Asynchronous stage – An automated, self-paced track that helps us move faster and give you quicker feedback: Short online form to confirm basic requirements 30–60 minute skills assessment via Codility – a platform founded in Poland that helps us provide quicker feedback and streamline this stage of the process. 5-minute introduction video Synchronous stage – Live interviews Technical interview with our engineering team (scheduled at your convenience) Final interview with your future teammates If it’s a match — you’ll get an offer! Вимоги до володіння мовами Англійська B2 – Вище середнього Java, Spring Boot, RESTful API, SOAP, GraphQL Опубліковано 29 липня 10 переглядів · 1 відгук ",
+    "score": 2,
+    "summary": "Компанія AgileEngine шукає Integrations Software Engineer. Ця посада не підходить кандидату, оскільки це чисто технічна роль, яка не відповідає його профілю та досвіду.",
+    "role_type": "Software Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Україна",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://weworkremotely.com/remote-jobs/retr-customer-support-specialist": {
+    "title": "RETR: Customer Support Specialist",
+    "url": "https://weworkremotely.com/remote-jobs/retr-customer-support-specialist",
+    "source": "WeWorkRemotely",
+    "description": "Headquarters: Remote URL: https://retr.app/ Why this role matters now A loan officer's business runs on relationships. Ours runs on making sure RETR never gets in the way of theirs. When something breaks for a customer, a real deal is on the line, and what they need is a person who understands both the product and their business. That person is you. Most support jobs are a treadmill: you answer the question, the question comes back, you answer it again. Here the work compounds. A good answer becomes an article, the article teaches our AI, and the question stops coming. We measure which articles resolve and which fail, so you can watch the queue shrink because of something you wrote. What you'll do • Be the first human a customer talks to, across email, chat, and phone, for individual and enterprise accounts alike • Answer the hard half. Our AI handles the routine questions; what reaches you is the ambiguous, the technical, and the high-stakes • Write and improve the knowledge base articles that make the AI better and the queue smaller. We measure which articles resolve and which fail, and we fix the ones that fail • Build real fluency in mortgage and real estate workflows, deep enough to explain our product in the customer's language rather than ours • Take actions that carry weight: refunds, cancellations, and billing corrections in Stripe • Surface product friction to Engineering with enough evidence that it gets fixed, then tell the customer when it ships • Hand inbound le",
+    "score": 6,
+    "summary": "Компанія RETR шукає Customer Support Specialist. Ця посада частково підходить кандидату, оскільки вона пов'язана з технічною підтримкою, але відсутня інформація про зарплату та рівень англійської мови.",
+    "role_type": "Customer Support Specialist",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Віддалена робота",
+      "Технічна підтримка"
+    ],
+    "cons": [
+      "Відсутня інформація про зарплату",
+      "Відсутня інформація про рівень англійської мови"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://jobicy.com/jobs/144921-manager-solutions-architects-sf-bay-area": {
+    "title": "Manager, Solutions Architects - SF Bay area",
+    "url": "https://jobicy.com/jobs/144921-manager-solutions-architects-sf-bay-area",
+    "source": "Jobicy",
+    "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into…",
+    "score": 1,
+    "summary": "Компанія GitLab шукає Manager, Solutions Architects. Ця посада не підходить кандидату, оскільки вона вимагає перебування в офісі в Сан-Франциско.",
+    "role_type": "Manager, Solutions Architects",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Вимагає перебування в офісі",
+      "Не підходить для віддаленої роботи"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://jobicy.com/jobs/144914-onboarding-project-manager-europe": {
+    "title": "Onboarding Project Manager - Europe",
+    "url": "https://jobicy.com/jobs/144914-onboarding-project-manager-europe",
+    "source": "Jobicy",
+    "description": "What Makes Us Unique  At Cloudbeds, we're not just building software, we’re transforming hospitality. Our intelligently designed platform powers properties across 150 countries, processing billions in bookings annually. From independent properties to hotel groups, we help hoteliers transform operations and uplevel their commercial strategy through a unified platform that integrates with hundreds of partners. And…",
+    "score": 5,
+    "summary": "Компанія Cloudbeds шукає Onboarding Project Manager. Ця посада частково підходить кандидату, оскільки вона пов'язана з управлінням проектами, але відсутня інформація про зарплату та рівень англійської мови.",
+    "role_type": "Onboarding Project Manager",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Управління проектами"
+    ],
+    "cons": [
+      "Відсутня інформація про зарплату",
+      "Відсутня інформація про рівень англійської мови"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://jobicy.com/jobs/144868-oncology-account-manager": {
+    "title": "Oncology Account Manager",
+    "url": "https://jobicy.com/jobs/144868-oncology-account-manager",
+    "source": "Jobicy",
+    "description": "Job Description SummaryOur business purpose: We are a purpose-driven team working to drive life-changing clarity in precision diagnostics that helps uncover what’s hidden inside the body – enabling earlier, more confident decisions in the fight against diseases like Alzheimer's, cardiovascular conditions, and cancer. As part of a company that delivers both radiopharmaceutical doses and the…",
+    "score": 3,
+    "summary": "Компанія шукає Oncology Account Manager. Ця посада не підходить кандидату, оскільки вона не пов'язана з технічною підтримкою чи управлінням проектами.",
+    "role_type": "Oncology Account Manager",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не підходить для кандидата",
+      "Відсутня інформація про зарплату"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://jobicy.com/jobs/144775-international-recruitment-consultant": {
+    "title": "International Recruitment Consultant",
+    "url": "https://jobicy.com/jobs/144775-international-recruitment-consultant",
+    "source": "Jobicy",
+    "description": "Atlean World is an International HR Consultant that aims to promote multicultural environments as the new reality. We specialize in multilingual markets making the candidate’s recruitment journey smoother and more enjoyable.Your Next Job, Without Boundaries!We are offering a great work experience as an International Recruitment Consultant specializing in BPO industries (such as Customer Service, Call-Center,…",
+    "score": 2,
+    "summary": "Компанія Atlean World пропонує роль International Recruitment Consultant, яка не підходить кандидату через відсутність технічної складової та орієнтацію на рекрутинг. Компанія не є продуктовою компанією B2B SaaS, а роль не відповідає жодній з цільових ролей кандидата.",
+    "role_type": "Рекрутер",
+    "company_type": "Агенція",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Відсутність технічної складової",
+      "Не продуктова компанія"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://stripe.com/jobs/search?gh_jid=8059784": {
+    "title": "Commercial Solutions Program Manager",
+    "url": "https://stripe.com/jobs/search?gh_jid=8059784",
+    "source": "Greenhouse",
+    "description": "Stripe Careers | Commercial Solutions Program Manager Commercial Solutions Program Manager Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career. About the team Global Business Services’ (GBS) Commercial Solutions team ensures operational and programmatic excellence across deal cycles, increases revenue through the development of transformative commercial constructs, and drives closure of Stripe’s sold portfolio. The team's reach is widespread across Stripe, not exclusive to one sales segment or geographical region. GBS drives change across go-to-market, positively impacting Stripe users, and cross-functional teams. GBS’s priorities are set through the direction of Stripe leadership and executive vision, partnership with sales and cross-functional organizations, as well as User feedback and market insights. This role sits within Global Business Practices’ Commercial Solutions team, responsible for developing, launching, and maintaining commercial constructs and programs to drive revenue for Stripe. What you’ll do Stripe's Global Business Services' Commercial Solutions team is looking for a Commercial Solutions Program Manager to own the end-to-end programmatic development of commercial and GBS launch readiness programs that drive revenue for Stripe. Programs have a large scope and impact in nature, including owning the development and support of first-of-its-kind commercialization efforts, ongoing program support (pre- to post-launch), custom deal support related to the program, ownership of related enablement and communications, as well as acting as a change agent across the business. You're responsible for the end-to-end management of commercial and GBS launch readiness programs, driving cross-organizational alignment through the delivery of related outputs. This role requires a background in program management and commercial program experience, change management, a strong understanding of private pricing frameworks (and pricing analysis), and experience scaling global, cross-organizational mechanisms. You have experience in program management ownership, custom pricing strategies, and a background in supporting selling motions. You have strong communication skills and executive presence to effectively communicate with Stripe senior leadership. You'll love this role if you're a natural relationship and mechanism builder. Responsibilities Independently lead large scale, cross-functional commercial or GBS launch readiness programs that have Stripe-wide impact, oftentimes first-of-its-kind programs and initiatives Manage and lead a highly complex program which requires considerable resources and high levels of complex functional and technical integration and knowledge Support the commercial program deal motion, partnering with Deal Pricing and Deal Strategy Strategists, sellers, and internal stakeholders to solution custom commercial approaches Work cross-functionally with sales teams, sales leaders, services/support teams, product teams, and cross-functional teams to develop, launch, and scale the commercial program (continuously evolving the ways Stripe goes to market) to support commercialization efforts Identify, surface, and action systemic, broad issues and gaps, proposing holistic solutions to address root causes Navigate and propose creative solutions through complex programmatic problems at scale across Go-To-Market and Stripe Partner with cross-functional teams such as Legal, Finance, Accounting, Service Teams, Product Teams, etc. to resolve and remove intern",
+    "score": 8,
+    "summary": "Компанія Stripe пропонує роль Commercial Solutions Program Manager, яка підходить кандидату через орієнтацію на рішення для бізнесу та наявність технічної складової. Компанія є продуктовою компанією B2B SaaS, а роль відповідає деяким з цільових ролей кандидата.",
+    "role_type": "Програмний менеджер",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Технічна складова",
+      "Продуктова компанія"
+    ],
+    "cons": [
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://himalayas.app/companies/bright-vision-technologies/jobs/aws-solutions-architect-3546562421": {
+    "title": "AWS Solutions Architect",
+    "url": "https://himalayas.app/companies/bright-vision-technologies/jobs/aws-solutions-architect-3546562421",
+    "source": "Himalayas",
+    "description": "AWS Solutions Architect - Remote Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States. This is a fantastic opportunity to join an established and well-respected organization offering tremendous career growth potential. Job Title: AWS Solutions Architect Location : 100% Remote (U.S.) Position Type : Full-time, Direct W2 Salary Range : $100,000–$150,000 Annually Experience Required : 6+ years Sponsorship: U.S. Citizens, Green Card Holders, EAD Holders, and H-1B transfer candidates are encouraged to apply. We are unable to sponsor new H-1B visa petitions for this position. Job Summary We are seeking an experienced AWS Solutions Architect to design, build, and operate large-scale, secure, and highly available cloud platforms on Amazon Web Services. This is a deeply hands-on engineering role spanning architecture, infrastructure-as-code, automation, security, observability, and continuous operational improvement of mission-critical production workloads. The successful candidate will bring strong working knowledge of the AWS service portfolio, deep DevOps fundamentals, and a pragmatic, cost-aware design mindset, and will partner with application, security, and SRE teams to deliver resilient, cloud-native solutions that scale with the business. Key Responsibilities Architect, deploy, and operate enterprise-grade AWS environments across compute, networking, storage, identit",
+    "score": 4,
+    "summary": "Компанія Bright Vision Technologies пропонує роль AWS Solutions Architect, яка частково підходить кандидату через наявність технічної складової, але не відповідає деяким з цільових ролей кандидата. Компанія не є продуктовою компанією B2B SaaS, а зарплата вища ніж очікувана.",
+    "role_type": "Архітектор рішень",
+    "company_type": "Консалтингова компанія",
+    "salary": "$100,000–$150,000",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Технічна складова",
+      "Висока зарплата"
+    ],
+    "cons": [
+      "Не продуктова компанія",
+      "Не відповідає деяким цільовим ролям"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://himalayas.app/companies/fujifilm/jobs/sr-project-team-support-engineer-8488516808": {
+    "title": "Sr Project Team Support Engineer",
+    "url": "https://himalayas.app/companies/fujifilm/jobs/sr-project-team-support-engineer-8488516808",
+    "source": "Himalayas",
+    "description": "Position Overview The Senior Projects Support Engineer provides highly visible remote technical, applications and system admin support for HCUS customers. Primarily supports TAC and MI Service with the management, execution, and administration of operational, billable, and more in-depth projects and support. Works on complex issues where analysis of situations or data requires an in-depth evaluation of variable factors which may include customer impact, HCUS business priorities, and regulatory requirements. Normally receives little instruction on day-to-day work, and general instructions on new assignments. Offers mentorship to new incumbents on technical and product knowledge and department operating procedures. To meet customers’ needs, working outside of normal business hours and holidays is required. Company Overview At FUJIFILM Healthcare Americas Corporation, we’re on a mission to innovate for a healthier world, and we need passionate, driven people like you to help us get there. Our cutting-edge healthcare solutions span diagnostic imaging, enterprise imaging, endoscopic and surgical imaging, as well as in-vitro diagnostics. But we don’t stop at healthcare; our Non-Destructive Testing (NDT) team harnesses advanced radiography solutions to keep transportation infrastructure, aerospace, and oil and gas assets safe and running smoothly. Ready to innovate, collaborate, and make a difference? Join us and bring your big ideas to life while working in a dynamic, flexible envi",
+    "score": 6,
+    "summary": "Компанія Fujifilm пропонує роль Sr Project Team Support Engineer, яка частково підходить кандидату через наявність технічної складової та орієнтацію на підтримку проектів. Компанія не є продуктовою компанією B2B SaaS, але роль відповідає деяким з цільових ролей кандидата.",
+    "role_type": "Інженер підтримки",
+    "company_type": "Виробнича компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Технічна складова",
+      "Підтримка проектів"
+    ],
+    "cons": [
+      "Не продуктова компанія",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/220e674a-fc70-439f-bacf-687553ca59c9": {
+    "title": "Solutions Consultant, Commercial",
+    "url": "https://jobs.ashbyhq.com/ramp/220e674a-fc70-439f-bacf-687553ca59c9",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nAs a Solutions Consultant at Ramp, you will play a crucial role in establishing and nurturing partnerships with potential customers. This involves building trust and confidence through expert demonstrations of Ramp's products and a deep understanding of our prospects' needs. Collaborating closely with Account Executives, Customer Success, and Account Management teams, you will prioritize and develop financial solutions for Ramp's key customers, ensuring that the product aligns with their evolving requirements. Acting as technical and ",
+    "score": 9,
+    "summary": "Компанія Ramp пропонує роль Solutions Consultant, Commercial, яка підходить кандидату через орієнтацію на рішення для бізнесу та наявність технічної складової. Компанія є продуктовою компанією B2B SaaS, а роль відповідає деяким з цільових ролей кандидата.",
+    "role_type": "Консультант рішень",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Технічна складова",
+      "Продуктова компанія",
+      "Підтримка рішень"
+    ],
+    "cons": [
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-29T17:05:10.915954+00:00"
   }
 }
