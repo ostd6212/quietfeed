@@ -12927,5 +12927,391 @@
       "Неясна інформація про компанію"
     ],
     "first_seen": "2026-07-29T01:27:24.595288+00:00"
+  },
+  "https://himalayas.app/companies/kestra-technologies/jobs/solution-engineer": {
+    "title": "Solution Engineer",
+    "url": "https://himalayas.app/companies/kestra-technologies/jobs/solution-engineer",
+    "source": "Himalayas",
+    "description": "About Kestra Kestra is the universal orchestration platform — open source, declarative, and designed to orchestrate data pipelines, IT automation, business workflows, and AI/agentic systems. Trusted by over 10,000 organizations worldwide — including JPMorgan Chase, Bloomberg, FILA, and Crédit Agricole — Kestra orchestrates mission-critical workloads at scale. The open-source project has close to 30,000 GitHub stars , hundreds of contributors, and a fast-growing global community. In March 2026, we closed a $25M Series A led by RTP Global, with participation from Alven, ISAI, and Axeleo – backed by founders from Datadog, dbt Labs, and Hugging Face. The Role We're looking for a Solution Engineer based in Germany to serve as the technical counterpart to our sales team in the DACH region. You'll work alongside Account Executives to help enterprise prospects understand how Kestra fits their architecture, run technical evaluations, and remove the engineering barriers between interest and adoption. This is a deeply technical, customer-facing role. You need to be comfortable leading architecture discussions, building proof-of-concept deployments, and answering hard questions about infrastructure, security, and integrations. This is a fully remote position. We're hiring from Germany for proximity to DACH enterprise customers and timezone alignment with the sales team. What You'll Do Partner with Account Executives on enterprise deals: lead technical discovery, run product demos tailore",
+    "score": 6,
+    "summary": "Компанія Kestra Technologies пропонує роль Solution Engineer, яка частково підходить кандидату через технічний напрямок роботи, але вимагає перебування в Німеччині. Компанія займається розробкою відкритої платформи для оркестрування даних, що може бути цікавим для кандидата.",
+    "role_type": "Solution Engineer",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Гібрид",
+    "region": "Закордон",
+    "pros": [
+      "Технічний напрямок роботи",
+      "Відкрита платформа для оркестрування даних"
+    ],
+    "cons": [
+      "Вимагає перебування в Німеччині",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/12f1366c-b762-44d9-81fb-039d5e2fa093": {
+    "title": "Key Account Manager",
+    "url": "https://jobs.lever.co/jobgether/12f1366c-b762-44d9-81fb-039d5e2fa093",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Key Account Manager, яка частково підходить кандидату через напрямок роботи з клієнтами, але відсутня детальна інформація про компанію та умови праці. Роль може бути цікавою для кандидата, але потрібна додаткова інформація.",
+    "role_type": "Key Account Manager",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Напрямок роботи з клієнтами"
+    ],
+    "cons": [
+      "Відсутня детальна інформація про компанію та умови праці"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1d351db5-0f18-444c-91f6-e0688d7154a8": {
+    "title": "Líder de Customer Success",
+    "url": "https://jobs.lever.co/jobgether/1d351db5-0f18-444c-91f6-e0688d7154a8",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Líder de Customer Success based in Brazil.\nThis role offers the opportunity to lead customer success strategies and develop high-performing teams within a fast-paced technology environment.\nYou will be responsible for strengthening customer relationships, improving operational processes, and driving retention and expansion outcomes.\nThe position combines people leadership, data-driven decision-making, and strategic collaboration across multiple areas.\nYou will help shape customer journeys, optimize team performance, and create scalable success practices.\nThe ideal candidate is passionate about customer experience, team development, and innovation in SaaS or technology-driven businesses.\nThis is an opportunity to make a direct impact by building strong customer relationships and fostering a culture of continuous improvement.",
+    "score": 8,
+    "summary": "Компанія пропонує роль Líder de Customer Success, яка підходить кандидату через напрямок роботи з клієнтами та керівництво командою. Компанія займається технологіями, що може бути цікавим для кандидата. Однак роль вимагає перебування в Бразилії.",
+    "role_type": "Líder de Customer Success",
+    "company_type": "Технологічна компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Напрямок роботи з клієнтами",
+      "Керівництво командою"
+    ],
+    "cons": [
+      "Вимагає перебування в Бразилії"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/68aaac63-a304-46d0-8e22-3d0e8a957c3a": {
+    "title": "Online Technical Support - Analyst",
+    "url": "https://jobs.lever.co/jobgether/68aaac63-a304-46d0-8e22-3d0e8a957c3a",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія пропонує роль Online Technical Support - Analyst, яка не підходить кандидату через відсутність технічного напрямку роботи та відсутню детальну інформацію про компанію та умови праці.",
+    "role_type": "Online Technical Support - Analyst",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Відсутній технічний напрямок роботи",
+      "Відсутня детальна інформація про компанію та умови праці"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/002fd33c-38c3-479a-b4e4-5115440c045a": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/002fd33c-38c3-479a-b4e4-5115440c045a",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія пропонує роль Plant Integration Engineer (Electrical), яка не підходить кандидату через відсутність технічного напрямку роботи в сфері IT та відсутню детальну інформацію про компанію та умови праці.",
+    "role_type": "Plant Integration Engineer (Electrical)",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Відсутній технічний напрямок роботи в сфері IT",
+      "Відсутня детальна інформація про компанію та умови праці"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1aaa8369-56cf-4539-838a-1dc089ace6e2": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/1aaa8369-56cf-4539-838a-1dc089ace6e2",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Вакансія не підходить через відсутність інформації про remote-можливості та зарплату.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Відсутність інформації про зарплату та remote-можливості"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/27e46f65-370b-4b43-8532-0afe900283ff": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/27e46f65-370b-4b43-8532-0afe900283ff",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Вакансія не підходить через відсутність інформації про remote-можливості та зарплату.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Відсутність інформації про зарплату та remote-можливості"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/28adc984-2e33-4b9c-ac3f-4b8ad45adad4": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/28adc984-2e33-4b9c-ac3f-4b8ad45adad4",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Вакансія не підходить через відсутність інформації про remote-можливості та зарплату.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Відсутність інформації про зарплату та remote-можливості"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/3bdfb631-9340-4610-aa2d-19c8bb86c423": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/3bdfb631-9340-4610-aa2d-19c8bb86c423",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Вакансія не підходить через відсутність інформації про remote-можливості та зарплату.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Відсутність інформації про зарплату та remote-можливості"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/3cc0f164-912f-4e5d-9476-08acf87dec5b": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/3cc0f164-912f-4e5d-9476-08acf87dec5b",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Вакансія не підходить через відсутність інформації про remote-можливості та зарплату.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Відсутність інформації про зарплату та remote-можливості"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/40fd2a98-e06a-48a9-82c8-5f0bc2f9faed": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/40fd2a98-e06a-48a9-82c8-5f0bc2f9faed",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/44bffbef-0675-43b0-8911-5aa200767507": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/44bffbef-0675-43b0-8911-5aa200767507",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4ae0af78-a05a-4d59-8364-13867bdb10bc": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/4ae0af78-a05a-4d59-8364-13867bdb10bc",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/53678d76-acbc-486c-b058-247941cf2668": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/53678d76-acbc-486c-b058-247941cf2668",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/55012782-9704-4de6-b333-a9c4d5be48b1": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/55012782-9704-4de6-b333-a9c4d5be48b1",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/692eb361-7d8d-44bb-96d0-ca122b65449b": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/692eb361-7d8d-44bb-96d0-ca122b65449b",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/74cb6530-bab0-4295-8bed-4f4181e78ece": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/74cb6530-bab0-4295-8bed-4f4181e78ece",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/74cc85ed-921b-4103-aecc-86317e3b7725": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/74cc85ed-921b-4103-aecc-86317e3b7725",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/75d764d1-9129-4097-923b-968acc0886f7": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/75d764d1-9129-4097-923b-968acc0886f7",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
+  },
+  "https://jobs.lever.co/jobgether/7c336cfe-d7a2-4fac-a10f-19e797aa0701": {
+    "title": "Plant Integration Engineer (Electrical)",
+    "url": "https://jobs.lever.co/jobgether/7c336cfe-d7a2-4fac-a10f-19e797aa0701",
+    "source": "Lever",
+    "description": "",
+    "score": 1,
+    "summary": "Компанія шукає інженера з електричної інтеграції, що не відповідає профілю кандидата. Кандидат шукає роль у сфері технічної підтримки або консалтингу, а не інженерну позицію.",
+    "role_type": "Інженер",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "Не відповідає профілю кандидата",
+      "Інженерна позиція"
+    ],
+    "first_seen": "2026-07-29T04:59:40.517315+00:00"
   }
 }
