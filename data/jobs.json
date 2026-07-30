@@ -15390,5 +15390,219 @@
       "відсутня інформація про зарплату"
     ],
     "first_seen": "2026-07-29T22:49:34.054348+00:00"
+  },
+  "https://himalayas.app/companies/conduent/jobs/app-dev-support-engineer-iii": {
+    "title": "App Dev & Support Engineer III",
+    "url": "https://himalayas.app/companies/conduent/jobs/app-dev-support-engineer-iii",
+    "source": "Himalayas",
+    "description": "Data Warehouse ETL Developer Job Summary: We are seeking a skilled Data Warehouse / ETL Developer with expertise in Informatica PowerCenter to design, develop, and maintain enterprise-level ETL solutions. The ideal candidate will have hands-on experience in data warehousing concepts, ETL processes, and strong problem-solving skills to ensure high-quality, timely, and accurate data integration. Key Responsibilities: Design, develop, and deploy ETL mappings, workflows, and sessions using Informatica PowerCenter. Extract data from heterogeneous source systems (Oracle, SQL Server, flat files, SAP) and load into target data warehouse environments. Collaborate with business analysts and data architects to understand data requirements and translate them into efficient ETL solutions. Optimize ETL processes for performance, scalability, and maintainability. Conduct data validation, reconciliation, and troubleshooting to ensure data quality and integrity. Maintain ETL documentation, including data flow diagrams, technical specifications, and process design documents. Participate in code reviews, unit testing, and UAT support. Monitor ETL jobs and workflows, identify bottlenecks, and implement improvements. Provide production support and resolve data-related issues in a timely manner. Required Skills and Qualifications: Bachelor’s degree in computer science, Information Technology, or a related field. 10 years of experience in ETL development using Informatica PowerCenter . Strong under",
+    "score": 2,
+    "summary": "Компанія Conduent шукає спеціаліста для розробки та підтримки програмного забезпечення. Ця вакансія не підходить кандидату, оскільки це робота пов'язана з чистим програмуванням, а не технічною підтримкою чи консалтингом.",
+    "role_type": "App Dev & Support Engineer",
+    "company_type": "IT-компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [],
+    "cons": [
+      "не відповідає профілю кандидата",
+      "можливо офісна робота"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://himalayas.app/companies/ingredion/jobs/account-manager-t-hs-us-can": {
+    "title": "Account Manager, T&HS, US/CAN",
+    "url": "https://himalayas.app/companies/ingredion/jobs/account-manager-t-hs-us-can",
+    "source": "Himalayas",
+    "description": "Account Manager, T&HS, US/CAN Position Location: Southeast US - Remote Reports To: Director, Sales, T&HS, East Ingredion is looking for a dynamic Account Manager to join our team and drive market presence and revenue growth. Your expertise and our innovative solutions will help build strong customer relationships and achieve mutual success. As an Account Manager, you will be responsible for developing and maximizing sales volume and margins through detailed planned sales coverage at existing and prospective accounts. The Account Manager will call on medium to large accounts with a focus on key strategic customers. As a member of the Go-to-Market team, the Account Manager will optimize profitability and grow sales of Ingredion ’s diverse and expanding specialty products. This role will report to the Director of Sales Texture and Healthful Solutions East Region What you will do (Responsibilities): Account Management - Develop strategic account plans to create long-term value for customers. Plans should include account strategies, defined objectives, milestones, and specific opportunities. Establish strategic relationships with key accounts to sell products, services, and alternative solutions to create competitive advantage for the customer. Relationship Building - Develop strong multi-level relationships between Ingredion and our important customers to drive growth and effectively address challenges that may arise. Sales Strategy Development - Work with management to develop a",
+    "score": 6,
+    "summary": "Компанія Ingredion шукає менеджера з обліку клієнтів для розвитку продажів та побудови відносин з клієнтами. Ця вакансія частково підходить кандидату, оскільки це роль менеджера, але не повністю відповідає профілю технічної підтримки чи консалтингу.",
+    "role_type": "Account Manager",
+    "company_type": "Продукційна компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "віддалена робота",
+      "роль менеджера"
+    ],
+    "cons": [
+      "не повністю відповідає профілю кандидата"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.lever.co/outreach/91b45521-0ad3-499f-8c05-514beb39c2e5": {
+    "title": "Senior Customer Success Manager",
+    "url": "https://jobs.lever.co/outreach/91b45521-0ad3-499f-8c05-514beb39c2e5",
+    "source": "Lever",
+    "description": "About Outreach\n \nOutreach, founded in 2014, is the only complete agentic AI platform for revenue teams. Outreach infuses agentic AI, conversation intelligence, and assistive AI to power hundreds of use cases across revenue motions. From new logo prospecting to expansions, deal acceleration, driving retention, and forecasting, Outreach AI automates workflows and frees sellers to focus on more strategic conversations and actions. Revenue leaders benefit from connected account visibility, performance insights, and higher forecasting accuracy across every GTM team. World leading enterprise organizations use Outreach to power their revenue teams, including Databricks, SAP, Siemens, and Verizon to name a few.  \n\n\nAbout the Team \nOur Customer Success team is where the promise of the platform becomes real for our customers. We act as trusted advisors — to our customers and to each other — partnering across Sales, Product, Marketing, and Professional Services as one team working toward the same outcome: customers who see measurable value and keep coming back for more. AI is part of how we get there — sharpening the insights we bring to every customer conversation. We lead with a customer-first mindset, take ownership of the results we commit to, and bring the curiosity to keep learning as the way our customers' work continues to evolve. \nThe Role \nWe're looking for a strategic, data-driven Customer Success Manager to partner with customers in maximizing value from our platform — lever",
+    "score": 8,
+    "summary": "Компанія Outreach шукає старшого менеджера з успіху клієнтів для забезпечення успіху клієнтів та розвитку бізнесу. Ця вакансія підходить кандидату, оскільки це роль менеджера з технічним фоном у сфері успіху клієнтів.",
+    "role_type": "Senior Customer Success Manager",
+    "company_type": "Продукційна компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "роль менеджера з технічним фоном",
+      "підтримка клієнтів"
+    ],
+    "cons": [
+      "не вказана зарплата"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/e5c809a6-7ea8-4470-9b42-a0c99e81dd31": {
+    "title": "Head of Enterprise & Strategic Activations (Customer Success)",
+    "url": "https://jobs.ashbyhq.com/ramp/e5c809a6-7ea8-4470-9b42-a0c99e81dd31",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nRamp is the fastest-growing corporate card and spend management platform in America. Our Customer Success team is the driving force behind how the world’s most ambitious companies unlock the full power of Ramp’s platform to transform their financial operations.\n\nWe’re looking for a Head of Enterprise & Strategic Success to lead our Customer Success motion across Ramp’s largest and most complex accounts—enterprise organizations and strategic partnerships with large multinational corporations. This is a senior leadership role responsibl",
+    "score": 9,
+    "summary": "Компанія Ramp шукає керівника з підприємства та стратегічних активів для забезпечення успіху клієнтів та розвитку бізнесу. Ця вакансія підходить кандидату, оскільки це роль керівника з технічним фоном у сфері успіху клієнтів та розвитку бізнесу.",
+    "role_type": "Head of Enterprise & Strategic Activations",
+    "company_type": "Фінтех-компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "роль керівника з технічним фоном",
+      "підтримка клієнтів",
+      "фінтех-компанія"
+    ],
+    "cons": [
+      "не вказана зарплата"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/f1b3ca8d-d55f-4159-9a3b-f69ad0d981bc": {
+    "title": "Software Engineer, Onboarding",
+    "url": "https://jobs.ashbyhq.com/ramp/f1b3ca8d-d55f-4159-9a3b-f69ad0d981bc",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nThe Onboarding team owns the product flows and platform that powers all new customer account creation at Ramp. This includes Ramp's application decisioning system that interfaces with our fraud, compliance, and credit underwriting models. As an engineer here, you’ll own workstreams that expand Ramp's total serviceable market and improve the end-to-end customer onboarding experience. You’ll partner with product, data, and design, and work directly with stakeholders across sales, marketing, risk strategy, operations, and finance to acce",
+    "score": 1,
+    "summary": "Компанія Ramp шукає спеціаліста з програмування для розробки програмного забезпечення. Ця вакансія не підходить кандидату, оскільки це робота пов'язана з чистим програмуванням, а не технічною підтримкою чи консалтингом.",
+    "role_type": "Software Engineer",
+    "company_type": "Фінтех-компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "не відповідає профілю кандидата",
+      "чисте програмування"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/218e3fef-0fa7-4ad4-b401-9ba0c76c0ff0": {
+    "title": "Technical Consultant, S/4HANA",
+    "url": "https://jobs.ashbyhq.com/ramp/218e3fef-0fa7-4ad4-b401-9ba0c76c0ff0",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nTechnical Consultants are on the frontlines working to establish partnerships with Ramp customers, and act as a liaison between customers and our internal technical teams. You'll be partnering with Customer Activation & Account Management teams to identify, prioritize and build financial solutions for new and existing customers so that Ramp continues to scale with their needs.\n\nYou will act as the technical and financial subject matter expert for our customers, and design solutions that address the customer's needs through Ramp and pa",
+    "score": 8,
+    "summary": "Компанія Ramp пропонує роль Technical Consultant, S/4HANA, яка підходить кандидату через досвід роботи з технічною підтримкою та знаннями в галузі фінтех. Компанія займається розробкою інтелектуальної інфраструктури для фінансових команд, що відповідає інтересам кандидата.",
+    "role_type": "Technical Consultant",
+    "company_type": "Продуктова компанія, фінтех",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Інтересна галузь фінтех"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/492823d8-9651-46cf-9d33-a632ef706879": {
+    "title": "Solutions Consultant, Post Sales, Mid-Market",
+    "url": "https://jobs.ashbyhq.com/ramp/492823d8-9651-46cf-9d33-a632ef706879",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nSolutions Consultants, Post-Sales at Ramp partner with Account Management to deepen and expand relationships with existing Ramp customers. You'll act as the technical and financial subject matter expert across the customer lifecycle — running product demonstrations to expand customers onto new Ramp products, while bringing the depth needed to resolve complex ERP integrations, configuration challenges, and technical blockers.\n\nYou'll collaborate closely with Account Managers to assess requirements, design scalable solutions, and ensure",
+    "score": 8,
+    "summary": "Компанія Ramp пропонує роль Solutions Consultant, Post Sales, Mid-Market, яка підходить кандидату через досвід роботи з технічною підтримкою та знаннями в галузі фінтех. Компанія займається розробкою інтелектуальної інфраструктури для фінансових команд, що відповідає інтересам кандидата.",
+    "role_type": "Solutions Consultant",
+    "company_type": "Продуктова компанія, фінтех",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Інтересна галузь фінтех"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/13fe8467-b624-4f30-8aad-af441dfb1797": {
+    "title": "Technical Consultant, Oracle Cloud",
+    "url": "https://jobs.ashbyhq.com/ramp/13fe8467-b624-4f30-8aad-af441dfb1797",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nTechnical Consultants are on the frontlines working to establish partnerships with Ramp customers, and act as a liaison between customers and our internal technical teams. You'll be partnering with Customer Activation & Account Management teams to identify, prioritize and build financial solutions for new and existing customers so that Ramp continues to scale with their needs.\n\n\n\nYou will act as the technical and financial subject matter expert for our customers and design solutions that address the customer's needs through Ramp and p",
+    "score": 6,
+    "summary": "Компанія Ramp пропонує роль Technical Consultant, Oracle Cloud, яка частково підходить кандидату через досвід роботи з технічною підтримкою, але може не відповідати через специфіку роботи з Oracle Cloud.",
+    "role_type": "Technical Consultant",
+    "company_type": "Продуктова компанія, фінтех",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Інтересна галузь фінтех"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи",
+      "Специфіка роботи з Oracle Cloud"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/85bb97ba-b1fe-4a3b-be35-df4d40b7455e": {
+    "title": "Technical Consultant, Workday",
+    "url": "https://jobs.ashbyhq.com/ramp/85bb97ba-b1fe-4a3b-be35-df4d40b7455e",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nTechnical Consultants are on the frontlines working to establish partnerships with Ramp customers, and act as a liaison between customers and our internal technical teams. You'll be partnering with Customer Activation & Account Management teams to identify, prioritize and build financial solutions for new and existing customers so that Ramp continues to scale with their needs.\n\n \n\nYou will act as the technical and financial subject matter expert for our customers, and design solutions that address the customer's needs through Ramp and",
+    "score": 6,
+    "summary": "Компанія Ramp пропонує роль Technical Consultant, Workday, яка частково підходить кандидату через досвід роботи з технічною підтримкою, але може не відповідати через специфіку роботи з Workday.",
+    "role_type": "Technical Consultant",
+    "company_type": "Продуктова компанія, фінтех",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Інтересна галузь фінтех"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи",
+      "Специфіка роботи з Workday"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://jobs.ashbyhq.com/ramp/8ca5c32b-e6c7-47e3-af23-291f122fa0f8": {
+    "title": "Solutions Consultant, Post Sales, Commercial",
+    "url": "https://jobs.ashbyhq.com/ramp/8ca5c32b-e6c7-47e3-af23-291f122fa0f8",
+    "source": "Ashby",
+    "description": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $200B in annualized spend flows in and out of 70,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nSolutions Consultants, Post-Sales at Ramp partner with Account Management to deepen and expand relationships with existing Ramp customers. You'll act as the technical and financial subject matter expert across the customer lifecycle — running product demonstrations to expand customers onto new Ramp products, while bringing the depth needed to resolve complex ERP integrations, configuration challenges, and technical blockers.\n\nYou'll collaborate closely with Account Managers to assess requirements, design scalable solutions, and ensure",
+    "score": 8,
+    "summary": "Компанія Ramp пропонує роль Solutions Consultant, Post Sales, Commercial, яка підходить кандидату через досвід роботи з технічною підтримкою та знаннями в галузі фінтех. Компанія займається розробкою інтелектуальної інфраструктури для фінансових команд, що відповідає інтересам кандидата.",
+    "role_type": "Solutions Consultant",
+    "company_type": "Продуктова компанія, фінтех",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Інтересна галузь фінтех"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T01:20:31.097413+00:00"
   }
 }
