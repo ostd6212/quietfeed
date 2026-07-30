@@ -15604,5 +15604,438 @@
       "Невідомий рівень віддаленої роботи"
     ],
     "first_seen": "2026-07-30T01:20:31.097413+00:00"
+  },
+  "https://djinni.co/jobs/840112-cloud-solutions-architect-senior-devops/": {
+    "title": "Cloud Solutions Architect Senior Devops",
+    "url": "https://djinni.co/jobs/840112-cloud-solutions-architect-senior-devops/",
+    "source": "Djinni",
+    "description": "Cloud Solutions Architect / Senior DevOps в Climission – Djinni Помилка Відкрити в застосунку Djinni We are a climate-tech product team building a multi-tenant SaaS platform. We are scaling into enterprise customers and want an experienced architect to help us design the platform for that next stage. This is a focused, well-scoped engagement with clear goals, not an open-ended retainer. You will work directly with the project lead. What you will do Design multi-tenant resource isolation so workloads stay predictable as customer count and data volume grow. Architect the async and background-processing model for long-running, data-heavy operations. Design and implement high availability for the data tier, including replication and verified backup and restore. Mature the deployment pipeline for deterministic, auditable releases. Define the service-level indicators that reflect real customer experience, and build the observability to measure them. Right-size cloud resources against measured usage and introduce autoscaling. Load and capacity testing at realistic data volumes. Give us your long-term view on cloud strategy. We are on Azure and are not planning to migrate, but we want an architect's assessment to plan against. What we are looking for 5+ years in cloud architecture, platform engineering or SRE, with real design ownership on at least one production system. Multi-tenant SaaS experience. You have solved noisy-neighbour and tenant-isolation problems before and have views on how. Strong production Kubernetes: Helm, resource management, autoscaling, disruption budgets, rolling-update strategy. Azure preferred, ideally AKS. Equivalent depth on AWS or GCP is fine. MongoDB operations at production scale: replication, migrations, backup and restore verification. Prometheus, Grafana, Alertmanager, Loki. Able to design meaningful alerting, not just install exporters. Terraform and CI/CD pipeline design. Able to read Node.js well enough to reason about where memory and time go. Comfortable disagreeing with a proposed design and explaining why. English sufficient for written technical discussion and calls. Nice to have GitOps in production (Argo CD or Flux). Load testing with k6 or JMeter. Exposure to blockchain infrastructure or carbon markets. Genuinely optional, we will teach the domain. Необхідний досвід з навичками MongoDB 3 роки Kubernetes 4 роки Cloud 4 роки Terraform 2 роки Node.js 2 роки + ще 1 CI/CD 4 роки Вимоги до володіння мовами Англійська B2 – Вище середнього Multi-tenancy, Software Architecture, Cloud Architecture, Enterprise Architecture Опубліковано 30 липня 3 перегляди · 2 відгуки Для відгуку на цю та інші вакансії на Djinni увійдіть або зареєструйтеся . від\n        5 років досвіду Також розглядаємо з досвідом 4 роки Тільки віддалено Країни Європи та Україна Країни, де розглядаємо кандидатів Англійська B2 – Вище середнього Software Architect MongoDB 3 роки Kubernetes 4 роки Cloud 4 роки + ще 3 Зайнятість: Fulltime Домен: Other Продуктова компанія Є тестове завдання 📊 Середня зарплатна вилка схожих вакансій у аналітиці → Завантаження... We use cookies to improve your experience. Learn more Okay",
+    "score": 2,
+    "summary": "Компанія Climission шукає Cloud Solutions Architect Senior Devops. Ця роль не підходить кандидату, оскільки це позиція з чисто технічним фокусом, а кандидат шукає ролі типу Technical Account Manager, Solution Consultant або Customer Success Manager.",
+    "role_type": "DevOps",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Україна",
+    "pros": [
+      "Опыт работы в облачных технологиях"
+    ],
+    "cons": [
+      "Не підходить кандидату через технічний фокус",
+      "Відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://job-boards.greenhouse.io/twilio/jobs/8079708": {
+    "title": "Technical Support Engineer 2",
+    "url": "https://job-boards.greenhouse.io/twilio/jobs/8079708",
+    "source": "Greenhouse",
+    "description": "Job Application for Technical Support Engineer 2 at Twilio Back to jobs New Technical Support Engineer 2 Remote - India Apply Who we are At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! . See yourself at Twilio Join the team as our next Technical Support Engineer 2 (Email Infra) - EMEA. About the job This position is needed to support our customers’ use of the Twilio platform, and help customers get the best experience from Twilio’s products. You will function as the voice of Twilio to our customers and partners, and operate as a subject matter expert for Twilio’s APIs and SDKs. This role reports to a Manager, Technical Support and will be based in our India office. This position requires working in a shift. The current shift timings for shift based roles supporting our EMEA customers is 12pm-9pm IST or 1pm-10pm IST .  This position also includes rostering. Rosters will be of a 5 day work week, and could include one or both weekend days. ( Mon-Fri , Tue-Sat or Sun-Thu ). Responsibilities In this role, you’ll: Use your strong technical and diplomatic skills to address customer issues and provide customer feedback to Twilio’s Product and Engineering teams. Be ready to assist our customers when they need us. This position may require working an irregular shift, including the weekend (Shifts are subject to change based on evolving team and customer needs). Work with our customers' and partners' developers, architects, and support personnel to resolve complex problems with potentially very costly and far-reaching consequences. Collaborate with your teammates and the Twilio Product and Engineering teams via Slack as well as filing JIRAs to report reproducible bugs. Review and contribute to internal knowledge bases and external technical resources to stay current on industry shifts and standards. Qualifications Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table! *Required: Overall 3+ years experience, with deep understanding of Email infrastructure such as Mail User Agent(MUA) Message Transfer Agent (MTA) Good knowledge of RESTful technology, previous work with APIs and ability to understand and solve issues with cloud solutions. Good understanding of protocols - encryption-based Internet security protocol such as SSL, TLS and Communication protocol SMTP. Bonus: Knowledge on Email protocols POP3 and IMAP and Client- Server protocol such as Tenet would be a HUGE plus. Skills in troubleshooting network connectivity issues, with an understanding of TCP/UDP, and basics of SSL/TLS. High competency in communicating complex technical issues to both technical and non-technical audiences via phone or email mediums. Ability to stand in the customer’s shoes and demonstrated dedication to the customer experience. Excellent written and verbal communication skills. Excellence in task prioritization and evaluation of situational urgency. Desired: Advanced time management skills, ability to work well under pressure, and proficiency at developing workflows",
+    "score": 8,
+    "summary": "Компанія Twilio шукає Technical Support Engineer 2. Ця роль підходить кандидату, оскільки це позиція в сфері технічної підтримки, а кандидат має відповідний досвід. Компанія також пропонує remote-роботу.",
+    "role_type": "Technical Support",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Відповідний досвід кандидата",
+      "Remote-робота"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://himalayas.app/companies/icf/jobs/community-development-consultant-on-call-part-time-remote-role": {
+    "title": "Community Development Consultant - ON CALL PART TIME (REMOTE ROLE)",
+    "url": "https://himalayas.app/companies/icf/jobs/community-development-consultant-on-call-part-time-remote-role",
+    "source": "Himalayas",
+    "description": "COMMUNITY DEVELOPMENT CONSULTANT ( ON-CALL role) Your passion is supporting communities with implementing best practice strategies to provide expert consulting skills and programmatic expertise to serve the needs of low- and moderate-income families.  At ICF , you will work alongside a team of experts supporting the U.S. Department of Housing and Urban Development (HUD) by delivering technical assistance and training on Section 3 and Federal Labor requirements . This role may also support broader community and economic development priorities, including workforce development initiatives such as job training and employment placement; small business and microenterprise development; and other HUD‑aligned economic and workforce development activities. This position is ON-CALL (part-time with variable hours) and work remote. Assignments are made on a demand-response basis so hours are completely variable. Apply today to become part of our great team of experts! What you’ll be doing: Work with a diverse set of stakeholders including public housing authorities, HUD Community Planning and Development (CPD) grantees who work with the Community Development Block Grant (CDBG), HOME Investment Partnerships Act, etc., programs. Focus of the work is in educating and distilling Federal rule requirements to grantees/subrecipients on Section 3 and labor requirements, including Davis-Bacon, that best supports building capacity to deliver high quality, compliant HUD programs Develop/deliver trai",
+    "score": 3,
+    "summary": "Компанія ICF шукає Community Development Consultant. Ця роль не підходить кандидату, оскільки це позиція в сфері розвитку громад, а кандидат шукає ролі в сфері технічної підтримки або консалтингу.",
+    "role_type": "Community Development",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Remote-робота"
+    ],
+    "cons": [
+      "Не підходить кандидату через сферу діяльності",
+      "Відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://himalayas.app/companies/cisco/jobs/renewals-specialist-splunk": {
+    "title": "Renewals Specialist - Splunk",
+    "url": "https://himalayas.app/companies/cisco/jobs/renewals-specialist-splunk",
+    "source": "Himalayas",
+    "description": "The application window is expected to close on: 08/28/2026 Job posting may be removed earlier if the position is filled or if a sufficient number of applications are received . This role can be performed from any location within the United States. Splunk, a Cisco company, is building a safer and more resilient digital world with an end-to-end full stack platform made for a hybrid, multi-cloud world. Leading enterprises use our unified security and observability platform to keep their digital systems secure and reliable. Come help organizations be their best, while you reach new heights with a team that has your back. What You'll Do: This role engages early and frequently with customers and partners, together with the Renewals Manager, to help solve technology challenges, address competitive risks, evaluate multiple solutions to meet customer needs, and enhance the product experience, typically starting six or more quarters prior to renewal. It builds relationships with customers and channel partner teams to understand business priorities and objectives, ensuring alignment with the CX recurring revenue strategy. Works on high volume, transactional opportunities and supports consultative renewals with team. Applies technical expertise across related products and services within a defined architecture to support renewal execution. Aligned to mid-market or regional accounts with moderate complexity. Participates in customer discussions to understand renewal needs and begins to ta",
+    "score": 6,
+    "summary": "Компанія Splunk шукає Renewals Specialist. Ця роль частково підходить кандидату, оскільки це позиція в сфері технічної підтримки, але кандидат шукає ролі з більш широким спектром відповідальності.",
+    "role_type": "Renewals Specialist",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Відповідний досвід кандидата",
+      "Remote-робота"
+    ],
+    "cons": [
+      "Вужчий спектр відповідальності",
+      "Відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/e03a2878-6ca1-430b-a231-6cc3b2203dfa": {
+    "title": "Application Modernization Consultant (AppMod SCE)",
+    "url": "https://jobs.lever.co/jobgether/e03a2878-6ca1-430b-a231-6cc3b2203dfa",
+    "source": "Lever",
+    "description": "",
+    "score": 5,
+    "summary": "Компанія Jobgether шукає Application Modernization Consultant. Ця роль частково підходить кандидату, оскільки це позиція в сфері консалтингу, але кандидат шукає ролі в сфері технічної підтримки або консалтингу з більш широким спектром відповідальності.",
+    "role_type": "Application Modernization Consultant",
+    "company_type": "Не вказано",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Відповідний досвід кандидата"
+    ],
+    "cons": [
+      "Вужчий спектр відповідальності",
+      "Відсутність інформації про зарплату"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/adfeb397-d0ac-420e-b0e2-ab38acf47e26": {
+    "title": "Customer Success Manager - APJ",
+    "url": "https://jobs.lever.co/jobgether/adfeb397-d0ac-420e-b0e2-ab38acf47e26",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія пропонує роль Customer Success Manager, яка підходить кандидату через технічний бекграунд і досвід роботи в сфері B2B SaaS. Компанія займається розробкою програмного забезпечення, що відповідає інтересам кандидата.",
+    "role_type": "Customer Success Manager",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Технічний бекграунд",
+      "Досвід роботи в B2B SaaS"
+    ],
+    "cons": [
+      "Не вказана зарплата",
+      "Не вказано про віддалену роботу"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/decebb68-2c6c-4485-acd3-591621ad7dda": {
+    "title": "Finance Implementation and Support Consultant",
+    "url": "https://jobs.lever.co/jobgether/decebb68-2c6c-4485-acd3-591621ad7dda",
+    "source": "Lever",
+    "description": "",
+    "score": 9,
+    "summary": "Компанія пропонує роль Finance Implementation and Support Consultant, яка підходить кандидату через досвід роботи з фінансовими системами і технічний бекграунд. Компанія займається розробкою програмного забезпечення для фінансового сектору.",
+    "role_type": "Solution Consultant",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Досвід роботи з фінансовими системами",
+      "Технічний бекграунд"
+    ],
+    "cons": [
+      "Не вказана зарплата",
+      "Не вказано про віддалену роботу"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/f9197a1b-a905-480f-9d7f-50d1b9e2df01": {
+    "title": "Functional Solution Architect (Workday)",
+    "url": "https://jobs.lever.co/jobgether/f9197a1b-a905-480f-9d7f-50d1b9e2df01",
+    "source": "Lever",
+    "description": "",
+    "score": 4,
+    "summary": "Компанія пропонує роль Functional Solution Architect, яка не підходить кандидату через відсутність технічного бекграунду в галузі архітектури рішень. Компанія займається розробкою програмного забезпечення для великих підприємств.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Досвід роботи з великими підприємствами"
+    ],
+    "cons": [
+      "Відсутність технічного бекграунду в галузі архітектури рішень",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/b86105ed-21b9-4c73-8ca4-3a84a6eb3395": {
+    "title": "Integrated Designer",
+    "url": "https://jobs.lever.co/jobgether/b86105ed-21b9-4c73-8ca4-3a84a6eb3395",
+    "source": "Lever",
+    "description": "",
+    "score": 2,
+    "summary": "Компанія пропонує роль Integrated Designer, яка не підходить кандидату через відсутність досвіду роботи в галузі дизайну. Компанія займається розробкою програмного забезпечення для різних галузей.",
+    "role_type": "Designer",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Досвід роботи з різними галузями"
+    ],
+    "cons": [
+      "Відсутність досвіду роботи в галузі дизайну",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/af486e25-178c-4712-9cc8-57998027f268": {
+    "title": "Integration Platform Developer",
+    "url": "https://jobs.lever.co/jobgether/af486e25-178c-4712-9cc8-57998027f268",
+    "source": "Lever",
+    "description": "",
+    "score": 3,
+    "summary": "Компанія пропонує роль Integration Platform Developer, яка не підходить кандидату через відсутність досвіду роботи в галузі розробки програмного забезпечення. Компанія займається розробкою програмного забезпечення для інтеграції різних систем.",
+    "role_type": "Developer",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Досвід роботи з інтеграцією систем"
+    ],
+    "cons": [
+      "Відсутність досвіду роботи в галузі розробки програмного забезпечення",
+      "Не вказана зарплата"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/02992901-1a19-4d01-977a-c22a69ca8b8b": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/02992901-1a19-4d01-977a-c22a69ca8b8b",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка підходить кандидату через відповідність його досвіду та навичок. Компанія займається розробкою рішень для управління ланцюгами поставок, що відповідає інтересам кандидата в сфері B2B SaaS.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Продуктова компанія в сфері B2B SaaS"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/040604fe-da64-4714-a0b1-b537b0c86648": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/040604fe-da64-4714-a0b1-b537b0c86648",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка підходить кандидату через відповідність його досвіду та навичок. Компанія займається розробкою рішень для управління ланцюгами поставок, що відповідає інтересам кандидата в сфері B2B SaaS.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Продуктова компанія в сфері B2B SaaS"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/08662e88-fbc2-4241-ab81-fbb87c703cc3": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/08662e88-fbc2-4241-ab81-fbb87c703cc3",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка підходить кандидату через відповідність його досвіду та навичок. Компанія займається розробкою рішень для управління ланцюгами поставок, що відповідає інтересам кандидата в сфері B2B SaaS.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Продуктова компанія в сфері B2B SaaS"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/0a415034-2d27-43b5-8bbe-a59fad5e445b": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/0a415034-2d27-43b5-8bbe-a59fad5e445b",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка підходить кандидату через відповідність його досвіду та навичок. Компанія займається розробкою рішень для управління ланцюгами поставок, що відповідає інтересам кандидата в сфері B2B SaaS.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Продуктова компанія в сфері B2B SaaS"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/2e7f09ae-6510-4120-a0c8-b2b3476e018e": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/2e7f09ae-6510-4120-a0c8-b2b3476e018e",
+    "source": "Lever",
+    "description": "",
+    "score": 8,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка підходить кандидату через відповідність його досвіду та навичок. Компанія займається розробкою рішень для управління ланцюгами поставок, що відповідає інтересам кандидата в сфері B2B SaaS.",
+    "role_type": "Solution Architect",
+    "company_type": "Продуктова компанія",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Відповідність ролі досвіду кандидата",
+      "Продуктова компанія в сфері B2B SaaS"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомий рівень віддаленої роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4113650e-da29-4ce6-82dc-e630321b9cfc": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/4113650e-da29-4ce6-82dc-e630321b9cfc",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка частково підходить кандидату через наявність технічних аспектів та можливості роботи з рішеннями. Однак, відсутність інформації про зарплату та умови роботи може бути недоліком.",
+    "role_type": "Solution Architect",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна роль",
+      "Можливість роботи з рішеннями"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомі умови роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4202386a-fda3-42ec-9b2c-15877b0e2a81": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/4202386a-fda3-42ec-9b2c-15877b0e2a81",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка частково підходить кандидату через наявність технічних аспектів та можливості роботи з рішеннями. Однак, відсутність інформації про зарплату та умови роботи може бути недоліком.",
+    "role_type": "Solution Architect",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна роль",
+      "Можливість роботи з рішеннями"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомі умови роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/53db6164-affa-4758-ad89-d2bbc14a6d3c": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/53db6164-affa-4758-ad89-d2bbc14a6d3c",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка частково підходить кандидату через наявність технічних аспектів та можливості роботи з рішеннями. Однак, відсутність інформації про зарплату та умови роботи може бути недоліком.",
+    "role_type": "Solution Architect",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна роль",
+      "Можливість роботи з рішеннями"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомі умови роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/55071e35-b77c-4249-b4de-0b51e4b32243": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/55071e35-b77c-4249-b4de-0b51e4b32243",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка частково підходить кандидату через наявність технічних аспектів та можливості роботи з рішеннями. Однак, відсутність інформації про зарплату та умови роботи може бути недоліком.",
+    "role_type": "Solution Architect",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна роль",
+      "Можливість роботи з рішеннями"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомі умови роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
+  },
+  "https://jobs.lever.co/jobgether/5fed3c9e-839e-485c-b884-09b63575da72": {
+    "title": "Kinaxis Solution Architect",
+    "url": "https://jobs.lever.co/jobgether/5fed3c9e-839e-485c-b884-09b63575da72",
+    "source": "Lever",
+    "description": "",
+    "score": 6,
+    "summary": "Компанія Kinaxis пропонує роль Solution Architect, яка частково підходить кандидату через наявність технічних аспектів та можливості роботи з рішеннями. Однак, відсутність інформації про зарплату та умови роботи може бути недоліком.",
+    "role_type": "Solution Architect",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Не вказано",
+    "pros": [
+      "Технічна роль",
+      "Можливість роботи з рішеннями"
+    ],
+    "cons": [
+      "Відсутність інформації про зарплату",
+      "Невідомі умови роботи"
+    ],
+    "first_seen": "2026-07-30T04:48:05.822078+00:00"
   }
 }
