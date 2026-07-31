@@ -9,7 +9,7 @@ This file is safe to have in a public repo.
 from job_search import sources
 from job_search.keywords import load_keywords
 
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "llama-3.1-8b-instant"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 BATCH_SIZE = 5
