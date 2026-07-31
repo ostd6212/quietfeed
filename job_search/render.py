@@ -29,6 +29,7 @@ STATUS_URL = "https://raw.githubusercontent.com/ostd6212/quietfeed/main/data/sta
 GH_OWNER = "ostd6212"
 GH_REPO = "quietfeed"
 GH_KEYWORDS_PATH = "data/keywords.json"
+GH_EXCLUDE_PATH = "data/exclude_keywords.json"
 GH_JOBS_PATH = "data/jobs.json"
 GH_BRANCH = "main"
 GH_WORKFLOW_FILE = "scrape-and-publish.yml"
@@ -60,6 +61,16 @@ def score_color(score) -> str:
         return "#f97316"
     else:
         return "#ef4444"
+
+
+def _esc_attr(s: str) -> str:
+    return (
+        (s or "")
+        .replace("&", "&amp;")
+        .replace('"', "&quot;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
 
 
 def _job_card(job: dict) -> str:
@@ -111,6 +122,7 @@ def _job_card(job: dict) -> str:
         <div class="card-actions">
             <a href="{job['url']}" target="_blank" rel="noopener" class="apply-btn">Переглянути вакансію →</a>
             <button class="hide-btn" data-url="{job['url']}">Приховати</button>
+            <button class="block-btn" data-url="{job['url']}" data-title="{_esc_attr(job['title'])}">🚫 Блокувати схожі</button>
         </div>
         {description_html}
     </div>"""
@@ -272,6 +284,9 @@ def generate_html(
   .hide-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 7px; cursor: pointer; font-family: inherit; }}
   .hide-btn:hover {{ border-color: #ef4444; color: #ef4444; }}
   .hide-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
+  .block-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 7px; cursor: pointer; font-family: inherit; }}
+  .block-btn:hover {{ border-color: #ef4444; color: #ef4444; }}
+  .block-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
   .description {{ margin-top: 14px; border-top: 1px solid #334155; padding-top: 14px; }}
   .description summary {{ font-size: 13px; color: #64748b; cursor: pointer; user-select: none; }}
   .description summary:hover {{ color: #94a3b8; }}
@@ -623,6 +638,91 @@ function jobRadarGetToken(forcePrompt) {{
           btn.disabled = false;
           btn.textContent = originalText;
           alert('Помилка приховування: ' + err.message);
+        }});
+    }});
+  }});
+}})();
+
+(function () {{
+  var OWNER = '{GH_OWNER}';
+  var REPO = '{GH_REPO}';
+  var BRANCH = '{GH_BRANCH}';
+  var EXCLUDE_PATH = '{GH_EXCLUDE_PATH}';
+  var JOBS_PATH = '{GH_JOBS_PATH}';
+
+  function b64EncodeUtf8(str) {{
+    return btoa(unescape(encodeURIComponent(str)));
+  }}
+  function b64DecodeUtf8(str) {{
+    return decodeURIComponent(escape(atob(str.replace(/\\n/g, ''))));
+  }}
+
+  function getFile(path, token) {{
+    var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path;
+    return fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
+      .then(function (r) {{
+        if (!r.ok) throw new Error('Не вдалось прочитати ' + path + ' (' + r.status + ')');
+        return r.json();
+      }});
+  }}
+
+  function putFile(path, token, sha, dataObj, message) {{
+    var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path;
+    var content = b64EncodeUtf8(JSON.stringify(dataObj, null, 2));
+    return fetch(apiUrl, {{
+      method: 'PUT',
+      headers: {{
+        Authorization: 'token ' + token,
+        Accept: 'application/vnd.github+json',
+        'Content-Type': 'application/json',
+      }},
+      body: JSON.stringify({{message: message, content: content, sha: sha, branch: BRANCH}}),
+    }}).then(function (r) {{
+      if (!r.ok) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
+    }});
+  }}
+
+  document.querySelectorAll('.block-btn').forEach(function (btn) {{
+    btn.addEventListener('click', function () {{
+      var title = btn.getAttribute('data-title') || '';
+      var phrase = window.prompt(
+        'Яке слово чи фразу в назві блокувати назавжди? ' +
+          '(відредагуй до конкретного фрагмента, щоб не заблокувати зайве)',
+        title.toLowerCase()
+      );
+      if (!phrase) return;
+      phrase = phrase.trim().toLowerCase();
+      if (!phrase) return;
+
+      var token = jobRadarGetToken(false);
+      if (!token) {{ alert('Токен не задано.'); return; }}
+      var url = btn.getAttribute('data-url');
+      var card = btn.closest('.card');
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Блокую…';
+
+      getFile(EXCLUDE_PATH, token)
+        .then(function (fileInfo) {{
+          var exclusions = JSON.parse(b64DecodeUtf8(fileInfo.content));
+          if (exclusions.indexOf(phrase) === -1) exclusions.push(phrase);
+          return putFile(EXCLUDE_PATH, token, fileInfo.sha, exclusions, 'chore: block vacancy pattern via site UI');
+        }})
+        .then(function () {{ return getFile(JOBS_PATH, token); }})
+        .then(function (fileInfo) {{
+          var jobs = JSON.parse(b64DecodeUtf8(fileInfo.content));
+          if (jobs[url]) {{
+            jobs[url].hidden = true;
+            return putFile(JOBS_PATH, token, fileInfo.sha, jobs, 'chore: hide vacancy via site UI');
+          }}
+        }})
+        .then(function () {{
+          card.style.display = 'none';
+        }})
+        .catch(function (err) {{
+          btn.disabled = false;
+          btn.textContent = originalText;
+          alert('Помилка блокування: ' + err.message);
         }});
     }});
   }});

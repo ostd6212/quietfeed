@@ -8,6 +8,7 @@ This file is safe to have in a public repo.
 
 from job_search import sources
 from job_search.keywords import load_keywords
+from job_search.exclusions import load_exclusions
 
 GROQ_MODEL = "llama-3.1-8b-instant"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
@@ -48,6 +49,11 @@ RETENTION_DAYS = 90
 # on every run.py invocation (a new process each cron tick), so an edit made
 # on the site takes effect on the very next scheduled run.
 TITLE_KEYWORDS = load_keywords()
+
+# Title phrases that veto a match regardless of TITLE_KEYWORDS -- see
+# exclusions.py. Lives in data/exclude_keywords.json, edited from the site
+# via the "Блокувати схожі" button on a job card.
+EXCLUDE_KEYWORDS = load_exclusions()
 
 # Sources whose upstream ToS/quota explicitly caps request frequency
 # (Remotive: "we advise max. 4 times a day" in its own API response;
@@ -91,4 +97,6 @@ SOURCES = [
 
 def title_matches(title: str) -> bool:
     t = title.lower()
+    if any(kw in t for kw in EXCLUDE_KEYWORDS):
+        return False
     return any(kw in t for kw in TITLE_KEYWORDS)
