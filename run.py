@@ -72,9 +72,11 @@ def main():
     print(f"\n  {len(new_jobs)} new vacancies out of {len(matched)} matched this run "
           f"({len(jobs_db)} already tracked)")
 
+    deferred_count = 0
     if len(new_jobs) > config.MAX_NEW_JOBS_PER_RUN:
+        deferred_count = len(new_jobs) - config.MAX_NEW_JOBS_PER_RUN
         print(f"  Capping to {config.MAX_NEW_JOBS_PER_RUN} for this run "
-              f"({len(new_jobs) - config.MAX_NEW_JOBS_PER_RUN} deferred to next run)")
+              f"({deferred_count} deferred to next run)")
         new_jobs = new_jobs[:config.MAX_NEW_JOBS_PER_RUN]
 
     status.publish("scoring", found=len(new_jobs), scored=0)
@@ -114,6 +116,7 @@ def main():
             try:
                 analyses = scoring.analyze_batch_with_groq(batch, profile_text)
             except QuotaExhausted as e:
+                deferred_count += len(new_jobs) - batch_start
                 print(f"    ⚠ {e} -- stopping scoring for this run, "
                       f"{len(new_jobs) - batch_start} vacancy(ies) deferred to next run")
                 break
@@ -138,7 +141,9 @@ def main():
 
     print("\n[ 4/4 ] Rendering site...")
     generated_at = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
-    html = render.generate_html(list(jobs_db.values()), stats, generated_at, config.TITLE_KEYWORDS)
+    html = render.generate_html(
+        list(jobs_db.values()), stats, generated_at, config.TITLE_KEYWORDS, deferred_count
+    )
     render.write_site(html)
 
     good = len([
@@ -150,7 +155,7 @@ def main():
           f"{len(jobs_db)} total tracked, {good} scored 7+")
     print(f"{'=' * 55}\n")
 
-    status.publish("idle", found=len(new_jobs), scored=len(new_jobs))
+    status.publish("idle", found=len(new_jobs), scored=len(new_jobs), deferred=deferred_count)
 
 
 if __name__ == "__main__":

@@ -140,7 +140,11 @@ def _status_panel(source_stats: list[dict]) -> str:
 
 
 def generate_html(
-    all_jobs: list[dict], source_stats: list[dict], generated_at: str, keywords: list[str]
+    all_jobs: list[dict],
+    source_stats: list[dict],
+    generated_at: str,
+    keywords: list[str],
+    deferred: int = 0,
 ) -> str:
     cutoff = datetime.now(timezone.utc) - timedelta(days=DISPLAY_DAYS)
     visible = []
@@ -322,6 +326,7 @@ def generate_html(
   <div class="stat"><div class="stat-num">{total}</div><div class="stat-label">Вакансій (за {DISPLAY_DAYS} дн.)</div></div>
   <div class="stat"><div class="stat-num" style="color:#22c55e">{good}</div><div class="stat-label">Скор 7+</div></div>
   <div class="stat"><div class="stat-num">{len(source_stats)}</div><div class="stat-label">Джерел перевірено</div></div>
+  {f'''<div class="stat"><div class="stat-num" style="color:#f59e0b">{deferred}</div><div class="stat-label">У черзі на оцінку (наступні запуски)</div></div>''' if deferred else ""}
 </div>
 
 <div class="keywords-panel">
