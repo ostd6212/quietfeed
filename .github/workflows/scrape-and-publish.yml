@@ -33,12 +33,18 @@ jobs:
         run: python run.py
 
       - name: Commit updated job data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update job data [skip ci]"
-          file_pattern: "data/jobs.json"
-          commit_user_name: "job-radar-bot"
-          commit_user_email: "job-radar-bot@users.noreply.github.com"
+        run: |
+          git config user.name "job-radar-bot"
+          git config user.email "job-radar-bot@users.noreply.github.com"
+          git add data/jobs.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update job data [skip ci]"
+          if ! git push origin HEAD:main; then
+            echo "::warning::Push rejected, probably a concurrent run already pushed jobs.json -- this run's new scores will be redone next scheduled run"
+          fi
 
       - uses: actions/upload-pages-artifact@v4
         with:
