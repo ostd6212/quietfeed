@@ -684,6 +684,25 @@ function jobRadarGetToken(forcePrompt) {{
     if (e.key === 'Enter') {{ e.preventDefault(); addBtn.click(); }}
   }});
 
+  // The embedded #keywords-data snapshot is only as fresh as the last
+  // pipeline run -- a save from this very panel writes straight to GitHub
+  // via the Contents API, bypassing the pipeline entirely, so the page can
+  // go stale the moment you save and then reload. Re-fetch the real file
+  // right after the instant render below and swap it in if it differs.
+  function loadLive() {{
+    var rawUrl = 'https://raw.githubusercontent.com/' + OWNER + '/' + REPO + '/' + BRANCH + '/' + PATH;
+    fetch(rawUrl + '?t=' + Date.now(), {{cache: 'no-store'}})
+      .then(function (r) {{ return r.ok ? r.json() : null; }})
+      .then(function (live) {{
+        if (Array.isArray(live) && !isDirty()) {{
+          original = live;
+          current = live.slice();
+          render();
+        }}
+      }})
+      .catch(function () {{}}); // embedded snapshot already rendered -- fine to stay silent
+  }}
+
   tokenBtn.addEventListener('click', function () {{ jobRadarGetToken(true); }});
 
   function b64EncodeUtf8(str) {{
@@ -736,6 +755,7 @@ function jobRadarGetToken(forcePrompt) {{
   }});
 
   render();
+  loadLive();
 }})();
 </script>
 </body>
