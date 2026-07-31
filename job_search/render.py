@@ -29,6 +29,7 @@ STATUS_URL = "https://raw.githubusercontent.com/ostd6212/quietfeed/main/data/sta
 GH_OWNER = "ostd6212"
 GH_REPO = "quietfeed"
 GH_KEYWORDS_PATH = "data/keywords.json"
+GH_JOBS_PATH = "data/jobs.json"
 GH_BRANCH = "main"
 GH_WORKFLOW_FILE = "scrape-and-publish.yml"
 
@@ -107,7 +108,10 @@ def _job_card(job: dict) -> str:
                 <ul>{cons_html}</ul>
             </div>
         </div>
-        <a href="{job['url']}" target="_blank" rel="noopener" class="apply-btn">Переглянути вакансію →</a>
+        <div class="card-actions">
+            <a href="{job['url']}" target="_blank" rel="noopener" class="apply-btn">Переглянути вакансію →</a>
+            <button class="hide-btn" data-url="{job['url']}">Приховати</button>
+        </div>
         {description_html}
     </div>"""
 
@@ -141,6 +145,8 @@ def generate_html(
     cutoff = datetime.now(timezone.utc) - timedelta(days=DISPLAY_DAYS)
     visible = []
     for job in all_jobs:
+        if job.get("hidden"):
+            continue
         try:
             seen_at = datetime.fromisoformat(job.get("first_seen", ""))
         except ValueError:
@@ -258,6 +264,10 @@ def generate_html(
 
   .apply-btn {{ display: inline-block; background: #38bdf8; color: #0f172a; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px; text-decoration: none; transition: background 0.2s; }}
   .apply-btn:hover {{ background: #7dd3fc; }}
+  .card-actions {{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
+  .hide-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 7px; cursor: pointer; font-family: inherit; }}
+  .hide-btn:hover {{ border-color: #ef4444; color: #ef4444; }}
+  .hide-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
   .description {{ margin-top: 14px; border-top: 1px solid #334155; padding-top: 14px; }}
   .description summary {{ font-size: 13px; color: #64748b; cursor: pointer; user-select: none; }}
   .description summary:hover {{ color: #94a3b8; }}
@@ -548,6 +558,69 @@ function jobRadarGetToken(forcePrompt) {{
   // saved (pollRunStatus sends it when present), the limit jumps to 5000/hr
   // and this interval stops mattering.
   setInterval(pollRunStatus, 90000);
+}})();
+
+(function () {{
+  var OWNER = '{GH_OWNER}';
+  var REPO = '{GH_REPO}';
+  var BRANCH = '{GH_BRANCH}';
+  var PATH = '{GH_JOBS_PATH}';
+
+  function b64EncodeUtf8(str) {{
+    return btoa(unescape(encodeURIComponent(str)));
+  }}
+  function b64DecodeUtf8(str) {{
+    return decodeURIComponent(escape(atob(str.replace(/\\n/g, ''))));
+  }}
+
+  document.querySelectorAll('.hide-btn').forEach(function (btn) {{
+    btn.addEventListener('click', function () {{
+      var token = jobRadarGetToken(false);
+      if (!token) {{ alert('Токен не задано.'); return; }}
+      var url = btn.getAttribute('data-url');
+      var card = btn.closest('.card');
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Приховую…';
+
+      var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + PATH;
+
+      fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
+        .then(function (r) {{
+          if (!r.ok) throw new Error('Не вдалось прочитати jobs.json (' + r.status + ')');
+          return r.json();
+        }})
+        .then(function (fileInfo) {{
+          var jobs = JSON.parse(b64DecodeUtf8(fileInfo.content));
+          if (!jobs[url]) throw new Error('Вакансію не знайдено у файлі');
+          jobs[url].hidden = true;
+          var content = b64EncodeUtf8(JSON.stringify(jobs, null, 2));
+          return fetch(apiUrl, {{
+            method: 'PUT',
+            headers: {{
+              Authorization: 'token ' + token,
+              Accept: 'application/vnd.github+json',
+              'Content-Type': 'application/json',
+            }},
+            body: JSON.stringify({{
+              message: 'chore: hide vacancy via site UI',
+              content: content,
+              sha: fileInfo.sha,
+              branch: BRANCH,
+            }}),
+          }});
+        }})
+        .then(function (r) {{
+          if (!r.ok) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
+          card.style.display = 'none';
+        }})
+        .catch(function (err) {{
+          btn.disabled = false;
+          btn.textContent = originalText;
+          alert('Помилка приховування: ' + err.message);
+        }});
+    }});
+  }});
 }})();
 
 (function () {{
