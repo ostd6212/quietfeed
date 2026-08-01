@@ -584,86 +584,33 @@ function jobRadarGetToken(forcePrompt) {{
   var OWNER = '{GH_OWNER}';
   var REPO = '{GH_REPO}';
   var BRANCH = '{GH_BRANCH}';
-  var PATH = '{GH_JOBS_PATH}';
-
-  function b64EncodeUtf8(str) {{
-    return btoa(unescape(encodeURIComponent(str)));
-  }}
-  function b64DecodeUtf8(str) {{
-    return decodeURIComponent(escape(atob(str.replace(/\\n/g, ''))));
-  }}
-
-  document.querySelectorAll('.hide-btn').forEach(function (btn) {{
-    btn.addEventListener('click', function () {{
-      var token = jobRadarGetToken(false);
-      if (!token) {{ alert('Токен не задано.'); return; }}
-      var url = btn.getAttribute('data-url');
-      var card = btn.closest('.card');
-      var originalText = btn.textContent;
-      btn.disabled = true;
-      btn.textContent = 'Приховую…';
-
-      var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + PATH;
-
-      fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
-        .then(function (r) {{
-          if (!r.ok) throw new Error('Не вдалось прочитати jobs.json (' + r.status + ')');
-          return r.json();
-        }})
-        .then(function (fileInfo) {{
-          var jobs = JSON.parse(b64DecodeUtf8(fileInfo.content));
-          if (!jobs[url]) throw new Error('Вакансію не знайдено у файлі');
-          jobs[url].hidden = true;
-          var content = b64EncodeUtf8(JSON.stringify(jobs, null, 2));
-          return fetch(apiUrl, {{
-            method: 'PUT',
-            headers: {{
-              Authorization: 'token ' + token,
-              Accept: 'application/vnd.github+json',
-              'Content-Type': 'application/json',
-            }},
-            body: JSON.stringify({{
-              message: 'chore: hide vacancy via site UI',
-              content: content,
-              sha: fileInfo.sha,
-              branch: BRANCH,
-            }}),
-          }});
-        }})
-        .then(function (r) {{
-          if (!r.ok) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
-          card.style.display = 'none';
-        }})
-        .catch(function (err) {{
-          btn.disabled = false;
-          btn.textContent = originalText;
-          alert('Помилка приховування: ' + err.message);
-        }});
-    }});
-  }});
-}})();
-
-(function () {{
-  var OWNER = '{GH_OWNER}';
-  var REPO = '{GH_REPO}';
-  var BRANCH = '{GH_BRANCH}';
   var EXCLUDE_PATH = '{GH_EXCLUDE_PATH}';
   var JOBS_PATH = '{GH_JOBS_PATH}';
 
   function b64EncodeUtf8(str) {{
     return btoa(unescape(encodeURIComponent(str)));
   }}
-  function b64DecodeUtf8(str) {{
-    return decodeURIComponent(escape(atob(str.replace(/\\n/g, ''))));
-  }}
 
-  function getFile(path, token) {{
+  // The Contents API omits `content` once a file crosses ~1MB (jobs.json
+  // did, past ~1000 vacancies) -- fetch the real body from the raw CDN
+  // instead and use the Contents API call only for the `sha` a PUT needs.
+  function getFileParsed(path, token) {{
     var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path;
-    return fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
-      .then(function (r) {{
-        if (!r.ok) throw new Error('Не вдалось прочитати ' + path + ' (' + r.status + ')');
-        return r.json();
-      }});
+    var rawUrl = 'https://raw.githubusercontent.com/' + OWNER + '/' + REPO + '/' + BRANCH + '/' + path;
+    return Promise.all([
+      fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
+        .then(function (r) {{
+          if (!r.ok) throw new Error('Не вдалось прочитати ' + path + ' (' + r.status + ')');
+          return r.json();
+        }}),
+      fetch(rawUrl + '?t=' + Date.now(), {{cache: 'no-store'}})
+        .then(function (r) {{
+          if (!r.ok) throw new Error('Не вдалось завантажити вміст ' + path + ' (' + r.status + ')');
+          return r.json();
+        }}),
+    ]).then(function (results) {{
+      return {{sha: results[0].sha, data: results[1]}};
+    }});
   }}
 
   function putFile(path, token, sha, dataObj, message) {{
@@ -681,6 +628,34 @@ function jobRadarGetToken(forcePrompt) {{
       if (!r.ok) return r.json().then(function (e) {{ throw new Error(e.message || ('HTTP ' + r.status)); }});
     }});
   }}
+
+  document.querySelectorAll('.hide-btn').forEach(function (btn) {{
+    btn.addEventListener('click', function () {{
+      var token = jobRadarGetToken(false);
+      if (!token) {{ alert('Токен не задано.'); return; }}
+      var url = btn.getAttribute('data-url');
+      var card = btn.closest('.card');
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Приховую…';
+
+      getFileParsed(JOBS_PATH, token)
+        .then(function (file) {{
+          var jobs = file.data;
+          if (!jobs[url]) throw new Error('Вакансію не знайдено у файлі');
+          jobs[url].hidden = true;
+          return putFile(JOBS_PATH, token, file.sha, jobs, 'chore: hide vacancy via site UI');
+        }})
+        .then(function () {{
+          card.style.display = 'none';
+        }})
+        .catch(function (err) {{
+          btn.disabled = false;
+          btn.textContent = originalText;
+          alert('Помилка приховування: ' + err.message);
+        }});
+    }});
+  }});
 
   document.querySelectorAll('.block-btn').forEach(function (btn) {{
     btn.addEventListener('click', function () {{
@@ -702,18 +677,18 @@ function jobRadarGetToken(forcePrompt) {{
       btn.disabled = true;
       btn.textContent = 'Блокую…';
 
-      getFile(EXCLUDE_PATH, token)
-        .then(function (fileInfo) {{
-          var exclusions = JSON.parse(b64DecodeUtf8(fileInfo.content));
+      getFileParsed(EXCLUDE_PATH, token)
+        .then(function (file) {{
+          var exclusions = file.data;
           if (exclusions.indexOf(phrase) === -1) exclusions.push(phrase);
-          return putFile(EXCLUDE_PATH, token, fileInfo.sha, exclusions, 'chore: block vacancy pattern via site UI');
+          return putFile(EXCLUDE_PATH, token, file.sha, exclusions, 'chore: block vacancy pattern via site UI');
         }})
-        .then(function () {{ return getFile(JOBS_PATH, token); }})
-        .then(function (fileInfo) {{
-          var jobs = JSON.parse(b64DecodeUtf8(fileInfo.content));
+        .then(function () {{ return getFileParsed(JOBS_PATH, token); }})
+        .then(function (file) {{
+          var jobs = file.data;
           if (jobs[url]) {{
             jobs[url].hidden = true;
-            return putFile(JOBS_PATH, token, fileInfo.sha, jobs, 'chore: hide vacancy via site UI');
+            return putFile(JOBS_PATH, token, file.sha, jobs, 'chore: hide vacancy via site UI');
           }}
         }})
         .then(function () {{
