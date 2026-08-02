@@ -22236,5 +22236,49 @@
       "Неможливість роботи на дому"
     ],
     "first_seen": "2026-08-01T20:41:20.237221+00:00"
+  },
+  "https://himalayas.app/companies/lavendo/jobs/solutions-engineer-ai-privacy-platform-dc-6116279399": {
+    "title": "Solutions Engineer, AI Privacy Platform (DC)",
+    "url": "https://himalayas.app/companies/lavendo/jobs/solutions-engineer-ai-privacy-platform-dc-6116279399",
+    "source": "Himalayas",
+    "description": "Lavendo partners with startups and high‑growth companies to help them hire top‑tier sales, GTM, and technical talent. This role is with one of our clients; we’ll share full details about the company and interview process as we get to know you and confirm mutual fit. Join a fast-growing SaaS company in the data privacy space as the technical partner to sales. You’ll help Fortune 500 customers understand how an AI-powered privacy platform fits their architecture, run POCs, and unblock technical questions that stand between “interest” and “signed deal.” About the Company Our client builds an AI-powered privacy governance platform used by large enterprises across retail, financial services, healthcare, and telecom. The product automates consent management, data mapping, DSARs, PII discovery, and vendor risk workflows so teams can scale compliance without scaling headcount. What You’ll Do Run the technical side of the sales process: discovery, solution outline, tailored demos, and POCs Deliver live demos and technical presentations to both engineers and executives Configure and troubleshoot demo/POC environments using REST APIs, SQL, and a major cloud platform (AWS or Azure) Do light scripting or coding (JavaScript, Python, SQL, or similar) to wire up integrations and customize demos Define POC success criteria, keep stakeholders aligned, and drive to technical sign-off Create simple diagrams and documentation that explain how the platform fits into a customer’s stack Feed what yo",
+    "score": 4,
+    "summary": "Компанія Lavendo працює з українськими компаніями, але саме ця вакансія розташована в місті DC, що вказує на закордонне місце роботи. Кандидат підходить за типом ролі, але не підходить за типом компанії та місцем роботи.",
+    "role_type": "Solutions Engineer",
+    "company_type": "Product company, B2B SaaS",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Тип ролі підходить кандидату",
+      "Компанія працює в галузі даних та приватності"
+    ],
+    "cons": [
+      "Місце роботи не в Україні",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-08-02T05:18:19.345166+00:00"
+  },
+  "https://himalayas.app/companies/blackbox-strategies/jobs/hubspot-implementation-consultant-contract-1650140913": {
+    "title": "HubSpot Implementation Consultant (Contract)",
+    "url": "https://himalayas.app/companies/blackbox-strategies/jobs/hubspot-implementation-consultant-contract-1650140913",
+    "source": "Himalayas",
+    "description": "HubSpot Implementation Consultant (Contract) Overview We’re seeking a senior HubSpot contractor to lead a one-time, end-to-end implementation of HubSpot across CRM, Marketing, Sales, and Service Hubs. This role owns platform architecture, configuration, automation, and handoff to a production-ready state. You will work closely with internal stakeholders and the client to design and deploy a scalable, well-governed HubSpot instance aligned to real GTM workflows. Engagement Details Type: One-time contract Duration: Fixed-scope implementation Focus: Architecture, build, QA, and handoff (no ongoing admin required) Scope of Work Architect HubSpot across all Hubs (CRM, Marketing, Sales, Service, Ops) Design data model, lifecycle stages, pipelines, and core objects Configure workflows, automation, lead routing, and scoring Implement and validate integrations with the client’s existing stack Support data migration, cleanup, and QA Build dashboards and reporting for operational and executive visibility Document system architecture and implementation decisions Deliver clean handoff of a production-ready HubSpot environment Deliverables Fully configured HubSpot deployment Documented CRM architecture (objects, pipelines, lifecycle stages) Live automations, workflows, and routing logic Integrated external tools and validated data syncs Executive and operator dashboards Final QA, documentation, and handoff Requirements Must Have Proven experience leading end-to-end HubSpot implementations ",
+    "score": 6,
+    "summary": "Компанія Blackbox Strategies працює з українськими клієнтами, але саме ця вакансія є контрактом. Кандидат підходить за типом ролі та типом компанії, але не підходить за місцем роботи та зарплатою.",
+    "role_type": "Implementation Consultant",
+    "company_type": "Product company, B2B SaaS",
+    "salary": "Не вказана",
+    "remote": "Гібрид",
+    "region": "Україна",
+    "pros": [
+      "Тип ролі підходить кандидату",
+      "Компанія працює з українськими клієнтами"
+    ],
+    "cons": [
+      "Місце роботи не фул-ремоте",
+      "Зарплата не вказана"
+    ],
+    "first_seen": "2026-08-02T05:18:19.345166+00:00"
   }
 }
