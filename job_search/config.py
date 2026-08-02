@@ -24,7 +24,13 @@ BATCH_SIZE = 5
 # here means any run finishes in bounded time; jobs beyond the cap simply
 # aren't in jobs_db yet, so they're picked up as "new" again on the next
 # scheduled run instead of being lost.
-MAX_NEW_JOBS_PER_RUN = 150
+#
+# Raised from 150 (2026-08-02) when the schedule moved from every 2h to a
+# handful of overnight runs -- fewer total runs per day means each one needs
+# more headroom to actually clear the backlog before morning. The 8B model
+# (see GROQ_MODEL) scored 149 jobs in ~5min in practice, so 300 has real
+# margin under the 35min job timeout even with some rate-limit backoff.
+MAX_NEW_JOBS_PER_RUN = 300
 
 # These sources are Ukrainian job boards by construction -- every listing on
 # them targets Ukraine, so region is known from the source itself rather than
