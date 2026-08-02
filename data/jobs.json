@@ -22324,5 +22324,46 @@
       "Не відповідає вимогам кандидата щодо роботи в офісі"
     ],
     "first_seen": "2026-08-02T08:04:40.277613+00:00"
+  },
+  "https://jobs.dou.ua/companies/precoro/vacancies/356093/": {
+    "title": "Implementation Consultant (В2В, SaaS)",
+    "url": "https://jobs.dou.ua/companies/precoro/vacancies/356093/",
+    "source": "DOU",
+    "description": "Implementation Consultant (В2В, SaaS) в Precoro Inc., Київ, за кордоном, віддалено | DOU × Вхід і реєстрація Вакансії Перша робота Тренди Компанії Рейтинг Топ-50 Відгуки Додати компанію Precoro Inc. Всі вакансії компанії Precoro is an innovative AI-powered procurement centralization & automation platform, helping companies eliminate manual tasks and control purchasing activities across all subsidiaries. With over 1,000 customers in more than 80 countries, Precoro has proven its ability to create real business value and deliver substantial cost savings. Всі вакансії / Account Manager / Київ 13 липня 2026 Implementation Consultant (В2В, SaaS) Київ, за кордоном, віддалено Precoro is an innovative AI-powered procurement centralization & automation В2В SaaS platform, helping companies eliminate manual tasks and control purchasing activities across all subsidiaries. With over 1,000 customers in more than 80 countries, Precoro has proven its ability to create real business value and deliver substantial cost savings. As we scale, we’re looking for a Implementation Consultant You will own the most critical stage of the customer lifecycle: the first 90 days. You will be directly responsible for leading the migration, system configuration, and process design to ensure a timely and successful Go-Live for our clients. 🌟 Responsibilities Lead Client Implementation Projects: Own the Project Lifecycle: Act as the primary Project Manager for the implementation phase, taking clients from point-of-sale to a fully operational, live product. Scope & Design Workflows: Conduct deep-dive discovery sessions to map out the client’s current procurement/financial processes and translate them into custom, optimized Precoro workflows. Data Migration Management: Manage timelines, deliverables, and technical alignment, helping clients map and migrate their existing data (vendor lists, budgets, item catalogs) into Precoro. Drive Go-Live Accountability: Keep both internal teams and client-side stakeholders on track with strict deadlines, managing risks and unblocking technical dependencies. Enablement & Change Management: Strategic Product Walkthroughs: Deliver high-impact interactive workshops and onboarding sprints for key client stakeholders, enabling them to operate the platform independently. Build Knowledge Assets: Create tactical, highly structured enablement resources (deployment playbooks, configuration guides, short video воркфлоус) to standardize the implementation process. Feedback Loop: Partner with Sales, Product, and QA teams to escalate technical blockers and translate client feedback into actionable product improvements. 🎯 What You Bring (Requirements) Must-Haves: Advanced English proficiency (both written and spoken) for daily complex business negotiations. Strong Project Management & Scoping skills: Proven ability to manage multiple concurrent projects, control deadlines, and mitigate scope creep. Technical & Analytical Aptitude: Experience working with Excel/Google Sheets on a high level to structure, validate, and map client metrics and data. Change Management Mindset: The ability to handle user resistance, simplify complex system logic, and guide corporate clients through process transformations. Problem-Solving Ownership: A natural curiosity to reverse-engineer technical issues and coordinate with engineering teams when complex setups (API/Integrations) require attention. Nice-to-Haves: Experience running software implementation or onboarding for clients in the US, UK, or Europe. Solid understanding of core business operations (specifically finance, accounting, or procurement ). Familiarity with B2B SaaS ecosystem, ERP systems (NetSuite, QuickBooks, Xero), or complex CRM platforms. Academic background in economics, finance, management, or related technical fields. 📈 What Success Looks Like: In 3 Months: Deeply master Precoro’s platform logic, configuration options, and current implementation framework. Establish solid bridges with intern",
+    "score": 6,
+    "summary": "Вакансія підходить кандидату через наявність ролі Implementation Consultant, компанії типу B2B SaaS, але зарплата не вказана, а також відсутність обов'язкової роботи в офісі.",
+    "role_type": "Implementation Consultant",
+    "company_type": "B2B SaaS",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Україна",
+    "pros": [
+      "Implementation Consultant",
+      "Б2Б SaaS"
+    ],
+    "cons": [
+      "Не вказана зарплата",
+      "Немає інформації про офіс"
+    ],
+    "first_seen": "2026-08-02T11:12:11.744970+00:00"
+  },
+  "https://remoteOK.com/remote-jobs/remote-phone-support-specialist-arabic-revolut-1135905": {
+    "title": "Phone Support Specialist Arabic",
+    "url": "https://remoteOK.com/remote-jobs/remote-phone-support-specialist-arabic-revolut-1135905",
+    "source": "RemoteOK",
+    "description": "About the role Our Customer Support team is the first point of contact for millions around the world, delivering fast, thoughtful help when it matters most. They're the voice of our customers, working closely with product teams to improve experiences and keep wow-level service at the heart of Revolut. Weâre looking for an Arabic-speaking Support Specialist to take ownership of customer issues, think deeper to find solutions, and contribute to the way we support our customers every day. To support our 24/7 coverage, this role may include night and weekend shifts, which are fully compensated. Up to shape what's next in finance? Let's get in touch. What you'll be doing Providing customers with a seamless experience to ensure confidence in using our features Delivering outstanding customer support over the phone Representing Revolut by ensuring professional and consistent communication with customers Collaborating with international teams to resolve customer issues What you'll need A bachelor's degree (must be able to provide at least a provisional certificate) 18+ months of customer service experience Fluency in English (C1+ level) Fluency in Arabic (native level) Excellent verbal and written communication skills The ability to explain complex issues in an easy and understandable manner Great numeracy, analytical, and IT skills Impeccable attention to detail To be driven and self-motivated with a highly flexible team player attitude An independent problem-solving approach Buil",
+    "score": 1,
+    "summary": "Вакансія не підходить кандидату через відсутність технічного досвіду, необхідності спілкування на іноземній мові, відсутності ролі типу Technical Account Manager чи Solution Consultant.",
+    "role_type": "Phone Support Specialist",
+    "company_type": "Фінтех",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Немає технічного досвіду",
+      "Немає ролі типу Technical Account Manager чи Solution Consultant"
+    ],
+    "first_seen": "2026-08-02T11:12:11.744970+00:00"
   }
 }
