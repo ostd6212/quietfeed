@@ -22647,5 +22647,63 @@
       "Недостатньо інформації про віддаленість роботи"
     ],
     "first_seen": "2026-08-02T12:57:03.059690+00:00"
+  },
+  "https://jobicy.com/jobs/150108-customer-care-scheduler-operations": {
+    "title": "Customer Care Scheduler Operations",
+    "url": "https://jobicy.com/jobs/150108-customer-care-scheduler-operations",
+    "source": "Jobicy",
+    "description": "We have many opportunities available on our other career site pages. Click here to link to our careers page!Signet Jewelers is the world's largest retailer of diamond jewelry, operating more than 2,800 stores worldwide under the iconic brands: Kay Jewelers, Zales, Jared, H.Samuel, Ernest Jones, Peoples, Banter by Piercing Pagoda, Rocksbox, JamesAllen.com and Diamonds Direct.…",
+    "score": 1,
+    "summary": "Signet Jewelers не підходить кандидату через відсутність технічного спрямування та необхідності перебування в офісі.",
+    "role_type": "Customer Care Scheduler Operations",
+    "company_type": "Роздрібна торгівля",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Немає технічного спрямування",
+      "Офісна робота"
+    ],
+    "first_seen": "2026-08-02T16:46:37.544763+00:00"
+  },
+  "https://jobicy.com/jobs/150101-senior-customer-support-engineer": {
+    "title": "Senior Customer Support Engineer",
+    "url": "https://jobicy.com/jobs/150101-senior-customer-support-engineer",
+    "source": "Jobicy",
+    "description": "About Vercel: Vercel is the agentic infrastructure company. We free people and agents to ship what’s next. For more than a decade, Vercel has shaped how the web is built. As the team behind Next.js, v0, and AI SDK, we create products that help builders move from idea to production with speed, security, and exceptional…",
+    "score": 8,
+    "summary": "Вакансія Senior Customer Support Engineer у Vercel підходить кандидату через технічний напрямок та можливість роботи на відстані.",
+    "role_type": "Senior Customer Support Engineer",
+    "company_type": "Технологічна компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Технічний напрямок",
+      "Фул-ремотна робота"
+    ],
+    "cons": [],
+    "first_seen": "2026-08-02T16:46:37.544763+00:00"
+  },
+  "https://jobicy.com/jobs/150100-strategic-account-manager-customer-success": {
+    "title": "Strategic Account Manager - Customer Success",
+    "url": "https://jobicy.com/jobs/150100-strategic-account-manager-customer-success",
+    "source": "Jobicy",
+    "description": "At Feedzai, we're building a world of safer money. A world where financial institutions move faster than criminals. Where the payments that fund real lives through salaries, savings, and businesses are protected in real time. We use trusted AI to detect and prevent financial crime, fraud, and money laundering at scale: the world's top banks,…",
+    "score": 9,
+    "summary": "Вакансія Strategic Account Manager - Customer Success у Feedzai підходить кандидату через технічний напрямок, можливість роботи на відстані та стабільну компанію.",
+    "role_type": "Strategic Account Manager - Customer Success",
+    "company_type": "Фінтех-компанія",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Технічний напрямок",
+      "Фул-ремотна робота",
+      "Стабільна компанія"
+    ],
+    "cons": [],
+    "first_seen": "2026-08-02T16:46:37.544763+00:00"
   }
 }
