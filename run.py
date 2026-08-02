@@ -101,6 +101,11 @@ def main():
         if before != len(new_jobs):
             print(f"  Dropped {before - len(new_jobs)} non-remote listing(s) after verification")
 
+        before = len(new_jobs)
+        new_jobs = [j for j in new_jobs if not config.description_excluded(j["description"])]
+        if before != len(new_jobs):
+            print(f"  Dropped {before - len(new_jobs)} listing(s) mentioning live-chat/call support")
+
     if new_jobs:
         print(f"\n[ 3/4 ] Scoring {len(new_jobs)} vacancies with AI "
               f"(Groq, batch of {config.BATCH_SIZE})...")

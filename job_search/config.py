@@ -70,6 +70,23 @@ RATE_LIMITED_HOURS_UTC = {0, 6, 12, 18}
 # structured field/URL param inside its own fetch_X() function.
 REMOTE_VERIFY_SOURCES = {"Work.ua"}
 
+# Support-channel phrases that make a role irrelevant regardless of title
+# match. These don't reliably show up in the title, only in the body, so
+# run.py checks them against the fetched description (after the HTML-scrape
+# step, before spending a Groq call) rather than in title_matches().
+DESCRIPTION_EXCLUDE_PHRASES = [
+    "live chat support", "live chat agent", "live chat specialist",
+    "chat support agent", "chat support representative",
+    "phone support", "call center", "call centre",
+    "inbound calls", "outbound calls", "answering calls", "answering phones",
+    "phone calls with customers", "voice support",
+]
+
+
+def description_excluded(text: str) -> bool:
+    t = (text or "").lower()
+    return any(p in t for p in DESCRIPTION_EXCLUDE_PHRASES)
+
 
 def has_remote_signal(text: str) -> bool:
     t = (text or "").lower()
