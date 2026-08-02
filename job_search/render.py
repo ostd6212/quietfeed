@@ -562,9 +562,46 @@ def generate_html(
     setAllCheckboxes(true);
   }});
 
+  // Same staleness problem as the Keywords panel: Hide/Block/Applied write
+  // straight to data/jobs.json via the GitHub API, bypassing the pipeline,
+  // so the card list baked into this page at the last render can disagree
+  // with the real file the moment one of those buttons is used elsewhere
+  // (another tab, another day) and this page is then reloaded. Reconcile
+  // against the live file once on load: drop newly-hidden cards entirely,
+  // sync the Applied button state for the rest.
+  function syncLiveJobState() {{
+    jobRadarFetchFresh('{GH_JOBS_PATH}')
+      .then(function (liveJobs) {{
+        if (!liveJobs) return;
+        cards = cards.filter(function (card) {{
+          var url = card.getAttribute('data-url');
+          var liveJob = liveJobs[url];
+          if (!liveJob) return true;
+          if (liveJob.hidden) {{
+            card.remove();
+            delete jobsByUrl[url];
+            return false;
+          }}
+          if (jobsByUrl[url]) {{
+            jobsByUrl[url].applied = !!liveJob.applied;
+            var btn = card.querySelector('.applied-btn');
+            if (btn) {{
+              btn.classList.toggle('applied-btn-active', !!liveJob.applied);
+              btn.textContent = liveJob.applied ? '✓ Подався' : '📩 Подався';
+            }}
+          }}
+          return true;
+        }});
+        updateAppliedCount();
+        applyFilters();
+      }})
+      .catch(function () {{}}); // page still works off the embedded snapshot if this fails
+  }}
+
   updateSourceSummary();
   updateAppliedCount();
   applyFilters();
+  syncLiveJobState();
 }})();
 
 // Shared by the run-status panel and the Keywords panel below -- both need
@@ -583,6 +620,29 @@ function jobRadarGetToken(forcePrompt) {{
   );
   if (t) {{ t = t.trim(); localStorage.setItem(TOKEN_KEY, t); }}
   return t || null;
+}}
+
+// raw.githubusercontent.com sits behind a CDN that can serve a stale copy
+// of a file for a few minutes after a push, even with a cache-busting query
+// string -- confirmed live (2026-08-02): a keywords.json edit and a hide
+// via the site both failed to show up on reload despite that. A git blob
+// fetched by its exact sha can't go stale (a sha is content-addressed, so
+// that sha's content never changes) -- so get a fresh sha from the
+// Contents API metadata call first, then fetch the blob it points to.
+// Works for files of any size, unlike the Contents API's own `content`
+// field, which it omits past ~1MB.
+function jobRadarFetchFresh(path) {{
+  var metaUrl = 'https://api.github.com/repos/{GH_OWNER}/{GH_REPO}/contents/' + path;
+  return fetch(metaUrl, {{headers: {{Accept: 'application/vnd.github+json'}}, cache: 'no-store'}})
+    .then(function (r) {{ if (!r.ok) throw new Error('metadata ' + r.status); return r.json(); }})
+    .then(function (meta) {{
+      var blobUrl = 'https://api.github.com/repos/{GH_OWNER}/{GH_REPO}/git/blobs/' + meta.sha;
+      return fetch(blobUrl, {{headers: {{Accept: 'application/vnd.github+json'}}}});
+    }})
+    .then(function (r) {{ if (!r.ok) throw new Error('blob ' + r.status); return r.json(); }})
+    .then(function (blob) {{
+      return JSON.parse(decodeURIComponent(escape(atob(blob.content.replace(/\\n/g, '')))));
+    }});
 }}
 
 (function () {{
@@ -731,25 +791,31 @@ function jobRadarGetToken(forcePrompt) {{
   }}
 
   // The Contents API omits `content` once a file crosses ~1MB (jobs.json
-  // did, past ~1000 vacancies) -- fetch the real body from the raw CDN
-  // instead and use the Contents API call only for the `sha` a PUT needs.
+  // did, past ~1000 vacancies), and raw.githubusercontent.com can serve a
+  // stale cached copy for a few minutes after a push regardless of a
+  // cache-busting query string (confirmed live 2026-08-02). Fetch the sha
+  // from the Contents API metadata, then the blob it points to by that
+  // exact sha -- content-addressed, so that fetch can't be stale, and the
+  // blobs endpoint has no ~1MB content cutoff either.
   function getFileParsed(path, token) {{
     var apiUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path;
-    var rawUrl = 'https://raw.githubusercontent.com/' + OWNER + '/' + REPO + '/' + BRANCH + '/' + path;
-    return Promise.all([
-      fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
-        .then(function (r) {{
-          if (!r.ok) throw new Error('Не вдалось прочитати ' + path + ' (' + r.status + ')');
-          return r.json();
-        }}),
-      fetch(rawUrl + '?t=' + Date.now(), {{cache: 'no-store'}})
-        .then(function (r) {{
-          if (!r.ok) throw new Error('Не вдалось завантажити вміст ' + path + ' (' + r.status + ')');
-          return r.json();
-        }}),
-    ]).then(function (results) {{
-      return {{sha: results[0].sha, data: results[1]}};
-    }});
+    return fetch(apiUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
+      .then(function (r) {{
+        if (!r.ok) throw new Error('Не вдалось прочитати ' + path + ' (' + r.status + ')');
+        return r.json();
+      }})
+      .then(function (meta) {{
+        var blobUrl = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/git/blobs/' + meta.sha;
+        return fetch(blobUrl, {{headers: {{Authorization: 'token ' + token, Accept: 'application/vnd.github+json'}}}})
+          .then(function (r) {{
+            if (!r.ok) throw new Error('Не вдалось завантажити вміст ' + path + ' (' + r.status + ')');
+            return r.json();
+          }})
+          .then(function (blob) {{
+            var text = decodeURIComponent(escape(atob(blob.content.replace(/\\n/g, ''))));
+            return {{sha: meta.sha, data: JSON.parse(text)}};
+          }});
+      }});
   }}
 
   function putFile(path, token, sha, dataObj, message) {{
@@ -937,9 +1003,7 @@ function jobRadarGetToken(forcePrompt) {{
   // go stale the moment you save and then reload. Re-fetch the real file
   // right after the instant render below and swap it in if it differs.
   function loadLive() {{
-    var rawUrl = 'https://raw.githubusercontent.com/' + OWNER + '/' + REPO + '/' + BRANCH + '/' + PATH;
-    fetch(rawUrl + '?t=' + Date.now(), {{cache: 'no-store'}})
-      .then(function (r) {{ return r.ok ? r.json() : null; }})
+    jobRadarFetchFresh(PATH)
       .then(function (live) {{
         if (Array.isArray(live) && !isDirty()) {{
           original = live;
