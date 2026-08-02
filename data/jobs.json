@@ -22280,5 +22280,49 @@
       "Зарплата не вказана"
     ],
     "first_seen": "2026-08-02T05:18:19.345166+00:00"
+  },
+  "https://www.arbeitnow.com/jobs/companies/buchhaltungsbutler/customer-success-manager-fintech-fibu-datev-erfahrung-100-remote-berlin-361354": {
+    "title": "Customer Success Manager (m/w/d) / FinTech - FiBu / Datev Erfahrung - 100% remote",
+    "url": "https://www.arbeitnow.com/jobs/companies/buchhaltungsbutler/customer-success-manager-fintech-fibu-datev-erfahrung-100-remote-berlin-361354",
+    "source": "Arbeitnow",
+    "description": "Bei BuchhaltungsButler glauben wir an die Förderung von Talenten und die Schaffung eines Umfelds, in dem Kreativität und Zusammenarbeit im Vordergrund unserer Erfolgsgeschichte stehen. Unser Unternehmen ist stolz auf die Kombination aus professioneller Exzellenz und einer entspannten, kollegialen Atmosphäre. In unserem hellen Büro am Ostbahnhof mit Blick auf die Spree erlebst Du eine Start-up-Atmosphäre, die von Flexibilität, Inklusion und Wachstum geprägt ist. Vom ersten Tag an bist Du Teil eines Teams, das Wert auf einen offenen Umgang miteinander legt und Dir ein umfassendes Onboarding-Programm, konsequentes Mentoring und kontinuierliche Weiterbildungsmöglichkeiten bietet. Die Stelle ist voll Remote oder auch Hybrid möglich, wie du möchtest. Aufgaben Du führst Demo-Calls durch, in denen du aktiv zuhörst, die Bedürfnisse unserer Kund:innen im E-Commerce - und SaaS-Bereich verstehst und passende Lösungen ableitest. Du bearbeitest eigenverantwortlich Support-Tickets und findest schnelle, kundenorientierte Lösungen. Du arbeitest eng mit unserem Onboarding- & Automation-Team zusammen, um Kundenzufriedenheit sicherzustellen und unsere Lösungen stetig weiterzuentwickeln. Du erstellst eigenständig Content wie Blogartikel, Templates oder Hilfeseiten und unterstützt aktiv bei der Umsetzung unserer KI- & Content-Strategie. Qualifikation Du bringst Erfahrung im Bereich Finanzbuchhaltung mit – oder hast ein gutes Verständnis für steuernahe Prozesse. Du hast Erfahrung im direkten Kunden",
+    "score": 4,
+    "summary": "Вакансія не підходить кандидату через відсутність технічного спрямування та необхідності перебування в офісі.",
+    "role_type": "Customer Success Manager",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Гібрид",
+    "region": "Закордон",
+    "pros": [
+      "Добре налаштований офіс",
+      "Можливість роботи в гібридному режимі"
+    ],
+    "cons": [
+      "Немає технічного спрямування",
+      "Не відповідає вимогам кандидата щодо роботи в офісі"
+    ],
+    "first_seen": "2026-08-02T08:04:40.277613+00:00"
+  },
+  "https://himalayas.app/companies/bjak/jobs/strategy-operations-associate-7652220692": {
+    "title": "Strategy & Operations Associate",
+    "url": "https://himalayas.app/companies/bjak/jobs/strategy-operations-associate-7652220692",
+    "source": "Himalayas",
+    "description": "About A1 There are over 5 billion users using basic applications today such email, notes, tasks that are not AI-native. Our mission is to build a proactive smart assistant for everyday users to bring intelligence to conversations, errands, organising and workflows, with minimal prompting. Our product focuses on achieving high reliability for long-running workflows, persistent context, and real-world task completion. The system must handle multi-step reasoning, interact with external tools, and remain reliable despite non-deterministic model behavior. Our objective is to help users complete tasks daily enjoyable with over ~90%* reduced time. About the Role You will work closely with core teams on the highest impact initiatives across engineering, product, hiring, operations, and business development. As the company grows, you'll help solve new challenges, build new capabilities, and drive execution wherever it matters most. We're looking for people who learn quickly, think deeply, and enjoy solving difficult problems in a fast-moving environment. What You Will Be Doing Drive high-priority initiatives across the business. Work with leadership to solve business and product challenges. Build new teams, processes, and capabilities as the company grows. Lead cross-functional projects from planning through execution. Research new markets, products, and business opportunities. Improve how we operate by identifying problems and implementing practical solutions. Take ownership of proje",
+    "score": 6,
+    "summary": "Вакансія має потенціал, але кандидат повинен бути готовий до роботи в стартапі та мати досвід роботи з AI-технологіями.",
+    "role_type": "Strategy & Operations Associate",
+    "company_type": "Стартап",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Шанс працювати в стартапі",
+      "Досвід роботи з AI-технологіями"
+    ],
+    "cons": [
+      "Немає вказаної зарплати",
+      "Не відповідає вимогам кандидата щодо роботи в офісі"
+    ],
+    "first_seen": "2026-08-02T08:04:40.277613+00:00"
   }
 }
