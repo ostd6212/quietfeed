@@ -191,8 +191,7 @@
     "cons": [
       "Недостатньо інформації про зарплату і можливості розвитку"
     ],
-    "first_seen": "2026-07-31T11:54:19.696109+00:00",
-    "hidden": true
+    "first_seen": "2026-07-31T11:54:19.696109+00:00"
   },
   "https://jobs.dou.ua/companies/zeely-ai/vacancies/293037/": {
     "title": "Customer Success Manager (Upsell, 6 PM-3AM)",
@@ -295,7 +294,8 @@
       "Неможливість роботи в Україні",
       "Неможливість побачити зарплату"
     ],
-    "first_seen": "2026-07-31T11:54:19.696109+00:00"
+    "first_seen": "2026-07-31T11:54:19.696109+00:00",
+    "hidden": true
   },
   "https://jobs.dou.ua/companies/winner-group-ukraine/vacancies/366885/": {
     "title": "Technical Support Engineer (T-SQL, SSRS, API) — L2/L3",
