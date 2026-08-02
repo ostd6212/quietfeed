@@ -29,7 +29,7 @@ MAX_NEW_JOBS_PER_RUN = 150
 # These sources are Ukrainian job boards by construction -- every listing on
 # them targets Ukraine, so region is known from the source itself rather than
 # left to the LLM to infer per-listing from free-text.
-UKRAINE_ONLY_SOURCES = {"DOU", "Djinni", "Work.ua"}
+UKRAINE_ONLY_SOURCES = {"DOU", "Djinni", "Work.ua", "Jooble"}
 
 # How many days of scored history to show on the page, and how long to keep
 # in data/jobs.json before pruning. Display window is shorter than retention
@@ -136,6 +136,7 @@ SOURCES = [
     {"name": "Ashby", "fetch": sources.fetch_ashby, "rate_limited": False},
     {"name": "SmartRecruiters", "fetch": sources.fetch_smartrecruiters, "rate_limited": False},
     {"name": "Workable", "fetch": sources.fetch_workable, "rate_limited": False},
+    {"name": "Jooble", "fetch": sources.fetch_jooble, "rate_limited": True},
 ]
 
 

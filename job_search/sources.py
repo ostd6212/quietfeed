@@ -418,6 +418,45 @@ def fetch_adzuna() -> list[dict] | None:
     return jobs
 
 
+_JOOBLE_KEYWORDS = [
+    "customer success", "technical support", "account manager",
+    "solutions engineer", "implementation", "customer support",
+]
+
+
+def fetch_jooble() -> list[dict] | None:
+    # Official partner API (POST, JSON body), not scraped HTML -- unlike
+    # Work.ua this isn't a consumer-facing page a WAF can bot-block. Queried
+    # against location="Україна" specifically since this is meant to widen
+    # Ukraine coverage; region is forced by UKRAINE_ONLY_SOURCES in config.py
+    # same as DOU/Djinni/Work.ua rather than left to the LLM to infer.
+    api_key = os.environ.get("JOOBLE_API_KEY")
+    if not api_key:
+        print("    ⚠ Jooble skipped: JOOBLE_API_KEY not set")
+        return None
+    keyword = _JOOBLE_KEYWORDS[datetime.now(timezone.utc).timetuple().tm_yday % len(_JOOBLE_KEYWORDS)]
+    try:
+        resp = requests.post(
+            f"https://jooble.org/api/{api_key}",
+            json={"keywords": keyword, "location": "Україна"},
+            timeout=20,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    ⚠ Jooble fetch error (keyword={keyword!r}): {e}")
+        return None
+    jobs = []
+    for j in data.get("jobs", []):
+        jobs.append({
+            "title": _strip_tags(j.get("title", "")),
+            "url": j.get("link", ""),
+            "source": "Jooble",
+            "description": extract_text(j.get("snippet", ""), MAX_DESC),
+        })
+    return jobs
+
+
 # ============================================================
 # Greenhouse -- curated per-company public boards, zero auth, zero ToS risk
 # ============================================================

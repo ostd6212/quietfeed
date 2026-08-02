@@ -3,7 +3,8 @@
 
 Usage: python3.11 run.py
 Requires env vars: GROQ_API_KEY, CANDIDATE_PROFILE (or a local fallback --
-see job_search/profile.py), and optionally ADZUNA_APP_ID/ADZUNA_APP_KEY.
+see job_search/profile.py), and optionally ADZUNA_APP_ID/ADZUNA_APP_KEY and
+JOOBLE_API_KEY.
 
 Output: site/index.html + site/robots.txt (published to GitHub Pages by the
 workflow), data/jobs.json (committed back to main by the workflow).
