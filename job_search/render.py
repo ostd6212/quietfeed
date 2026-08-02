@@ -637,12 +637,23 @@ function jobRadarGetToken(forcePrompt) {{
 // Works for files of any size, unlike the Contents API's own `content`
 // field, which it omits past ~1MB.
 function jobRadarFetchFresh(path) {{
+  // Unauthenticated api.github.com is capped at 60 req/hr *total* across
+  // this whole page (run-status polling alone burns 40/hr on its own) --
+  // confirmed live (2026-08-02) that this was silently starving the
+  // Hide/Keywords live-sync fetches below of quota, so a freshly-hidden
+  // vacancy kept reappearing on reload even though the write itself had
+  // gone through fine. Send the token when one's already saved (anyone
+  // using Hide/Block/Applied already has one) to jump to 5000/hr.
+  var token = localStorage.getItem('jobRadarGhToken');
+  var headers = {{Accept: 'application/vnd.github+json'}};
+  if (token) headers.Authorization = 'token ' + token;
+
   var metaUrl = 'https://api.github.com/repos/{GH_OWNER}/{GH_REPO}/contents/' + path;
-  return fetch(metaUrl, {{headers: {{Accept: 'application/vnd.github+json'}}, cache: 'no-store'}})
+  return fetch(metaUrl, {{headers: headers, cache: 'no-store'}})
     .then(function (r) {{ if (!r.ok) throw new Error('metadata ' + r.status); return r.json(); }})
     .then(function (meta) {{
       var blobUrl = 'https://api.github.com/repos/{GH_OWNER}/{GH_REPO}/git/blobs/' + meta.sha;
-      return fetch(blobUrl, {{headers: {{Accept: 'application/vnd.github+json'}}}});
+      return fetch(blobUrl, {{headers: headers}});
     }})
     .then(function (r) {{ if (!r.ok) throw new Error('blob ' + r.status); return r.json(); }})
     .then(function (blob) {{
