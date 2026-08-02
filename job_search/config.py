@@ -83,9 +83,36 @@ DESCRIPTION_EXCLUDE_PHRASES = [
 ]
 
 
+# Phrases indicating a listing is scoped to a specific place outside
+# Europe/Ukraine (Latin America, APAC, a named non-European country, a
+# region abbreviation, or a "citizens/residents of X only" clause) -- the
+# relevant set here is Europe, Ukraine, or genuinely worldwide/unrestricted.
+# Checked against both title and description since boards phrase this
+# inconsistently. Heuristic, not exhaustive: a worldwide listing that merely
+# name-drops one of these in passing (e.g. "we also have an office in
+# Brazil") could get caught too -- use "Блокувати схожі" on the card for
+# anything specific this list misses, or trim an entry here if it's
+# over-excluding.
+NON_EUROPE_REGION_PHRASES = [
+    "latin america", "latam",
+    "brazil", "mexico", "colombia", "argentina", "chile", "peru", "ecuador",
+    "venezuela", "costa rica", "guatemala", "honduras", "el salvador",
+    "panama", "bolivia", "paraguay", "uruguay",
+    "apac", "asia-pacific", "philippines", "india", "pakistan", "bangladesh",
+    "vietnam", "indonesia", "malaysia", "thailand", "singapore", "china",
+    "japan", "south korea", "australia", "new zealand",
+    "nigeria", "south africa", "kenya", "egypt", "morocco",
+    "united arab emirates", "uae", "saudi arabia", "israel",
+    "us citizens only", "us-based only", "united states only", "usa only",
+    "authorized to work in the united states", "canada only",
+]
+
+
 def description_excluded(text: str) -> bool:
     t = (text or "").lower()
-    return any(p in t for p in DESCRIPTION_EXCLUDE_PHRASES)
+    if any(p in t for p in DESCRIPTION_EXCLUDE_PHRASES):
+        return True
+    return any(p in t for p in NON_EUROPE_REGION_PHRASES)
 
 
 def has_remote_signal(text: str) -> bool:
