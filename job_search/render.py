@@ -206,7 +206,11 @@ def generate_html(
     jobs_json = json.dumps(jobs_meta, ensure_ascii=False)
     keywords_json = json.dumps(keywords, ensure_ascii=False)
     region_options = "".join(f'<option value="{r}">{r}</option>' for r in REGIONS)
-    sources_present = sorted({j["source"] for j in jobs_meta})
+    # Union of configured sources (present every run via source_stats,
+    # regardless of whether this cycle skipped/found nothing) and whatever
+    # sources actually have visible jobs -- so a newly added source shows up
+    # in the filter immediately, not only once it's produced a match.
+    sources_present = sorted({s["name"] for s in source_stats} | {j["source"] for j in jobs_meta})
     sources_json = json.dumps(sources_present, ensure_ascii=False)
 
     return f"""<!DOCTYPE html>
