@@ -41,8 +41,7 @@
       "Немає інформації про зарплату",
       "Немає інформації про досвід роботи з SaaS платформами"
     ],
-    "first_seen": "2026-07-31T11:54:19.696109+00:00",
-    "hidden": true
+    "first_seen": "2026-07-31T11:54:19.696109+00:00"
   },
   "https://jobs.dou.ua/companies/precoro/vacancies/356093/?from=list_hot": {
     "title": "Implementation Consultant (В2В, SaaS)",
@@ -171,7 +170,8 @@
     "cons": [
       "Неможливість роботи в офісі"
     ],
-    "first_seen": "2026-07-31T11:54:19.696109+00:00"
+    "first_seen": "2026-07-31T11:54:19.696109+00:00",
+    "hidden": true
   },
   "https://jobs.dou.ua/companies/cloudfresh/vacancies/352318/": {
     "title": "Customer Success Manager",
