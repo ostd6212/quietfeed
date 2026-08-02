@@ -92,6 +92,9 @@ def _job_card(job: dict) -> str:
         if description
         else ""
     )
+    applied = bool(job.get("applied"))
+    applied_class = " applied-btn-active" if applied else ""
+    applied_text = "✓ Подався" if applied else "📩 Подався"
 
     return f"""
     <div class="card" data-url="{job['url']}">
@@ -123,6 +126,7 @@ def _job_card(job: dict) -> str:
             <a href="{job['url']}" target="_blank" rel="noopener" class="apply-btn">Переглянути вакансію →</a>
             <button class="hide-btn" data-url="{job['url']}">Приховати</button>
             <button class="block-btn" data-url="{job['url']}" data-title="{_esc_attr(job['title'])}">🚫 Блокувати схожі</button>
+            <button class="applied-btn{applied_class}" data-url="{job['url']}">{applied_text}</button>
         </div>
         {description_html}
     </div>"""
@@ -195,6 +199,7 @@ def generate_html(
             "score": j.get("score") if isinstance(j.get("score"), (int, float)) else 0,
             "region": j.get("region") or "Не вказано",
             "source": j.get("source") or "—",
+            "applied": bool(j.get("applied")),
         }
         for j in visible
     ]
@@ -302,6 +307,16 @@ def generate_html(
   .block-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 7px; cursor: pointer; font-family: inherit; }}
   .block-btn:hover {{ border-color: #ef4444; color: #ef4444; }}
   .block-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
+  .applied-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 7px; cursor: pointer; font-family: inherit; }}
+  .applied-btn:hover {{ border-color: #38bdf8; color: #38bdf8; }}
+  .applied-btn.applied-btn-active {{ border-color: #22c55e; color: #22c55e; }}
+  .applied-btn.applied-btn-active:hover {{ border-color: #ef4444; color: #ef4444; }}
+  .applied-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
+
+  .view-tabs {{ max-width: 900px; margin: 0 auto; padding: 0 24px; display: flex; gap: 8px; }}
+  .view-tab {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 8px 8px 0 0; border-bottom: none; cursor: pointer; font-family: inherit; }}
+  .view-tab.active {{ background: #1e293b; color: #f1f5f9; border-color: #38bdf8; }}
+  .view-tab:hover:not(.active) {{ color: #cbd5e1; }}
   .description {{ margin-top: 14px; border-top: 1px solid #334155; padding-top: 14px; }}
   .description summary {{ font-size: 13px; color: #64748b; cursor: pointer; user-select: none; }}
   .description summary:hover {{ color: #94a3b8; }}
@@ -404,6 +419,11 @@ def generate_html(
   <span class="filter-count" id="filter-count"></span>
 </div>
 
+<div class="view-tabs">
+  <button class="view-tab active" id="tab-all" data-view="all">Усі вакансії</button>
+  <button class="view-tab" id="tab-applied" data-view="applied">Куди подався (<span id="applied-count">0</span>)</button>
+</div>
+
 <div class="cards" id="cards">
 {cards}
 </div>
@@ -484,6 +504,26 @@ def generate_html(
     }}
   }});
 
+  var currentView = 'all';
+  var tabAll = document.getElementById('tab-all');
+  var tabApplied = document.getElementById('tab-applied');
+  var appliedCountEl = document.getElementById('applied-count');
+
+  function setView(view) {{
+    currentView = view;
+    tabAll.classList.toggle('active', view === 'all');
+    tabApplied.classList.toggle('active', view === 'applied');
+    applyFilters();
+  }}
+  tabAll.addEventListener('click', function () {{ setView('all'); }});
+  tabApplied.addEventListener('click', function () {{ setView('applied'); }});
+
+  function updateAppliedCount() {{
+    var n = 0;
+    for (var url in jobsByUrl) {{ if (jobsByUrl[url].applied) n++; }}
+    appliedCountEl.textContent = n;
+  }}
+
   function applyFilters() {{
     var minScore = parseInt(scoreSelect.value, 10) || 0;
     var region = regionSelect.value;
@@ -492,7 +532,7 @@ def generate_html(
     cards.forEach(function (card) {{
       var job = jobsByUrl[card.getAttribute('data-url')];
       var match = job && job.score >= minScore && (region === 'all' || job.region === region) &&
-        checkedSources[job.source];
+        checkedSources[job.source] && (currentView === 'all' || job.applied);
       card.classList.toggle('hidden', !match);
       if (match) visibleCount++;
     }});
@@ -501,15 +541,29 @@ def generate_html(
     emptyEl.style.display = (visibleCount === 0 && cards.length > 0) ? 'block' : 'none';
   }}
 
+  // Fired by the applied-btn handler below (separate IIFE, owns the
+  // GitHub write) after a successful toggle, so this filter/tab state
+  // updates without a page reload.
+  document.addEventListener('jobradar:applied-changed', function (e) {{
+    var job = jobsByUrl[e.detail.url];
+    if (job) job.applied = e.detail.applied;
+    updateAppliedCount();
+    applyFilters();
+  }});
+
   scoreSelect.addEventListener('change', applyFilters);
   regionSelect.addEventListener('change', applyFilters);
   resetBtn.addEventListener('click', function () {{
     scoreSelect.value = '0';
     regionSelect.value = 'all';
+    currentView = 'all';
+    tabAll.classList.add('active');
+    tabApplied.classList.remove('active');
     setAllCheckboxes(true);
   }});
 
   updateSourceSummary();
+  updateAppliedCount();
   applyFilters();
 }})();
 
@@ -783,6 +837,39 @@ function jobRadarGetToken(forcePrompt) {{
           btn.disabled = false;
           btn.textContent = originalText;
           alert('Помилка блокування: ' + err.message);
+        }});
+    }});
+  }});
+
+  document.querySelectorAll('.applied-btn').forEach(function (btn) {{
+    btn.addEventListener('click', function () {{
+      var token = jobRadarGetToken(false);
+      if (!token) {{ alert('Токен не задано.'); return; }}
+      var url = btn.getAttribute('data-url');
+      var wasApplied = btn.classList.contains('applied-btn-active');
+      var newState = !wasApplied;
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = newState ? 'Позначаю…' : 'Скасовую…';
+
+      getFileParsed(JOBS_PATH, token)
+        .then(function (file) {{
+          var jobs = file.data;
+          if (!jobs[url]) throw new Error('Вакансію не знайдено у файлі');
+          jobs[url].applied = newState;
+          return putFile(JOBS_PATH, token, file.sha, jobs, 'chore: mark vacancy applied via site UI');
+        }})
+        .then(function () {{
+          btn.classList.toggle('applied-btn-active', newState);
+          btn.textContent = newState ? '✓ Подався' : '📩 Подався';
+          document.dispatchEvent(new CustomEvent('jobradar:applied-changed', {{detail: {{url: url, applied: newState}}}}));
+        }})
+        .catch(function (err) {{
+          btn.textContent = originalText;
+          alert('Помилка: ' + err.message);
+        }})
+        .finally(function () {{
+          btn.disabled = false;
         }});
     }});
   }});
