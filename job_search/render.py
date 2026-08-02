@@ -194,12 +194,15 @@ def generate_html(
             "url": j["url"],
             "score": j.get("score") if isinstance(j.get("score"), (int, float)) else 0,
             "region": j.get("region") or "Не вказано",
+            "source": j.get("source") or "—",
         }
         for j in visible
     ]
     jobs_json = json.dumps(jobs_meta, ensure_ascii=False)
     keywords_json = json.dumps(keywords, ensure_ascii=False)
     region_options = "".join(f'<option value="{r}">{r}</option>' for r in REGIONS)
+    sources_present = sorted({j["source"] for j in jobs_meta})
+    sources_json = json.dumps(sources_present, ensure_ascii=False)
 
     return f"""<!DOCTYPE html>
 <html lang="uk">
@@ -249,6 +252,18 @@ def generate_html(
   .filter-reset {{ background: none; border: 1px solid #334155; color: #94a3b8; border-radius: 8px; padding: 8px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }}
   .filter-reset:hover {{ border-color: #38bdf8; color: #38bdf8; }}
   .filter-count {{ margin-left: auto; font-size: 13px; color: #64748b; }}
+
+  .filter-source-dropdown {{ position: relative; }}
+  .filter-source-dropdown summary {{ list-style: none; background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 8px 12px; font-size: 13px; font-family: inherit; cursor: pointer; user-select: none; }}
+  .filter-source-dropdown summary::-webkit-details-marker {{ display: none; }}
+  .filter-source-dropdown summary:after {{ content: ' ▾'; color: #64748b; }}
+  .filter-source-dropdown[open] summary {{ border-color: #38bdf8; }}
+  .filter-source-options {{ position: absolute; top: calc(100% + 6px); left: 0; z-index: 20; background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 8px; min-width: 200px; max-height: 280px; overflow-y: auto; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }}
+  .filter-source-options label {{ display: flex; align-items: center; gap: 8px; padding: 5px 6px; font-size: 13px; color: #cbd5e1; border-radius: 5px; cursor: pointer; white-space: nowrap; }}
+  .filter-source-options label:hover {{ background: #0f172a; }}
+  .filter-source-actions {{ display: flex; gap: 6px; padding: 4px 6px 8px; border-bottom: 1px solid #334155; margin-bottom: 4px; }}
+  .filter-source-actions button {{ background: none; border: none; color: #38bdf8; font-size: 12px; cursor: pointer; font-family: inherit; padding: 0; }}
+  .filter-source-actions button:hover {{ text-decoration: underline; }}
 
   .cards {{ max-width: 900px; margin: 0 auto; padding: 0 24px 24px; display: flex; flex-direction: column; gap: 16px; }}
   .card.hidden {{ display: none; }}
@@ -374,6 +389,17 @@ def generate_html(
     <option value="all">Всі</option>
     {region_options}
   </select>
+  <span class="filter-label">Джерело</span>
+  <details class="filter-source-dropdown" id="filter-source-dropdown">
+    <summary id="filter-source-summary">Всі</summary>
+    <div class="filter-source-options">
+      <div class="filter-source-actions">
+        <button type="button" id="filter-source-all">Обрати всі</button>
+        <button type="button" id="filter-source-none">Зняти всі</button>
+      </div>
+      <div id="filter-source-checkboxes"></div>
+    </div>
+  </details>
   <button class="filter-reset" id="filter-reset">Скинути фільтри</button>
   <span class="filter-count" id="filter-count"></span>
 </div>
@@ -387,6 +413,7 @@ def generate_html(
 
 <script type="application/json" id="jobs-data">{jobs_json}</script>
 <script type="application/json" id="keywords-data">{keywords_json}</script>
+<script type="application/json" id="sources-data">{sources_json}</script>
 <script>
 (function () {{
   var jobsByUrl = {{}};
@@ -401,6 +428,62 @@ def generate_html(
   var countEl = document.getElementById('filter-count');
   var emptyEl = document.getElementById('filter-empty');
 
+  var allSources = JSON.parse(document.getElementById('sources-data').textContent);
+  var sourceDropdown = document.getElementById('filter-source-dropdown');
+  var sourceSummary = document.getElementById('filter-source-summary');
+  var sourceCheckboxes = document.getElementById('filter-source-checkboxes');
+  var sourceAllBtn = document.getElementById('filter-source-all');
+  var sourceNoneBtn = document.getElementById('filter-source-none');
+  var checkedSources = {{}}; // source name -> bool, all true by default (= no filtering)
+
+  allSources.forEach(function (src) {{
+    checkedSources[src] = true;
+    var label = document.createElement('label');
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = true;
+    cb.value = src;
+    cb.addEventListener('change', function () {{
+      checkedSources[src] = cb.checked;
+      updateSourceSummary();
+      applyFilters();
+    }});
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(src));
+    sourceCheckboxes.appendChild(label);
+  }});
+
+  function selectedSourceCount() {{
+    return allSources.filter(function (s) {{ return checkedSources[s]; }}).length;
+  }}
+
+  function updateSourceSummary() {{
+    var n = selectedSourceCount();
+    if (n === allSources.length) {{
+      sourceSummary.textContent = 'Всі';
+    }} else if (n === 0) {{
+      sourceSummary.textContent = 'Жодного';
+    }} else {{
+      sourceSummary.textContent = n + ' обрано';
+    }}
+  }}
+
+  function setAllCheckboxes(value) {{
+    allSources.forEach(function (s) {{ checkedSources[s] = value; }});
+    sourceCheckboxes.querySelectorAll('input[type=checkbox]').forEach(function (cb) {{ cb.checked = value; }});
+    updateSourceSummary();
+    applyFilters();
+  }}
+
+  sourceAllBtn.addEventListener('click', function () {{ setAllCheckboxes(true); }});
+  sourceNoneBtn.addEventListener('click', function () {{ setAllCheckboxes(false); }});
+
+  document.addEventListener('click', function (e) {{
+    if (sourceDropdown.open && !sourceDropdown.contains(e.target)) {{
+      sourceDropdown.open = false;
+    }}
+  }});
+
   function applyFilters() {{
     var minScore = parseInt(scoreSelect.value, 10) || 0;
     var region = regionSelect.value;
@@ -408,7 +491,8 @@ def generate_html(
 
     cards.forEach(function (card) {{
       var job = jobsByUrl[card.getAttribute('data-url')];
-      var match = job && job.score >= minScore && (region === 'all' || job.region === region);
+      var match = job && job.score >= minScore && (region === 'all' || job.region === region) &&
+        checkedSources[job.source];
       card.classList.toggle('hidden', !match);
       if (match) visibleCount++;
     }});
@@ -422,9 +506,10 @@ def generate_html(
   resetBtn.addEventListener('click', function () {{
     scoreSelect.value = '0';
     regionSelect.value = 'all';
-    applyFilters();
+    setAllCheckboxes(true);
   }});
 
+  updateSourceSummary();
   applyFilters();
 }})();
 
