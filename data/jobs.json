@@ -259,7 +259,8 @@
       "Агенція",
       "Непідходяча роль"
     ],
-    "first_seen": "2026-08-02T22:55:24.977091+00:00"
+    "first_seen": "2026-08-02T22:55:24.977091+00:00",
+    "applied": true
   },
   "https://jobs.dou.ua/companies/kitsoft/vacancies/364485/": {
     "title": "Technical / Customer Support Engineer",
