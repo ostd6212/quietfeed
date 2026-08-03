@@ -9626,7 +9626,8 @@
       "Можливість роботи віддалено"
     ],
     "cons": [],
-    "first_seen": "2026-08-03T02:11:12.800326+00:00"
+    "first_seen": "2026-08-03T02:11:12.800326+00:00",
+    "hidden": true
   },
   "https://jobs.ashbyhq.com/perplexity/111dfa6f-e6f3-45b6-9de4-69e4a28e3f12": {
     "title": "Enterprise Customer Support Specialist",
