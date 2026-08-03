@@ -338,7 +338,16 @@ def generate_html(
   .view-tab.active {{ background: #1e293b; color: #f1f5f9; border-color: #38bdf8; }}
   .view-tab:hover:not(.active) {{ color: #cbd5e1; }}
 
-  .keywords-panel {{ max-width: 1400px; margin: 0 auto 24px; padding: 16px 24px; background: #1e293b; border: 1px solid #334155; border-radius: 10px; }}
+  /* Every other top-level row (.stats, .filter-bar, .header-inner, ...) is
+  an invisible max-width:1400px container with 24px horizontal padding --
+  you never see its own edge, only its children's, inset by that padding.
+  .keywords-panel is the only one with its own visible background/border,
+  so if it carried max-width+padding directly, its border would sit flush
+  with the shared 1400px boundary while every other row's visible content
+  sits 24px inside it -- reads as wider than everything else. The wrap
+  below reproduces the same 24px inset; the panel itself just fills it. */
+  .keywords-panel-wrap {{ max-width: 1400px; margin: 0 auto 24px; padding: 0 24px; }}
+  .keywords-panel {{ padding: 16px 24px; background: #1e293b; border: 1px solid #334155; border-radius: 10px; }}
   .keywords-header {{ display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }}
   .keywords-title {{ font-size: 13px; font-weight: 600; color: #f1f5f9; }}
   .keywords-hint {{ font-size: 12px; color: #64748b; }}
@@ -390,6 +399,7 @@ def generate_html(
   {f'''<div class="stat"><div class="stat-num" style="color:#f59e0b">{deferred}</div><div class="stat-label">У черзі на оцінку (наступні запуски)</div></div>''' if deferred else ""}
 </div>
 
+<div class="keywords-panel-wrap">
 <div class="keywords-panel">
   <div class="keywords-header">
     <span class="keywords-title">Ключові слова пошуку</span>
@@ -405,6 +415,7 @@ def generate_html(
     <button class="secondary" id="keyword-token-btn">Токен GitHub</button>
     <span class="keywords-status" id="keyword-status"></span>
   </div>
+</div>
 </div>
 
 <div class="filter-bar">
