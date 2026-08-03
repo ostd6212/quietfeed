@@ -102,19 +102,21 @@ def _esc_attr(s: str) -> str:
 def _job_card(job: dict, now: datetime) -> str:
     score = job.get("score", "?")
     color = score_color(score)
-    summary = job.get("summary", "Аналіз недоступний")
     salary = job.get("salary") or "Не вказана"
     # posted_at is the source's own posting date (see sources.py's _to_iso);
     # first_seen (when *we* scraped it) is only a fallback for the sources
     # that don't expose one (Djinni/DOU/Work.ua -- HTML-scraped listings).
     posted = _relative_time(job.get("posted_at") or job.get("first_seen"), now)
 
-    description = (job.get("description") or "").replace("<", "&lt;").replace(">", "&gt;")
-    description_html = (
-        f'<details class="description"><summary>Повний опис</summary><p>{description}</p></details>'
-        if description
-        else ""
-    )
+    # The AI summary reads near-identically across most listings and adds
+    # little over the title -- an excerpt of the vacancy's own text (same
+    # idea as Djinni's listing preview) is more useful and more honest
+    # about what the job actually says. line-clamp in CSS caps it at a
+    # fixed number of lines regardless of how long the source text runs,
+    # which is also what keeps every card in the grid close to the same
+    # height instead of a ragged mix of tall and short cards.
+    excerpt = (job.get("description") or "").strip()
+    excerpt = excerpt.replace("<", "&lt;").replace(">", "&gt;")
     applied = bool(job.get("applied"))
     applied_class = " applied-btn-active" if applied else ""
     applied_text = "✓ Подався" if applied else "📩 Подався"
@@ -128,18 +130,16 @@ def _job_card(job: dict, now: datetime) -> str:
                 <span class="source-badge">{job['source']}</span>
             </div>
         </div>
-        <p class="summary">{summary}</p>
+        <p class="summary">{excerpt}</p>
         <div class="card-sub">
             <span class="salary-tag">💰 {salary}</span>
             <span class="posted-tag">🕒 {posted}</span>
         </div>
         <div class="card-actions">
-            <a href="{job['url']}" target="_blank" rel="noopener" class="apply-btn">Переглянути вакансію →</a>
             <button class="hide-btn" data-url="{job['url']}">Приховати</button>
             <button class="block-btn" data-url="{job['url']}" data-title="{_esc_attr(job['title'])}">🚫 Блокувати схожі</button>
             <button class="applied-btn{applied_class}" data-url="{job['url']}">{applied_text}</button>
         </div>
-        {description_html}
     </div>"""
 
 
@@ -291,7 +291,7 @@ def generate_html(
   .card.hidden {{ display: none; }}
   .filter-empty {{ max-width: 1400px; margin: 0 auto 24px; padding: 40px 24px; text-align: center; color: #6b7280; font-size: 14px; }}
 
-  .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 24px; transition: border-color 0.2s; }}
+  .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 24px; transition: border-color 0.2s; display: flex; flex-direction: column; }}
   .card:hover {{ border-color: #38bdf8; }}
 
   .card-header {{ display: flex; align-items: flex-start; gap: 16px; margin-bottom: 14px; }}
@@ -301,13 +301,15 @@ def generate_html(
   .job-title:hover {{ color: #38bdf8; }}
   .source-badge {{ display: inline-block; margin-top: 5px; font-size: 11px; font-weight: 600; color: #64748b; background: #0f172a; border: 1px solid #334155; border-radius: 4px; padding: 2px 7px; text-transform: uppercase; letter-spacing: 0.5px; }}
 
-  .summary {{ font-size: 14px; line-height: 1.6; color: #94a3b8; margin-bottom: 16px; }}
+  .summary {{
+    font-size: 14px; line-height: 1.6; color: #94a3b8; margin-bottom: 16px;
+    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }}
 
   .card-sub {{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; font-size: 13px; color: #94a3b8; }}
 
-  .apply-btn {{ display: inline-block; background: #38bdf8; color: #0f172a; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px; text-decoration: none; transition: background 0.2s; }}
-  .apply-btn:hover {{ background: #7dd3fc; }}
-  .card-actions {{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
+  .card-actions {{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: auto; }}
   .hide-btn {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 7px; cursor: pointer; font-family: inherit; }}
   .hide-btn:hover {{ border-color: #ef4444; color: #ef4444; }}
   .hide-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
@@ -324,10 +326,6 @@ def generate_html(
   .view-tab {{ background: none; border: 1px solid #334155; color: #94a3b8; font-size: 13px; padding: 8px 16px; border-radius: 8px 8px 0 0; border-bottom: none; cursor: pointer; font-family: inherit; }}
   .view-tab.active {{ background: #1e293b; color: #f1f5f9; border-color: #38bdf8; }}
   .view-tab:hover:not(.active) {{ color: #cbd5e1; }}
-  .description {{ margin-top: 14px; border-top: 1px solid #334155; padding-top: 14px; }}
-  .description summary {{ font-size: 13px; color: #64748b; cursor: pointer; user-select: none; }}
-  .description summary:hover {{ color: #94a3b8; }}
-  .description p {{ margin-top: 10px; font-size: 13px; color: #64748b; line-height: 1.6; white-space: pre-wrap; }}
 
   .keywords-panel {{ max-width: 1400px; margin: 0 auto 24px; padding: 16px 24px; background: #1e293b; border: 1px solid #334155; border-radius: 10px; }}
   .keywords-header {{ display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }}
