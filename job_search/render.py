@@ -108,15 +108,15 @@ def _job_card(job: dict, now: datetime) -> str:
     # that don't expose one (Djinni/DOU/Work.ua -- HTML-scraped listings).
     posted = _relative_time(job.get("posted_at") or job.get("first_seen"), now)
 
-    # The AI summary reads near-identically across most listings and adds
-    # little over the title -- an excerpt of the vacancy's own text (same
-    # idea as Djinni's listing preview) is more useful and more honest
-    # about what the job actually says. line-clamp in CSS caps it at a
-    # fixed number of lines regardless of how long the source text runs,
-    # which is also what keeps every card in the grid close to the same
-    # height instead of a ragged mix of tall and short cards.
-    excerpt = (job.get("description") or "").strip()
-    excerpt = excerpt.replace("<", "&lt;").replace(">", "&gt;")
+    # A raw description excerpt cuts off mid-sentence wherever the
+    # line-clamp lands -- looks broken rather than just brief. scoring.py's
+    # prompt now asks Groq for exactly "Company. Sphere. What it does" (no
+    # candidate-fit reasoning), which reads as a complete thought at any
+    # length instead of a truncated one. line-clamp stays as a safety net
+    # for whatever the model doesn't keep as short as asked, and is also
+    # what keeps every card in the grid close to the same height.
+    summary = (job.get("summary") or "Аналіз недоступний").strip()
+    summary = summary.replace("<", "&lt;").replace(">", "&gt;")
     applied = bool(job.get("applied"))
     applied_class = " applied-btn-active" if applied else ""
     applied_text = "✓ Подався" if applied else "📩 Подався"
@@ -130,7 +130,7 @@ def _job_card(job: dict, now: datetime) -> str:
                 <span class="source-badge">{job['source']}</span>
             </div>
         </div>
-        <p class="summary">{excerpt}</p>
+        <p class="summary">{summary}</p>
         <div class="card-sub">
             <span class="salary-tag">💰 {salary}</span>
             <span class="posted-tag">🕒 {posted}</span>
@@ -303,7 +303,7 @@ def generate_html(
 
   .summary {{
     font-size: 14px; line-height: 1.6; color: #94a3b8; margin-bottom: 16px;
-    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
     overflow: hidden;
   }}
 
