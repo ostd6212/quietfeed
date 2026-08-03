@@ -268,15 +268,15 @@ def generate_html(
   .stat-label {{ font-size: 12px; color: #64748b; margin-top: 2px; }}
 
   .filter-bar {{ max-width: 1400px; margin: 0 auto 20px; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }}
-  .filter-bar select {{ background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 8px 12px; font-size: 13px; font-family: inherit; cursor: pointer; }}
+  .filter-bar select {{ height: 36px; box-sizing: border-box; background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 0 12px; font-size: 13px; font-family: inherit; cursor: pointer; }}
   .filter-bar select:focus {{ outline: none; border-color: #38bdf8; }}
   .filter-label {{ font-size: 12px; color: #64748b; }}
-  .filter-reset {{ background: none; border: 1px solid #334155; color: #94a3b8; border-radius: 8px; padding: 8px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }}
+  .filter-reset {{ height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; background: none; border: 1px solid #334155; color: #94a3b8; border-radius: 8px; padding: 0 12px; font-size: 13px; cursor: pointer; font-family: inherit; }}
   .filter-reset:hover {{ border-color: #38bdf8; color: #38bdf8; }}
   .filter-count {{ margin-left: auto; font-size: 13px; color: #64748b; }}
 
   .filter-source-dropdown {{ position: relative; }}
-  .filter-source-dropdown summary {{ list-style: none; background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 8px 12px; font-size: 13px; font-family: inherit; cursor: pointer; user-select: none; }}
+  .filter-source-dropdown summary {{ height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; list-style: none; background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; padding: 0 12px; font-size: 13px; font-family: inherit; cursor: pointer; user-select: none; }}
   .filter-source-dropdown summary::-webkit-details-marker {{ display: none; }}
   .filter-source-dropdown summary:after {{ content: ' ▾'; color: #64748b; }}
   .filter-source-dropdown[open] summary {{ border-color: #38bdf8; }}
