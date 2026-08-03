@@ -117,8 +117,14 @@ def _job_card(job: dict, now: datetime) -> str:
     # keep rendering that as a fallback so old cards don't go blank.
     tags = job.get("tags")
     if isinstance(tags, list) and tags:
+        # Groq sometimes returns one comma-joined string as a single array
+        # element ("SaaS, B2B, Fintech") instead of separate elements --
+        # split defensively so that shape still renders as separate pills.
+        flat_tags = []
+        for t in tags:
+            flat_tags.extend(part.strip() for part in str(t).split(",") if part.strip())
         tags_html = '<div class="tags-row">' + "".join(
-            f'<span class="tag-pill">{_esc_attr(str(t))}</span>' for t in tags[:5]
+            f'<span class="tag-pill">{_esc_attr(t)}</span>' for t in flat_tags[:5]
         ) + "</div>"
     else:
         legacy_summary = (job.get("summary") or "").strip()
