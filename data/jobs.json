@@ -3346,5 +3346,109 @@
       "Company type is not a product company, but an agentic risk platform"
     ],
     "first_seen": "2026-08-03T17:03:31.734376+00:00"
+  },
+  "https://apply.workable.com/j/33E1B72091": {
+    "title": "Account Manager (Czech Republic)",
+    "url": "https://apply.workable.com/j/33E1B72091",
+    "source": "Workable",
+    "description": "Account Manager (Czech Republic) - Flosum",
+    "location": "Czechia",
+    "posted_at": "2026-07-06T00:00:00+00:00",
+    "score": 2,
+    "tags": [
+      "iGaming",
+      "B2B",
+      "SaaS",
+      "Office"
+    ],
+    "role_type": "Account Manager",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-03T22:17:30.759971+00:00"
+  },
+  "https://apply.workable.com/j/6DC4B048E9": {
+    "title": "Account Manager (London)",
+    "url": "https://apply.workable.com/j/6DC4B048E9",
+    "source": "Workable",
+    "description": "Account Manager (London) - Flosum",
+    "location": "London, England, United Kingdom",
+    "posted_at": "2026-07-17T00:00:00+00:00",
+    "score": 2,
+    "tags": [
+      "iGaming",
+      "B2B",
+      "SaaS",
+      "Office"
+    ],
+    "role_type": "Account Manager",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-03T22:17:30.759971+00:00"
+  },
+  "https://apply.workable.com/j/AC84E58B70": {
+    "title": "Account Manager (Poland)",
+    "url": "https://apply.workable.com/j/AC84E58B70",
+    "source": "Workable",
+    "description": "Account Manager (Poland) - Flosum",
+    "location": "Poland",
+    "posted_at": "2026-07-06T00:00:00+00:00",
+    "score": 2,
+    "tags": [
+      "iGaming",
+      "B2B",
+      "SaaS",
+      "Office"
+    ],
+    "role_type": "Account Manager",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-03T22:17:30.759971+00:00"
+  },
+  "https://apply.workable.com/j/5620F6A090": {
+    "title": "Account Manager (Romania)",
+    "url": "https://apply.workable.com/j/5620F6A090",
+    "source": "Workable",
+    "description": "Account Manager (Romania) - Flosum",
+    "location": "Romania",
+    "posted_at": "2026-07-06T00:00:00+00:00",
+    "score": 2,
+    "tags": [
+      "iGaming",
+      "B2B",
+      "SaaS",
+      "Office"
+    ],
+    "role_type": "Account Manager",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-03T22:17:30.759971+00:00"
   }
 }
