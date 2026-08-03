@@ -132,7 +132,6 @@ SOURCES = [
     {"name": "Remotive", "fetch": sources.fetch_remotive, "rate_limited": True},
     {"name": "RemoteOK", "fetch": sources.fetch_remoteok, "rate_limited": False},
     {"name": "Arbeitnow", "fetch": sources.fetch_arbeitnow, "rate_limited": False},
-    {"name": "WeWorkRemotely", "fetch": sources.fetch_weworkremotely, "rate_limited": False},
     {"name": "Jobicy", "fetch": sources.fetch_jobicy, "rate_limited": False},
     {"name": "Adzuna", "fetch": sources.fetch_adzuna, "rate_limited": True},
     {"name": "Greenhouse", "fetch": sources.fetch_greenhouse, "rate_limited": False},
