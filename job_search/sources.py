@@ -249,6 +249,7 @@ def fetch_remotive() -> list[dict] | None:
             "url": j.get("url", ""),
             "source": "Remotive",
             "description": extract_text(j.get("description", ""), MAX_DESC),
+            "location": j.get("candidate_required_location", ""),
         })
     return jobs
 
@@ -274,6 +275,7 @@ def fetch_remoteok() -> list[dict] | None:
             "url": j.get("url") or j.get("apply_url", ""),
             "source": "RemoteOK",
             "description": extract_text(j.get("description", ""), MAX_DESC),
+            "location": j.get("location", ""),
         })
     return jobs
 
@@ -302,6 +304,7 @@ def fetch_arbeitnow() -> list[dict] | None:
                 "url": j.get("url", ""),
                 "source": "Arbeitnow",
                 "description": extract_text(j.get("description", ""), MAX_DESC),
+                "location": j.get("location", ""),
             })
         time.sleep(0.5)
     return jobs if any_success else None
@@ -361,6 +364,7 @@ def fetch_jobicy() -> list[dict] | None:
             "url": j.get("url", ""),
             "source": "Jobicy",
             "description": extract_text(j.get("jobExcerpt") or j.get("jobDescription") or "", MAX_DESC),
+            "location": j.get("jobGeo", ""),
         })
     return jobs
 
@@ -544,6 +548,7 @@ def fetch_himalayas() -> list[dict] | None:
             "url": j.get("applicationLink", ""),
             "source": "Himalayas",
             "description": extract_text(j.get("description", ""), MAX_DESC),
+            "location": " / ".join(j.get("locationRestrictions") or []),
         })
     return jobs
 
@@ -633,6 +638,7 @@ def fetch_smartrecruiters() -> list[dict] | None:
                 "url": f"https://jobs.smartrecruiters.com/{company}/{j.get('id', '')}",
                 "source": "SmartRecruiters",
                 "description": None,
+                "location": (j.get("location") or {}).get("fullLocation", ""),
             })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -668,6 +674,7 @@ def fetch_workable() -> list[dict] | None:
         for j in data.get("jobs", []):
             if not j.get("shortlink") or not j.get("telecommuting"):
                 continue
+            location = ", ".join(filter(None, [j.get("city", ""), j.get("state", ""), j.get("country", "")]))
             jobs.append({
                 "title": j.get("title", ""),
                 "url": j["shortlink"],
@@ -676,6 +683,7 @@ def fetch_workable() -> list[dict] | None:
                 # HTML-scrape fallback (triggered by description=None)
                 # fetches it from the shortlink page instead.
                 "description": None,
+                "location": location,
             })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -696,6 +704,7 @@ def fetch_workingnomads() -> list[dict] | None:
             "url": j.get("url", ""),
             "source": "Working Nomads",
             "description": extract_text(j.get("description", ""), MAX_DESC),
+            "location": j.get("location", ""),
         })
     return jobs
 
