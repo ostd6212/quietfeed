@@ -2,7 +2,8 @@
 """Fetchers for every job source.
 
 Each fetch_X() returns list[dict] shaped:
-    {"title": str, "url": str, "source": str, "description": str | None}
+    {"title": str, "url": str, "source": str, "description": str | None,
+     "posted_at": str | None}
 
 `description` is None for Djinni/DOU/Work.ua/Greenhouse/SmartRecruiters/
 Workable -- their search-results responses don't include full job body
@@ -10,6 +11,14 @@ text, so run.py does a second per-job page fetch for those specifically.
 Every other source includes the description inline in its API/RSS
 response, so no second fetch is needed (or wanted -- it would just be
 extra load for no reason).
+
+`posted_at` is the source's own posting-date field (see _to_iso), normalized
+to a UTC ISO string -- the real "vacancy went up on this date", as opposed
+to first_seen (added in run.py), which is just when *we* first scraped it
+and can lag the real posting by up to a scheduled-run interval. Absent
+(key missing entirely) for Djinni/DOU/Work.ua: HTML-scraped, and none of
+the three expose a posting date on the listing page without a much deeper
+per-job scrape. render.py falls back to first_seen for those.
 """
 
 import os
@@ -18,6 +27,7 @@ import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 
 import requests
@@ -66,6 +76,37 @@ def extract_text(html: str, limit: int = 4000) -> str:
 
 def _strip_tags(s: str) -> str:
     return re.sub(r"<[^>]+>", "", s or "").strip()
+
+
+def _to_iso(value) -> str | None:
+    """Normalizes a source's native posting-date field to a UTC ISO string.
+
+    Handles every shape seen across sources: epoch seconds (Arbeitnow,
+    Himalayas), epoch milliseconds (Lever), ISO 8601 strings with or
+    without a timezone/fractional seconds/trailing "Z" (most APIs), and
+    RFC 2822 (WeWorkRemotely's RSS <pubDate>). Returns None on anything
+    unexpected -- render.py falls back to first_seen in that case, so a
+    source drifting its date format quietly degrades instead of crashing
+    the run.
+    """
+    if value is None or value == "":
+        return None
+    try:
+        if isinstance(value, (int, float)):
+            # 13-digit ms vs 10-digit sec, same heuristic every ATS's JS
+            # client uses to tell the two apart.
+            seconds = value / 1000 if value > 10**12 else value
+            return datetime.fromtimestamp(seconds, tz=timezone.utc).isoformat()
+        text = str(value)
+        try:
+            dt = datetime.fromisoformat(text)
+        except ValueError:
+            dt = parsedate_to_datetime(text)  # RFC 2822, e.g. RSS <pubDate>
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).isoformat()
+    except (ValueError, TypeError, OverflowError, OSError):
+        return None
 
 
 def fetch_url(url: str, timeout: int = 15) -> str | None:
@@ -250,6 +291,7 @@ def fetch_remotive() -> list[dict] | None:
             "source": "Remotive",
             "description": extract_text(j.get("description", ""), MAX_DESC),
             "location": j.get("candidate_required_location", ""),
+            "posted_at": _to_iso(j.get("publication_date")),
         })
     return jobs
 
@@ -276,6 +318,7 @@ def fetch_remoteok() -> list[dict] | None:
             "source": "RemoteOK",
             "description": extract_text(j.get("description", ""), MAX_DESC),
             "location": j.get("location", ""),
+            "posted_at": _to_iso(j.get("date")),
         })
     return jobs
 
@@ -305,6 +348,7 @@ def fetch_arbeitnow() -> list[dict] | None:
                 "source": "Arbeitnow",
                 "description": extract_text(j.get("description", ""), MAX_DESC),
                 "location": j.get("location", ""),
+                "posted_at": _to_iso(j.get("created_at")),
             })
         time.sleep(0.5)
     return jobs if any_success else None
@@ -340,6 +384,7 @@ def fetch_weworkremotely() -> list[dict] | None:
                     "url": link,
                     "source": "WeWorkRemotely",
                     "description": extract_text(desc, MAX_DESC),
+                    "posted_at": _to_iso(item.findtext("pubDate")),
                 })
         time.sleep(0.5)
     return _dedupe(jobs) if any_success else None
@@ -365,6 +410,7 @@ def fetch_jobicy() -> list[dict] | None:
             "source": "Jobicy",
             "description": extract_text(j.get("jobExcerpt") or j.get("jobDescription") or "", MAX_DESC),
             "location": j.get("jobGeo", ""),
+            "posted_at": _to_iso(j.get("pubDate")),
         })
     return jobs
 
@@ -418,6 +464,7 @@ def fetch_adzuna() -> list[dict] | None:
             "url": j.get("redirect_url", ""),
             "source": "Adzuna",
             "description": extract_text(desc_raw, MAX_DESC),
+            "posted_at": _to_iso(j.get("created")),
         })
     return jobs
 
@@ -457,6 +504,7 @@ def fetch_jooble() -> list[dict] | None:
             "url": j.get("link", ""),
             "source": "Jooble",
             "description": extract_text(j.get("snippet", ""), MAX_DESC),
+            "posted_at": _to_iso(j.get("updated")),
         })
     return jobs
 
@@ -525,6 +573,11 @@ def fetch_greenhouse() -> list[dict] | None:
                     "source": "Greenhouse",
                     "description": None,
                     "location": location_name,
+                    # Greenhouse's job-board API has no created_at, only
+                    # updated_at -- the closest available proxy for posting
+                    # date (usually the same for a listing that's never
+                    # been edited since it went up).
+                    "posted_at": _to_iso(j.get("updated_at")),
                 })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -549,6 +602,7 @@ def fetch_himalayas() -> list[dict] | None:
             "source": "Himalayas",
             "description": extract_text(j.get("description", ""), MAX_DESC),
             "location": " / ".join(j.get("locationRestrictions") or []),
+            "posted_at": _to_iso(j.get("pubDate")),
         })
     return jobs
 
@@ -602,6 +656,7 @@ def fetch_lever() -> list[dict] | None:
                 "source": "Lever",
                 "description": extract_text(j.get("descriptionPlain", ""), MAX_DESC),
                 "location": location,
+                "posted_at": _to_iso(j.get("createdAt")),
             })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -639,6 +694,7 @@ def fetch_smartrecruiters() -> list[dict] | None:
                 "source": "SmartRecruiters",
                 "description": None,
                 "location": (j.get("location") or {}).get("fullLocation", ""),
+                "posted_at": _to_iso(j.get("releasedDate")),
             })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -684,6 +740,7 @@ def fetch_workable() -> list[dict] | None:
                 # fetches it from the shortlink page instead.
                 "description": None,
                 "location": location,
+                "posted_at": _to_iso(j.get("published_on")),
             })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -705,6 +762,7 @@ def fetch_workingnomads() -> list[dict] | None:
             "source": "Working Nomads",
             "description": extract_text(j.get("description", ""), MAX_DESC),
             "location": j.get("location", ""),
+            "posted_at": _to_iso(j.get("pub_date")),
         })
     return jobs
 
@@ -758,6 +816,7 @@ def fetch_ashby() -> list[dict] | None:
                 "source": "Ashby",
                 "description": extract_text(j.get("descriptionPlain") or "", MAX_DESC),
                 "location": location,
+                "posted_at": _to_iso(j.get("publishedAt")),
             })
         time.sleep(0.3)
     return jobs if any_success else None

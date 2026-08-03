@@ -104,7 +104,10 @@ def _job_card(job: dict, now: datetime) -> str:
     color = score_color(score)
     summary = job.get("summary", "Аналіз недоступний")
     salary = job.get("salary") or "Не вказана"
-    posted = _relative_time(job.get("first_seen"), now)
+    # posted_at is the source's own posting date (see sources.py's _to_iso);
+    # first_seen (when *we* scraped it) is only a fallback for the sources
+    # that don't expose one (Djinni/DOU/Work.ua -- HTML-scraped listings).
+    posted = _relative_time(job.get("posted_at") or job.get("first_seen"), now)
 
     description = (job.get("description") or "").replace("<", "&lt;").replace(">", "&gt;")
     description_html = (
