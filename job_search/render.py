@@ -537,7 +537,7 @@ def generate_html(
     cards.forEach(function (card) {{
       var job = jobsByUrl[card.getAttribute('data-url')];
       var match = job && job.score >= minScore && (region === 'all' || job.region === region) &&
-        checkedSources[job.source] && (currentView === 'all' || job.applied);
+        checkedSources[job.source] && (currentView === 'all' ? !job.applied : job.applied);
       card.classList.toggle('hidden', !match);
       if (match) visibleCount++;
     }});
