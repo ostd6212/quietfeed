@@ -113,7 +113,11 @@ NON_EUROPE_REGION_PHRASES = [
     "united arab emirates", "uae", "saudi arabia", "israel",
     "us citizens only", "us-based only", "united states only", "usa only",
     "authorized to work in the united states", "canada only",
-    "united states", "usa", "canada",
+    # NOT bare "usa" -- it's a substring of ordinary words like "usage",
+    # which produced a false-positive exclusion on a real DOU/Ukraine
+    # listing that merely mentioned API usage. "us" alone is even riskier
+    # (matches inside dozens of common words) and isn't included either.
+    "united states", "canada",
 ]
 
 # Structured location fields (Greenhouse/Ashby/Lever -- see sources.py) often
