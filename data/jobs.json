@@ -756,7 +756,8 @@
       "Низька зарплата",
       "Немає інформації про технології компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/302beb4d-46ea-411b-b82a-65b9d4b2f76d": {
     "title": "Account Manager",
