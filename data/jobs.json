@@ -8487,7 +8487,8 @@
     "cons": [
       "Нема"
     ],
-    "first_seen": "2026-08-03T02:11:12.800326+00:00"
+    "first_seen": "2026-08-03T02:11:12.800326+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/30a61c42-e6b2-40c2-9be6-7a980e9131f3": {
     "title": "Technical Account Manager - AI for Martech",
