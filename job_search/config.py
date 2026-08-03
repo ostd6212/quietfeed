@@ -120,6 +120,27 @@ NON_EUROPE_REGION_PHRASES = [
     "united states", "canada",
 ]
 
+# "usa" alone is excluded from NON_EUROPE_REGION_PHRASES above (substring of
+# "usage") but some sources' location field really is just the bare string
+# "USA" (Jobicy's jobGeo) -- a word-boundary regex catches that standalone
+# case without matching inside other words.
+_USA_WORD_RE = re.compile(r"\busa\b", re.IGNORECASE)
+
+# Some sources' location field is just a bare US state name with no country
+# or 2-letter code at all (RemoteOK: "Oregon, ") -- the ", ST" regex below
+# doesn't fire for that shape, so match full state names directly too.
+_US_STATE_NAMES = [
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
+    "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine",
+    "maryland", "massachusetts", "michigan", "minnesota", "mississippi",
+    "missouri", "montana", "nebraska", "nevada", "new hampshire",
+    "new jersey", "new mexico", "north carolina", "north dakota", "ohio",
+    "oklahoma", "oregon", "pennsylvania", "rhode island", "south carolina",
+    "south dakota", "tennessee", "texas", "utah", "vermont", "virginia",
+    "washington", "west virginia", "wisconsin", "wyoming",
+]
+
 # Structured location fields (Greenhouse/Ashby/Lever -- see sources.py) often
 # list "City, ST" pairs with a US state abbreviation and no country name at
 # all (e.g. "San Francisco, CA; Austin, TX"), so the plain-phrase check above
@@ -136,12 +157,19 @@ _US_STATE_CODE_RE = re.compile(
 
 
 def location_excluded(location: str) -> bool:
-    return bool(_US_STATE_CODE_RE.search(location or ""))
+    if not location:
+        return False
+    if _US_STATE_CODE_RE.search(location):
+        return True
+    t = location.lower()
+    return any(name in t for name in _US_STATE_NAMES)
 
 
 def description_excluded(text: str) -> bool:
     t = (text or "").lower()
     if any(p in t for p in DESCRIPTION_EXCLUDE_PHRASES):
+        return True
+    if _USA_WORD_RE.search(t):
         return True
     return any(p in t for p in NON_EUROPE_REGION_PHRASES)
 
