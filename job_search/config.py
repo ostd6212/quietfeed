@@ -142,7 +142,12 @@ SOURCES = [
     {"name": "Ashby", "fetch": sources.fetch_ashby, "rate_limited": False},
     {"name": "SmartRecruiters", "fetch": sources.fetch_smartrecruiters, "rate_limited": False},
     {"name": "Workable", "fetch": sources.fetch_workable, "rate_limited": False},
-    {"name": "Jooble", "fetch": sources.fetch_jooble, "rate_limited": True},
+    # Not rate_limited: with the schedule down to ~4-5 runs/day total
+    # (see scrape-and-publish.yml), Jooble would hit its 4-hour allowlist
+    # window on only some of those runs anyway, which just meant confusing
+    # "0 found" cycles for no real quota benefit -- the 500-request free
+    # tier isn't remotely at risk from 4-5 calls/day.
+    {"name": "Jooble", "fetch": sources.fetch_jooble, "rate_limited": False},
 ]
 
 
