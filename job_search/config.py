@@ -183,7 +183,9 @@ SOURCES = [
     {"name": "DOU", "fetch": sources.fetch_dou, "rate_limited": False},
     {"name": "Work.ua", "fetch": sources.fetch_workua, "rate_limited": False},
     {"name": "Remotive", "fetch": sources.fetch_remotive, "rate_limited": True},
-    {"name": "RemoteOK", "fetch": sources.fetch_remoteok, "rate_limited": False},
+    # RemoteOK dropped (2026-08-03): listings routing behind a pay-to-apply
+    # flow -- a real employer never charges the candidate, so any source
+    # doing this by design isn't worth the noise/scam risk of keeping.
     {"name": "Arbeitnow", "fetch": sources.fetch_arbeitnow, "rate_limited": False},
     {"name": "Jobicy", "fetch": sources.fetch_jobicy, "rate_limited": False},
     {"name": "Adzuna", "fetch": sources.fetch_adzuna, "rate_limited": True},
