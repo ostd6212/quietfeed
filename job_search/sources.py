@@ -65,13 +65,30 @@ class _TextExtractor(HTMLParser):
         return " ".join(self.text)
 
 
+_SALARY_RE = re.compile(
+    r"[$€£]\s?\d[\d,]*(?:\.\d+)?\s?[kK]?\s*(?:-|–|—|to)\s*[$€£]?\s?\d[\d,]*(?:\.\d+)?\s?[kK]?"
+    r"(?:\s*(?:USD|EUR|GBP|per\s*year|/\s*year|/\s*yr|annually))?",
+    re.IGNORECASE,
+)
+
+
 def extract_text(html: str, limit: int = 4000) -> str:
     parser = _TextExtractor()
     try:
         parser.feed(html or "")
     except Exception:
         pass
-    return parser.get_text()[:limit]
+    full = parser.get_text()
+    # Postings often put compensation near the end (e.g. after a long
+    # requirements list) -- confirmed live on an Ashby listing where "$92,000
+    # - $138,000 USD" sat at character 5300 of a 6000-char description, well
+    # past both this function's limit and scoring.py's further [:800] slice
+    # for the Groq prompt, so the model always saw "not specified" regardless
+    # of the real salary being right there in the text. Hoisting a found
+    # match to the front means it survives whatever gets sliced off after.
+    m = _SALARY_RE.search(full)
+    prefix = f"Compensation: {m.group(0)}. " if m else ""
+    return (prefix + full)[:limit]
 
 
 def _strip_tags(s: str) -> str:
