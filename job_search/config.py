@@ -117,7 +117,7 @@ NON_EUROPE_REGION_PHRASES = [
     # which produced a false-positive exclusion on a real DOU/Ukraine
     # listing that merely mentioned API usage. "us" alone is even riskier
     # (matches inside dozens of common words) and isn't included either.
-    "united states", "canada",
+    "united states", "canada", "united kingdom",
 ]
 
 # "usa" alone is excluded from NON_EUROPE_REGION_PHRASES above (substring of
@@ -155,11 +155,31 @@ _US_STATE_CODE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Greenhouse in particular often shortens the country itself to "US" rather
+# than naming a state ("Remote - US", "Remote, US") -- confirmed live
+# (2026-08-04) on a Twilio listing that slipped through both checks above.
+# Word-boundary keeps this safe against names like "Belarus"/"Mauritius"
+# (their trailing "us" has no boundary before it, being part of the word).
+# Scoped to the location field only, same reasoning as the state-code regex
+# -- "US" in free-text description prose would be a much noisier signal.
+_US_COUNTRY_CODE_RE = re.compile(r"\bUS\b", re.IGNORECASE)
+
+# Same shorthand pattern, same source (Greenhouse etc.), for the UK -- e.g.
+# "Remote - UK". \bUK\b is safe against "Ukraine"/"Ukrainian": the match
+# would need a word boundary right after the "k", but both are followed by
+# more letters ("raine"/"rainian"), so there's no boundary there and the
+# regex simply doesn't fire on those words.
+_UK_COUNTRY_CODE_RE = re.compile(r"\bUK\b", re.IGNORECASE)
+
 
 def location_excluded(location: str) -> bool:
     if not location:
         return False
-    if _US_STATE_CODE_RE.search(location):
+    if (
+        _US_STATE_CODE_RE.search(location)
+        or _US_COUNTRY_CODE_RE.search(location)
+        or _UK_COUNTRY_CODE_RE.search(location)
+    ):
         return True
     t = location.lower()
     return any(name in t for name in _US_STATE_NAMES)
