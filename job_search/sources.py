@@ -520,6 +520,7 @@ def fetch_greenhouse() -> list[dict] | None:
                     "url": j["absolute_url"],
                     "source": "Greenhouse",
                     "description": None,
+                    "location": location_name,
                 })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -588,11 +589,14 @@ def fetch_lever() -> list[dict] | None:
             # check matters a lot, not just a formality.
             if j.get("workplaceType") != "remote":
                 continue
+            categories = j.get("categories") or {}
+            location = " / ".join(filter(None, [categories.get("location")] + (categories.get("allLocations") or [])))
             jobs.append({
                 "title": j.get("text", ""),
                 "url": j.get("hostedUrl", ""),
                 "source": "Lever",
                 "description": extract_text(j.get("descriptionPlain", ""), MAX_DESC),
+                "location": location,
             })
         time.sleep(0.3)
     return jobs if any_success else None
@@ -737,11 +741,14 @@ def fetch_ashby() -> list[dict] | None:
         for j in data.get("jobs", []):
             if not j.get("isRemote"):
                 continue
+            secondary = [loc.get("location", "") for loc in (j.get("secondaryLocations") or [])]
+            location = " / ".join(filter(None, [j.get("location", "")] + secondary))
             jobs.append({
                 "title": j.get("title", ""),
                 "url": j.get("jobUrl", ""),
                 "source": "Ashby",
                 "description": extract_text(j.get("descriptionPlain") or "", MAX_DESC),
+                "location": location,
             })
         time.sleep(0.3)
     return jobs if any_success else None

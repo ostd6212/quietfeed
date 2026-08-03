@@ -103,9 +103,13 @@ def main():
             print(f"  Dropped {before - len(new_jobs)} non-remote listing(s) after verification")
 
         before = len(new_jobs)
-        new_jobs = [j for j in new_jobs if not config.description_excluded(j["description"])]
+        new_jobs = [
+            j for j in new_jobs
+            if not config.location_excluded(j.get("location", ""))
+            and not config.description_excluded(f"{j.get('location', '')} {j['description']}")
+        ]
         if before != len(new_jobs):
-            print(f"  Dropped {before - len(new_jobs)} listing(s) mentioning live-chat/call support")
+            print(f"  Dropped {before - len(new_jobs)} listing(s) (live-chat/call support or non-Europe location)")
 
     if new_jobs:
         print(f"\n[ 3/4 ] Scoring {len(new_jobs)} vacancies with AI "

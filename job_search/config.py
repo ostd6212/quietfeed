@@ -6,6 +6,8 @@ fit criteria) lives in the CANDIDATE_PROFILE secret instead — see profile.py.
 This file is safe to have in a public repo.
 """
 
+import re
+
 from job_search import sources
 from job_search.keywords import load_keywords
 from job_search.exclusions import load_exclusions
@@ -100,7 +102,7 @@ DESCRIPTION_EXCLUDE_PHRASES = [
 # anything specific this list misses, or trim an entry here if it's
 # over-excluding.
 NON_EUROPE_REGION_PHRASES = [
-    "latin america", "latam",
+    "latin america", "latam", "north america",
     "brazil", "mexico", "colombia", "argentina", "chile", "peru", "ecuador",
     "venezuela", "costa rica", "guatemala", "honduras", "el salvador",
     "panama", "bolivia", "paraguay", "uruguay",
@@ -111,7 +113,26 @@ NON_EUROPE_REGION_PHRASES = [
     "united arab emirates", "uae", "saudi arabia", "israel",
     "us citizens only", "us-based only", "united states only", "usa only",
     "authorized to work in the united states", "canada only",
+    "united states", "usa", "canada",
 ]
+
+# Structured location fields (Greenhouse/Ashby/Lever -- see sources.py) often
+# list "City, ST" pairs with a US state abbreviation and no country name at
+# all (e.g. "San Francisco, CA; Austin, TX"), so the plain-phrase check above
+# never fires. This is a location-specific pattern, not a scan of arbitrary
+# prose, so the false-positive risk of matching on a bare 2-letter code is
+# low -- it only ever runs against the location field, never the full
+# description.
+_US_STATE_CODE_RE = re.compile(
+    r",\s*(?:AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|"
+    r"MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|"
+    r"VT|VA|WA|WV|WI|WY)\b",
+    re.IGNORECASE,
+)
+
+
+def location_excluded(location: str) -> bool:
+    return bool(_US_STATE_CODE_RE.search(location or ""))
 
 
 def description_excluded(text: str) -> bool:
