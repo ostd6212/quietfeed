@@ -2847,7 +2847,8 @@
       "Низька зарплата",
       "Незрозуміла бізнес-модель компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.ashbyhq.com/harvey/aa678bd6-698e-4b83-8475-127e27e3cf51": {
     "title": "Technical Support Engineer - Premium Accounts, Weekend Coverage",
