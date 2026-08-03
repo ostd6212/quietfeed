@@ -2511,7 +2511,8 @@
       "Низька зарплата",
       "Незрозуміла бізнес-модель компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.ashbyhq.com/openai/5c85c498-6459-4e4a-937c-6bc9150f743e": {
     "title": "Senior Manager, Technical Accounting, Compute Infrastructure",
