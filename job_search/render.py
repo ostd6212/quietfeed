@@ -108,15 +108,23 @@ def _job_card(job: dict, now: datetime) -> str:
     # that don't expose one (Djinni/DOU/Work.ua -- HTML-scraped listings).
     posted = _relative_time(job.get("posted_at") or job.get("first_seen"), now)
 
-    # A raw description excerpt cuts off mid-sentence wherever the
-    # line-clamp lands -- looks broken rather than just brief. scoring.py's
-    # prompt now asks Groq for exactly "Company. Sphere. What it does" (no
-    # candidate-fit reasoning), which reads as a complete thought at any
-    # length instead of a truncated one. line-clamp stays as a safety net
-    # for whatever the model doesn't keep as short as asked, and is also
-    # what keeps every card in the grid close to the same height.
-    summary = (job.get("summary") or "Аналіз недоступний").strip()
-    summary = summary.replace("<", "&lt;").replace(">", "&gt;")
+    # scoring.py now asks Groq for a handful of short company/domain tags
+    # (iGaming, Fintech, B2B, ...) instead of a summary sentence -- scannable
+    # at a glance instead of read word-by-word, and no line-clamp needed
+    # since a tag row's height doesn't vary the way a sentence's does.
+    # Jobs scored before this field existed only have the old sentence-style
+    # `summary` (originally an AI fit-summary, later a company blurb) --
+    # keep rendering that as a fallback so old cards don't go blank.
+    tags = job.get("tags")
+    if isinstance(tags, list) and tags:
+        tags_html = '<div class="tags-row">' + "".join(
+            f'<span class="tag-pill">{_esc_attr(str(t))}</span>' for t in tags[:5]
+        ) + "</div>"
+    else:
+        legacy_summary = (job.get("summary") or "").strip()
+        tags_html = (
+            f'<p class="summary">{_esc_attr(legacy_summary)}</p>' if legacy_summary else ""
+        )
     applied = bool(job.get("applied"))
     applied_class = " applied-btn-active" if applied else ""
     applied_text = "✓ Подався" if applied else "📩 Подався"
@@ -130,7 +138,7 @@ def _job_card(job: dict, now: datetime) -> str:
                 <span class="source-badge">{job['source']}</span>
             </div>
         </div>
-        <p class="summary">{summary}</p>
+        {tags_html}
         <div class="card-sub">
             <span class="salary-tag">💰 {salary}</span>
             <span class="posted-tag">🕒 {posted}</span>
@@ -306,6 +314,9 @@ def generate_html(
     display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
     overflow: hidden;
   }}
+
+  .tags-row {{ display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }}
+  .tag-pill {{ background: rgba(56, 189, 248, 0.12); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; }}
 
   .card-sub {{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; font-size: 13px; color: #94a3b8; }}
 
