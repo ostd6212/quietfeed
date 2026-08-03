@@ -602,7 +602,8 @@
       "Низька інформація про зарплату",
       "Надмірна кількість чатів"
     ],
-    "first_seen": "2026-08-02T22:55:24.977091+00:00"
+    "first_seen": "2026-08-02T22:55:24.977091+00:00",
+    "hidden": true
   },
   "https://weworkremotely.com/remote-jobs/select-saunas-customer-support-specialist": {
     "title": "Select Saunas: Customer Support Specialist",
