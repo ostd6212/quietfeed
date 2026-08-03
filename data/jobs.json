@@ -121,7 +121,8 @@
       "Немає технічного досвіду в області SaaS, fintech, billing систем",
       "Немає можливості роботи віддалено"
     ],
-    "first_seen": "2026-08-02T22:55:24.977091+00:00"
+    "first_seen": "2026-08-02T22:55:24.977091+00:00",
+    "hidden": true
   },
   "https://jobs.dou.ua/companies/netfully/vacancies/366569/": {
     "title": "Technical Support Engineer",
