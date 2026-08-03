@@ -671,7 +671,13 @@ def fetch_lever() -> list[dict] | None:
                 "title": j.get("text", ""),
                 "url": j.get("hostedUrl", ""),
                 "source": "Lever",
-                "description": extract_text(j.get("descriptionPlain", ""), MAX_DESC),
+                # Confirmed live: some posters (e.g. "jobgether") leave
+                # descriptionPlain/descriptionBodyPlain empty while the HTML
+                # description/descriptionBody fields are fully populated --
+                # fall back to stripping the HTML rather than storing "".
+                "description": extract_text(
+                    j.get("descriptionPlain") or j.get("description", ""), MAX_DESC
+                ),
                 "location": location,
                 "posted_at": _to_iso(j.get("createdAt")),
             })
@@ -831,7 +837,9 @@ def fetch_ashby() -> list[dict] | None:
                 "title": j.get("title", ""),
                 "url": j.get("jobUrl", ""),
                 "source": "Ashby",
-                "description": extract_text(j.get("descriptionPlain") or "", MAX_DESC),
+                "description": extract_text(
+                    j.get("descriptionPlain") or j.get("descriptionHtml", ""), MAX_DESC
+                ),
                 "location": location,
                 "posted_at": _to_iso(j.get("publishedAt")),
             })

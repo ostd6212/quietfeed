@@ -287,7 +287,7 @@ def generate_html(
   .filter-source-actions button {{ background: none; border: none; color: #38bdf8; font-size: 12px; cursor: pointer; font-family: inherit; padding: 0; }}
   .filter-source-actions button:hover {{ text-decoration: underline; }}
 
-  .cards {{ max-width: 1400px; margin: 0 auto; padding: 0 24px 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; align-items: start; }}
+  .cards {{ max-width: 1400px; margin: 0 auto; padding: 0 24px 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }}
   .card.hidden {{ display: none; }}
   .filter-empty {{ max-width: 1400px; margin: 0 auto 24px; padding: 40px 24px; text-align: center; color: #6b7280; font-size: 14px; }}
 
