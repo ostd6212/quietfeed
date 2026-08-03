@@ -232,7 +232,8 @@
       "Непідходяча роль",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-02T22:55:24.977091+00:00"
+    "first_seen": "2026-08-02T22:55:24.977091+00:00",
+    "hidden": true
   },
   "https://jobs.dou.ua/companies/peax-software/vacancies/355851/": {
     "title": "Technical Support Engineer L1-L2",
