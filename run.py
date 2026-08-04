@@ -11,15 +11,72 @@ workflow), data/jobs.json (committed back to main by the workflow).
 """
 
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+
+import requests
 
 from job_search import config, render, scoring, sources, status, storage
 from job_search.scoring import QuotaExhausted
 from job_search.profile import build_profile_text, load_profile
 
+# How many already-stored, non-hidden listings to re-check per run, and how
+# long a listing goes between checks. Confirmed live (2026-08-04): Lever/
+# Ashby postings routinely close and start 404ing well within the 21-day
+# display window, and nothing else in the pipeline ever re-visits a URL
+# once it's scored -- a closed listing just sits there until it ages out.
+# Batched + interval-gated instead of checking every stored job every run
+# so this stays light (~100-150 stored jobs -> full coverage in a few
+# cycles, not one slow one).
+LINK_RECHECK_BATCH_SIZE = 40
+LINK_RECHECK_INTERVAL_DAYS = 3
+
 
 def _current_hour_utc() -> int:
     return datetime.now(timezone.utc).hour
+
+
+def revalidate_stored_links(jobs_db: dict) -> int:
+    """Re-checks a capped, interval-gated batch of stored listings' URLs and
+    hides ones that now 404/410 (job closed/removed). Ambiguous responses
+    (403/503/timeouts -- bot-blocking or a network hiccup, not proof the job
+    is gone) just refresh the checked timestamp so they're retried on a
+    later run instead of being hidden on a guess."""
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=LINK_RECHECK_INTERVAL_DAYS)
+
+    candidates = []
+    for url, job in jobs_db.items():
+        if job.get("hidden"):
+            continue
+        checked_at = job.get("link_checked_at")
+        if checked_at:
+            try:
+                if datetime.fromisoformat(checked_at) >= cutoff:
+                    continue
+            except ValueError:
+                pass
+        candidates.append((checked_at or "", url, job))
+
+    candidates.sort(key=lambda c: c[0])  # never-checked ("") first, then oldest
+    batch = candidates[:LINK_RECHECK_BATCH_SIZE]
+
+    hidden = 0
+    for _, url, job in batch:
+        try:
+            resp = requests.get(
+                url, headers={"User-Agent": sources.USER_AGENT}, timeout=12, stream=True
+            )
+            resp.close()
+            if resp.status_code in (404, 410):
+                job["hidden"] = True
+                hidden += 1
+        except requests.RequestException:
+            pass
+        job["link_checked_at"] = now.isoformat()
+
+    if batch:
+        print(f"  Re-checked {len(batch)} stored listing link(s), hid {hidden} now-dead")
+    return hidden
 
 
 def fetch_all() -> tuple[list[dict], list[dict]]:
@@ -57,6 +114,9 @@ def main():
     profile_text = build_profile_text(profile)
 
     jobs_db = storage.load_jobs()
+
+    print("[ 0/4 ] Re-checking stored listing links...")
+    revalidate_stored_links(jobs_db)
 
     status.publish("fetching")
     print("[ 1/4 ] Fetching sources...")

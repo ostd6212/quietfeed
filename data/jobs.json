@@ -823,7 +823,8 @@
       "Низька зарплата",
       "Немає інформації про технології компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/6acbe0c8-657d-47ee-a3ab-8356c1891668": {
     "title": "Account Manager",
@@ -852,7 +853,8 @@
       "Низька зарплата",
       "Немає інформації про технології компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/78654923-2c64-4203-82ad-e647a6d03ca7": {
     "title": "Account Manager",
@@ -880,7 +882,8 @@
       "Низька зарплата",
       "Немає інформації про технології компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/8f8515db-7f8c-4970-9bc1-a8eae0c726a2": {
     "title": "Account Manager",
@@ -908,7 +911,8 @@
       "Недостатньо інформації про компанію",
       "Недостатньо інформації про зарплату"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/b14c90cf-34c3-46a8-9f68-43f25666dca5": {
     "title": "Account Manager",
@@ -936,7 +940,8 @@
       "Недостатньо інформації про компанію",
       "Недостатньо інформації про зарплату"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/cc6a5b2a-3175-45fa-aa19-acf6050c770b": {
     "title": "Account Manager",
@@ -964,7 +969,8 @@
       "Недостатньо інформації про компанію",
       "Недостатньо інформації про зарплату"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/694c923d-ca3c-47d4-b759-a42745220d2a": {
     "title": "Engineering Project Coordinator (Reactor Systems Integration)",
@@ -1164,7 +1170,8 @@
       "Office-only position",
       "Junior/intern position"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/1aaa8369-56cf-4539-838a-1dc089ace6e2": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1214,7 +1221,8 @@
       "Office-only position",
       "Junior/intern position"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/3bdfb631-9340-4610-aa2d-19c8bb86c423": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1289,7 +1297,8 @@
       "Непідходить за професією",
       "Непідходить за зацікавленнями"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/55012782-9704-4de6-b333-a9c4d5be48b1": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1314,7 +1323,8 @@
       "Непідходить за професією",
       "Непідходить за зацікавленнями"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/692eb361-7d8d-44bb-96d0-ca122b65449b": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1339,7 +1349,8 @@
       "Непідходить за професією",
       "Непідходить за зацікавленнями"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/74cb6530-bab0-4295-8bed-4f4181e78ece": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1364,7 +1375,8 @@
       "Непідходить за професією",
       "Непідходить за зацікавленнями"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/74cc85ed-921b-4103-aecc-86317e3b7725": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1389,7 +1401,8 @@
       "Непідходить за професією",
       "Непідходить за зацікавленнями"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/75d764d1-9129-4097-923b-968acc0886f7": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1414,7 +1427,8 @@
       "Непідходить за фахом",
       "Непідходить за рівнем"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/7c336cfe-d7a2-4fac-a10f-19e797aa0701": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1439,7 +1453,8 @@
       "Непідходить за фахом",
       "Непідходить за рівнем"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/80e1ab76-98ed-4179-95b9-a1f4db7bdd77": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1464,7 +1479,8 @@
       "Непідходить за фахом",
       "Непідходить за рівнем"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/87fda40a-b91f-42b8-b2eb-452307664240": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1489,7 +1505,8 @@
       "Непідходить за фахом",
       "Непідходить за рівнем"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/9303b825-c77b-421e-960e-ca6ddd7a7824": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1514,7 +1531,8 @@
       "Непідходить за фахом",
       "Непідходить за рівнем"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/9f93d1ad-98f0-48cb-a1c0-c135ef4a951c": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1562,7 +1580,8 @@
     "cons": [
       "Непідходить за профілем кандидата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/bfae9f3c-3e4c-44c3-a702-db86b08c0122": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1586,7 +1605,8 @@
     "cons": [
       "Непідходить за профілем кандидата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/c515803d-4434-4d84-9291-71867e67eba8": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1610,7 +1630,8 @@
     "cons": [
       "Непідходить за профілем кандидата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/ca305fb4-060f-4dec-84e3-5cf867902603": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1760,7 +1781,8 @@
       "Неподібна сфера діяльності",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/21d5b033-9030-4bb0-acc4-084186df407e": {
     "title": "SailPoint IdentityIQ Support Engineer",
@@ -1980,7 +2002,8 @@
       "Непідтверджена компанія",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/2d2d7c52-4bed-4932-995d-38760011cec2": {
     "title": "Senior Werum PAS-X MES L2 Support & Integration Specialist",
@@ -2007,7 +2030,8 @@
       "Непідтверджена компанія",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/44906d0e-5b71-4ebc-9d52-2653d6ebb97a": {
     "title": "Senior Werum PAS-X MES L2 Support & Integration Specialist",
@@ -2034,7 +2058,8 @@
       "Непідтверджена компанія",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/53b913ed-9b44-46fc-99be-a64b45b4d54b": {
     "title": "Senior Werum PAS-X MES L2 Support & Integration Specialist",
@@ -2062,7 +2087,8 @@
       "Непідходящий досвід",
       "Непідходящий рівень"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/706f4fc1-618a-4d28-b0b7-86cb3679ca1a": {
     "title": "Senior Werum PAS-X MES L2 Support & Integration Specialist",
@@ -2119,7 +2145,8 @@
       "Непідходящий досвід",
       "Непідходящий рівень"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/c1da67f6-c3fd-4ba1-83ff-7fd0aa261991": {
     "title": "Senior Werum PAS-X MES L2 Support & Integration Specialist",
@@ -2147,7 +2174,8 @@
       "Непідходящий досвід",
       "Непідходящий рівень"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/0431e015-8d18-45bc-b6d1-6c146c39a7aa": {
     "title": "Technical Account Manager - AI for Martech",
