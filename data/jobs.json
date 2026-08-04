@@ -381,7 +381,8 @@
       "Непідтверджена інформація",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://job-boards.greenhouse.io/gitlab/jobs/8645825002": {
     "title": "Senior Assigned Support Engineer (EMEA)",
@@ -409,7 +410,8 @@
       "Низька зарплата",
       "Непідтверджена інформація"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://careers.datadoghq.com/detail/7409175/?gh_jid=7409175": {
     "title": "Major Account Manager (EMEA)",
@@ -467,7 +469,8 @@
       "Низька відповідність до досвіду кандидата",
       "Низька відповідність до бажаних вимог"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://job-boards.greenhouse.io/twilio/jobs/8072907": {
     "title": "Incident Commander",
@@ -527,7 +530,8 @@
       "Низька відповідність до досвіду кандидата",
       "Низька відповідність до бажаних вимог"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://job-boards.greenhouse.io/twilio/jobs/8023560": {
     "title": "Security Engineer, Incident Response",
@@ -587,7 +591,8 @@
       "Низька відповідність до досвіду кандидата",
       "Низька відповідність до бажаних вимог"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://job-boards.greenhouse.io/twilio/jobs/8081664": {
     "title": "Staff, Technical Support Engineer",
@@ -643,7 +648,8 @@
     "cons": [
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://job-boards.greenhouse.io/remotecom/jobs/7791136003": {
     "title": "Senior Product Manager, HRIS Integrations",
@@ -699,7 +705,8 @@
       "Низька зарплата",
       "Незрозуміла роль"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://www.workingnomads.com/job/go/1746261/": {
     "title": "Account Manager, Creative Operations",
@@ -786,7 +793,8 @@
       "Низька зарплата",
       "Немає інформації про технології компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/65dcd6f8-91ad-447b-8a76-1548ac9b6d5a": {
     "title": "Account Manager",
@@ -1082,7 +1090,8 @@
     "cons": [
       "Непідходить за профілем"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/d35efd95-848c-4abb-8075-2a46ad56456a": {
     "title": "Engineering Project Coordinator (Reactor Systems Integration)",
@@ -1650,7 +1659,8 @@
       "Неподібна сфера діяльності",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/d8eb8c29-0663-43a4-b01b-940fe3ff11bb": {
     "title": "Plant Integration Engineer (Electrical)",
@@ -1890,7 +1900,8 @@
       "Немає інформації про зарплату",
       "Немає інформації про компанії"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/c62fd620-0549-4fd0-8764-a1b5d534fecd": {
     "title": "SailPoint IdentityIQ Support Engineer",
@@ -2079,7 +2090,8 @@
       "Непідходящий досвід",
       "Непідходящий рівень"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/852d3222-cff8-4e71-bc95-4d11d890ffbd": {
     "title": "Senior Werum PAS-X MES L2 Support & Integration Specialist",
@@ -2312,7 +2324,8 @@
       "Не вказана зарплата",
       "Незрозуміла компанія"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/c5804e4a-5359-4c34-a2c7-bee53bf0872e": {
     "title": "Technical Account Manager - AI for Martech",
@@ -3259,7 +3272,8 @@
       "Немає інформації про досвід роботи",
       "Потрібно перебувати в Лондоні"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.ashbyhq.com/replit/0d1babbc-0249-436d-98f7-ae8acf1940a5": {
     "title": "Enterprise Account Manager (London)",
@@ -3290,7 +3304,8 @@
       "Немає інформації про досвід роботи",
       "Потрібно перебувати в Лондоні"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.ashbyhq.com/sardine/8940dcd3-1cb1-4c45-b162-34630ddb63a5": {
     "title": "Solutions Architect, Integrations (UK/EU)",
@@ -3319,7 +3334,8 @@
       "Низька зарплата порівняно з іншими вакансіями",
       "Немає інформації про досвід роботи"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://jobs.ashbyhq.com/sardine/84b8ff1e-81a2-44e7-9161-9ccd5e5b0cb3": {
     "title": "Strategic Account Manager",
@@ -3348,7 +3364,8 @@
       "Office hubs in the Bay Area, NYC, Austin, Toronto, and São Paulo",
       "Company type is not a product company, but an agentic risk platform"
     ],
-    "first_seen": "2026-08-03T17:03:31.734376+00:00"
+    "first_seen": "2026-08-03T17:03:31.734376+00:00",
+    "hidden": true
   },
   "https://apply.workable.com/j/33E1B72091": {
     "title": "Account Manager (Czech Republic)",
@@ -3400,7 +3417,8 @@
       "Agency",
       "Office-only"
     ],
-    "first_seen": "2026-08-03T22:17:30.759971+00:00"
+    "first_seen": "2026-08-03T22:17:30.759971+00:00",
+    "hidden": true
   },
   "https://apply.workable.com/j/AC84E58B70": {
     "title": "Account Manager (Poland)",
