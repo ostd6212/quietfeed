@@ -3637,7 +3637,8 @@
       "Потрібно перебувати в офісі",
       "Низька зарплата"
     ],
-    "first_seen": "2026-08-04T07:28:37.845495+00:00"
+    "first_seen": "2026-08-04T07:28:37.845495+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
   },
   "https://djinni.co/jobs/841031-game-providers-account-manager/": {
     "title": "Game Providers Account Manager",
@@ -3662,7 +3663,8 @@
     "cons": [
       "Неподібна роль, не відповідає вимогам"
     ],
-    "first_seen": "2026-08-04T12:48:32.670706+00:00"
+    "first_seen": "2026-08-04T12:48:32.670706+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
   },
   "https://jobs.dou.ua/companies/squad/vacancies/368408/": {
     "title": "L2 Technical Support Engineer",
@@ -3687,7 +3689,8 @@
     "cons": [
       "Низька оцінка за профілем кандидата, не відповідає вимогам"
     ],
-    "first_seen": "2026-08-04T12:48:32.670706+00:00"
+    "first_seen": "2026-08-04T12:48:32.670706+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
   },
   "https://www.arbeitnow.com/jobs/companies/gfn-gmbh/trainees-als-it-trainer-dozenten-fur-fachinformatiker-systemintegration-heidelberg-304350": {
     "title": "Trainees (m/w/x) als IT- Trainer/Dozenten für Fachinformatiker Systemintegration (m/w/x)",
@@ -3714,7 +3717,8 @@
     "cons": [
       "Неподібна роль, не відповідає вимогам"
     ],
-    "first_seen": "2026-08-04T12:48:32.670706+00:00"
+    "first_seen": "2026-08-04T12:48:32.670706+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
   },
   "https://www.adzuna.co.uk/jobs/details/5684623319?utm_medium=api&utm_source=0743cc53": {
     "title": "Technical Account Manager",
@@ -3740,7 +3744,8 @@
     "cons": [
       "Низька зарплата не вказана"
     ],
-    "first_seen": "2026-08-04T12:48:32.670706+00:00"
+    "first_seen": "2026-08-04T12:48:32.670706+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
   },
   "https://jobs.lever.co/jobgether/e8d75d65-fa89-4ca1-aefa-c3739b493619": {
     "title": "Technical Support Analyst",
@@ -3769,7 +3774,8 @@
       "Немає вказаної зарплати",
       "Немає вказаних технічних навичок"
     ],
-    "first_seen": "2026-08-05T01:56:48.867377+00:00"
+    "first_seen": "2026-08-05T01:56:48.867377+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
   },
   "https://jobs.ashbyhq.com/harvey/808dd9dc-8c79-4435-9e07-badc3f8c0d01": {
     "title": "Head of Technical Accounting and Reporting",
@@ -3798,6 +3804,225 @@
       "Низька відповідність вимогам кандидата",
       "Немає вказаних технічних навичок"
     ],
-    "first_seen": "2026-08-05T01:56:48.867377+00:00"
+    "first_seen": "2026-08-05T01:56:48.867377+00:00",
+    "link_checked_at": "2026-08-05T05:00:18.589935+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1965602f-8865-492f-9b6d-aa8752de6bf2": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/1965602f-8865-492f-9b6d-aa8752de6bf2",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Portugal. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Portugal / Portugal",
+    "posted_at": "2026-08-05T04:45:30.498000+00:00",
+    "score": 2,
+    "tags": [
+      "Fintech",
+      "Payment",
+      "API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна атмосфера"
+    ],
+    "cons": [
+      "Низька зарплата",
+      "Неповно відомості про компанію"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1bbea58a-1d09-445d-862f-f94a3c776506": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/1bbea58a-1d09-445d-862f-f94a3c776506",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Switzerland. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Switzerland / Switzerland",
+    "posted_at": "2026-08-05T04:44:44.933000+00:00",
+    "score": 2,
+    "tags": [
+      "Fintech",
+      "Payment",
+      "API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна атмосфера"
+    ],
+    "cons": [
+      "Низька зарплата",
+      "Неповно відомості про компанію"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/7b28157a-ce9c-4f3a-a699-bb8db4938aea": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/7b28157a-ce9c-4f3a-a699-bb8db4938aea",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Netherlands. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Netherlands / Netherlands",
+    "posted_at": "2026-08-05T04:45:17.258000+00:00",
+    "score": 2,
+    "tags": [
+      "Fintech",
+      "Payment",
+      "API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна атмосфера"
+    ],
+    "cons": [
+      "Низька зарплата",
+      "Неповно відомості про компанію"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/870c2aa2-02c9-489b-9ccd-ab82c714cb00": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/870c2aa2-02c9-489b-9ccd-ab82c714cb00",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in France. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "France / France",
+    "posted_at": "2026-08-05T04:44:30.485000+00:00",
+    "score": 2,
+    "tags": [
+      "Fintech",
+      "Payment",
+      "API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна атмосфера"
+    ],
+    "cons": [
+      "Низька зарплата",
+      "Неповно відомості про компанію"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/89509e99-290d-446f-87a7-39c3a67a4a58": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/89509e99-290d-446f-87a7-39c3a67a4a58",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Italy. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Italy / Italy",
+    "posted_at": "2026-08-05T04:45:46.141000+00:00",
+    "score": 2,
+    "tags": [
+      "Fintech",
+      "Payment",
+      "API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна атмосфера"
+    ],
+    "cons": [
+      "Низька зарплата",
+      "Неповно відомості про компанію"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/a78c5c0d-0ecd-4e6c-ad18-cc86d520bd92": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/a78c5c0d-0ecd-4e6c-ad18-cc86d520bd92",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Spain. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Spain / Spain",
+    "posted_at": "2026-08-05T04:44:17.499000+00:00",
+    "score": 4,
+    "tags": [
+      "Fintech, Payment, API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна робота"
+    ],
+    "cons": [
+      "Непідтверджена компанія",
+      "Низька зарплата"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/ecc08ada-7cfa-4bf9-884d-27f6d425b367": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/ecc08ada-7cfa-4bf9-884d-27f6d425b367",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Ireland. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Ireland / Ireland",
+    "posted_at": "2026-08-05T04:45:01.663000+00:00",
+    "score": 4,
+    "tags": [
+      "Fintech, Payment, API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна робота"
+    ],
+    "cons": [
+      "Непідтверджена компанія",
+      "Низька зарплата"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
+  },
+  "https://jobs.lever.co/jobgether/f556ff66-9192-48f9-8582-b9077a68c961": {
+    "title": "Technical Support Analyst",
+    "url": "https://jobs.lever.co/jobgether/f556ff66-9192-48f9-8582-b9077a68c961",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Support Analyst based in Romania. Join a fast-growing technology environment where you'll play a key role in supporting innovative payment and financial solutions used by businesses around the world. As a Technical Support Analyst, you will work at the intersection of customer success, engineering, and product development, helping partners resolve complex technical issues and optimize platform integrations. You'll investigate API-related challenges, analyze system behavior, and contribute to continuous product improvements through actionable technical insights. This role offers the opportunity to work with modern technologies in a collaborative, high-impact environment where ownership, problem-solving, and clear communication are highly valued. If you enjoy troubleshooting complex systems and making a tangible difference for customers, this position offers an exciting opportunity to grow your technical expertise.",
+    "location": "Romania / Romania",
+    "posted_at": "2026-08-05T04:45:59.533000+00:00",
+    "score": 4,
+    "tags": [
+      "Fintech, Payment, API"
+    ],
+    "role_type": "Technical Support Analyst",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Фул-Remote",
+    "region": "Закордон",
+    "pros": [
+      "Модерні технології",
+      "Колаборативна робота"
+    ],
+    "cons": [
+      "Непідтверджена компанія",
+      "Низька зарплата"
+    ],
+    "first_seen": "2026-08-05T05:03:42.163161+00:00"
   }
 }
