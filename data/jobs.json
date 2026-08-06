@@ -4082,7 +4082,8 @@
       "Неправильное описание роли",
       "Низкая зарплата"
     ],
-    "first_seen": "2026-08-06T01:59:32.103594+00:00"
+    "first_seen": "2026-08-06T01:59:32.103594+00:00",
+    "link_checked_at": "2026-08-06T05:17:08.965991+00:00"
   },
   "https://www.arbeitnow.com/jobs/companies/tellent/remote-senior-account-manager-dach-cologne-456488": {
     "title": "Senior Account Manager - DACH",
@@ -4107,7 +4108,8 @@
     "cons": [
       "Низкая зарплата не указана"
     ],
-    "first_seen": "2026-08-06T01:59:32.103594+00:00"
+    "first_seen": "2026-08-06T01:59:32.103594+00:00",
+    "link_checked_at": "2026-08-06T05:17:08.965991+00:00"
   },
   "https://www.arbeitnow.com/jobs/companies/customs-support-group/remote-ai-integration-automation-engineer-412569": {
     "title": "AI Integration & Automation Engineer (m/w/d)",
@@ -4132,7 +4134,8 @@
       "Неправильное описание роли",
       "Низкая зарплата не указана"
     ],
-    "first_seen": "2026-08-06T01:59:32.103594+00:00"
+    "first_seen": "2026-08-06T01:59:32.103594+00:00",
+    "link_checked_at": "2026-08-06T05:17:08.965991+00:00"
   },
   "https://www.arbeitnow.com/jobs/companies/customs-support-group/remote-ai-integration-automation-engineer-ger-371377": {
     "title": "AI Integration & Automation Engineer (m/w/d) GER",
@@ -4157,6 +4160,650 @@
       "Неправильное описание роли",
       "Низкая зарплата не указана"
     ],
-    "first_seen": "2026-08-06T01:59:32.103594+00:00"
+    "first_seen": "2026-08-06T01:59:32.103594+00:00",
+    "link_checked_at": "2026-08-06T05:17:08.965991+00:00"
+  },
+  "https://djinni.co/jobs/839011-junior-technical-support-specialist-mobile-ap/": {
+    "title": "Junior Technical Support Specialist Mobile Ap",
+    "url": "https://djinni.co/jobs/839011-junior-technical-support-specialist-mobile-ap/",
+    "source": "Djinni",
+    "description": "Junior Technical Support Specialist (Mobile Apps) в LGT HOLDING – Djinni Помилка Відкрити в застосунку Djinni 🎯 Основна мета ролі: Забезпечення технічної та операційної підтримки команди при роботі з мобільними застосунками, акаунтами розробника та сторонніми сервісами. Підготовка й налаштування необхідних ресурсів за інструкціями та чек-листами. Тестування мобільних застосунків, фіксація знайдених проблем і передача їх відповідальним спеціалістам. Підтримка порядку в робочих акаунтах, документації та поточних технічних запитах. 🧩 Обов'язки: Робота з антидетект-браузерами та профілями за готовими інструкціями. Купівля, підключення та базове налаштування вебдоменів. Налаштування DNS і підключення доменів до необхідних сервісів. Адміністрування акаунтів розробника та сторонніх сервісів. Підготовка матеріалів і налаштувань мобільних застосунків для публікації в консолях розробника. Завантаження та перевірка описів, зображень, посилань та інших матеріалів для мобільних застосунків. Функціональне тестування мобільних застосунків перед релізами та після оновлень. Фіксація знайдених багів: опис, скріншоти, відео та кроки для відтворення. Обробка технічних запитів у Telegram-чатах. Ведення та актуалізація чек-листів, таблиць, інструкцій і внутрішньої документації. Робота з системами управління задачами (Jira, Asana або Trello). Участь у командних мітингах. Виконання регулярних повторюваних задач із поступовим переходом до більш складних процесів. 🧠 Вимоги до кандидата Досвід: Досвід роботи в технічній підтримці, операційних ролях, ручному тестуванні або адмініструванні онлайн-сервісів буде перевагою. Практичний досвід роботи з вебсервісами, особистими кабінетами та великою кількістю акаунтів. Досвід тестування сайтів або мобільних застосунків буде плюсом. Вміння працювати за інструкціями, чек-листами та встановленими процесами. Готовність самостійно розбиратися з новими інструментами та сервісами. Досвід роботи з мобільними застосунками та консолями розробника буде перевагою, але не є обов'язковим. Навички: Впевнене володіння Google Docs, Google Sheets та Excel. Досвід роботи хоча б з одним таск-менеджером: Jira, Asana або Trello. Базові навички роботи у Figma та Miro (перегляд макетів, коментарі, прості зміни). Вміння грамотно описувати технічні проблеми та складати покрокові інструкції. Уважність і акуратність при роботі з акаунтами, доступами, налаштуваннями та даними. Вміння систематизувати інформацію та підтримувати порядок у документації. Використання AI/LLM для пошуку інформації, підготовки інструкцій і вирішення типових робочих задач. Здатність самостійно знаходити рішення, перевіряти результат і своєчасно звертатися по допомогу. Грамотна письмова комунікація та вміння вести робоче листування. ⭐ Буде перевагою: Розуміння принципів роботи проксі та антидетект-браузерів. Досвід роботи з Namecheap, GoDaddy та Cloudflare. Знайомство з Firebase та OneSignal. Досвід роботи з Google Play Console або App Store Connect. Базове розуміння Linux, Python, JavaScript або Bash. Досвід ручного тестування мобільних застосунків і оформлення баг-репортів. Вимоги до володіння мовами Англійська B1 – Середній Українська Носій мови Російська B1 – Середній AI/LLM, Figma, Jira, Asana, Trello Опубліковано 23 липня · Оновлено 6 серпня 305 переглядів · 35 відгуків Активність рекрутера: Дуже висока Відповідали позавчора Подивитись статистику кандидатів що відгукнулись на цю вакансію 👀 Огляд кандидатів Для відгуку на цю та інші вакансії на Djinni увійдіть або зареєструйтеся . Виключно\n      \n      \n        від\n        0.5 років досвіду Тільки віддалено Весь світ Країни, де розглядаємо кандидатів Англійська B1 – Середній Українська Носій мови Російська B1 – Середній Mobile Apps Зайнятість: Fulltime Домен: Gambling Агенція Активність рекрутера: Дуже висока Відповідали позавчора 📊 Середня зарплатна вилка схожих вакансій у аналітиці → Завантаження... We use cookies to improve your experience. Learn more Okay",
+    "score": 1,
+    "tags": [
+      "iGaming",
+      "Office",
+      "Не вказана"
+    ],
+    "role_type": "Junior Technical Support Specialist",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Офіс",
+    "region": "Україна",
+    "pros": [],
+    "cons": [
+      "Junior/intern positions",
+      "Office-only positions"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/0025a919-8ad8-47f1-9ffb-5eaf3dff588f": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/0025a919-8ad8-47f1-9ffb-5eaf3dff588f",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Greece. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Greece / Greece",
+    "posted_at": "2026-08-06T05:31:11.699000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "B2B",
+      "Не вказана"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Office-only positions",
+      "Junior/intern positions"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/0c25edbb-768e-4ca1-802e-672744a05d4d": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/0c25edbb-768e-4ca1-802e-672744a05d4d",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Italy. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Italy / Italy",
+    "posted_at": "2026-08-06T05:27:22.016000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "B2B",
+      "Не вказана"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Office-only positions",
+      "Junior/intern positions"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/1b2781de-b826-40a0-8a62-f7e89f56bd0e": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/1b2781de-b826-40a0-8a62-f7e89f56bd0e",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Portugal. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Portugal / Portugal",
+    "posted_at": "2026-08-06T05:27:08.565000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "B2B",
+      "Не вказана"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Office-only positions",
+      "Junior/intern positions"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/2009fd70-2251-4db9-b2f1-68042779c6df": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/2009fd70-2251-4db9-b2f1-68042779c6df",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Bulgaria. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Bulgaria / Bulgaria",
+    "posted_at": "2026-08-06T05:31:40.275000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "B2B",
+      "Не вказана"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Office-only positions",
+      "Junior/intern positions"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/23e88bae-7a4f-443b-9521-913e28ec059d": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/23e88bae-7a4f-443b-9521-913e28ec059d",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Finland. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Finland / Finland",
+    "posted_at": "2026-08-06T05:32:53.674000+00:00",
+    "score": 2,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Unknown",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Високотехнологічний проект",
+      "Мультидисциплінарний збір команди"
+    ],
+    "cons": [
+      "Немає інформації про компанії",
+      "Немає можливості роботи віддалено"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/273187e1-73c7-4c3a-9b08-835a7679d746": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/273187e1-73c7-4c3a-9b08-835a7679d746",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Austria. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Austria / Austria",
+    "posted_at": "2026-08-06T05:30:24.388000+00:00",
+    "score": 2,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Unknown",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Високотехнологічний проект",
+      "Мультидисциплінарний збір команди"
+    ],
+    "cons": [
+      "Немає інформації про компанії",
+      "Немає можливості роботи віддалено"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/395f73a1-f864-4184-9017-6975a20fedf6": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/395f73a1-f864-4184-9017-6975a20fedf6",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Estonia. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Estonia / Estonia",
+    "posted_at": "2026-08-06T05:33:40.822000+00:00",
+    "score": 2,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Unknown",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Високотехнологічний проект",
+      "Мультидисциплінарний збір команди"
+    ],
+    "cons": [
+      "Немає інформації про компанії",
+      "Немає можливості роботи віддалено"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/41985462-16b3-4ade-87e8-7bf009524904": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/41985462-16b3-4ade-87e8-7bf009524904",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Hungary. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Hungary / Hungary",
+    "posted_at": "2026-08-06T05:33:10.148000+00:00",
+    "score": 2,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Unknown",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Високотехнологічний проект",
+      "Мультидисциплінарний збір команди"
+    ],
+    "cons": [
+      "Немає інформації про компанії",
+      "Немає можливості роботи віддалено"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/48114e6b-7695-4a51-b97a-38538eaef4b1": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/48114e6b-7695-4a51-b97a-38538eaef4b1",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Croatia. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Croatia / Croatia",
+    "posted_at": "2026-08-06T05:31:55.493000+00:00",
+    "score": 2,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Unknown",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [
+      "Високотехнологічний проект",
+      "Мультидисциплінарний збір команди"
+    ],
+    "cons": [
+      "Немає інформації про компанії",
+      "Немає можливості роботи віддалено"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/4d7c8c03-7359-42fc-8337-acacb72f9045": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/4d7c8c03-7359-42fc-8337-acacb72f9045",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Denmark. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Denmark / Denmark",
+    "posted_at": "2026-08-06T05:31:26.611000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за профілем кандидата"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/672ccb83-8ca9-4509-b16c-0a3f79e94a85": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/672ccb83-8ca9-4509-b16c-0a3f79e94a85",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Turkey. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Turkey / Turkey",
+    "posted_at": "2026-08-06T05:28:36.953000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за профілем кандидата"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/6c4ebf88-f23c-4be0-b684-36e5fd55ca9f": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/6c4ebf88-f23c-4be0-b684-36e5fd55ca9f",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in France. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "France / France",
+    "posted_at": "2026-08-06T05:26:12.180000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за профілем кандидата"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/7053d480-7ad3-432c-9abc-ea6e9f65e90c": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/7053d480-7ad3-432c-9abc-ea6e9f65e90c",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Switzerland. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Switzerland / Switzerland",
+    "posted_at": "2026-08-06T05:26:27.568000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за профілем кандидата"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/9b179454-fa73-4c72-8629-71f4c5381ed4": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/9b179454-fa73-4c72-8629-71f4c5381ed4",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Spain. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Spain / Spain",
+    "posted_at": "2026-08-06T05:25:42.730000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "Europe"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Agency",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за профілем кандидата"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/9f1f296b-7e8a-4c30-aff7-68d34654e37b": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/9f1f296b-7e8a-4c30-aff7-68d34654e37b",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Sweden. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Sweden / Sweden",
+    "posted_at": "2026-08-06T05:30:10.925000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "No-name"
+    ],
+    "role_type": "Pure coding / software development role",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Wrong level",
+      "Low salary",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/b03e95a1-5eca-4242-bf6c-b0310a8991c5": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/b03e95a1-5eca-4242-bf6c-b0310a8991c5",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Germany. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Germany / Germany",
+    "posted_at": "2026-08-06T05:25:56.984000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "No-name"
+    ],
+    "role_type": "Pure coding / software development role",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Wrong level",
+      "Low salary",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/b66ec857-9727-4e37-85d9-06e59cd1ff48": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/b66ec857-9727-4e37-85d9-06e59cd1ff48",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Czechia. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Czechia / Czechia",
+    "posted_at": "2026-08-06T05:32:38.594000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "No-name"
+    ],
+    "role_type": "Pure coding / software development role",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Wrong level",
+      "Low salary",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/c8068251-c395-4630-b1ea-7d9e7d45dea2": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/c8068251-c395-4630-b1ea-7d9e7d45dea2",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Romania. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Romania / Romania",
+    "posted_at": "2026-08-06T05:27:38.427000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "No-name"
+    ],
+    "role_type": "Pure coding / software development role",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Wrong level",
+      "Low salary",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/cb48375c-86cc-44c6-9888-6093a6148c29": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/cb48375c-86cc-44c6-9888-6093a6148c29",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Norway. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Norway / Norway",
+    "posted_at": "2026-08-06T05:32:24.235000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "No-name"
+    ],
+    "role_type": "Pure coding / software development role",
+    "company_type": "Outsource",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Agency",
+      "Wrong level",
+      "Low salary",
+      "Office-only"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/d5e52cb4-2371-4ed9-ab02-281bce2e5043": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/d5e52cb4-2371-4ed9-ab02-281bce2e5043",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Belgium. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Belgium / Belgium",
+    "posted_at": "2026-08-06T05:29:19.452000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "B2B"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за професією",
+      "Непідходить за місцем роботи"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/dc0451eb-f06d-4916-a2c2-afaf05dffd72": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/dc0451eb-f06d-4916-a2c2-afaf05dffd72",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Ireland. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Ireland / Ireland",
+    "posted_at": "2026-08-06T05:26:41.535000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "B2B"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за професією",
+      "Непідходить за місцем роботи"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/f0bfcb13-43a5-4997-a57f-82762b4bafdc": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/f0bfcb13-43a5-4997-a57f-82762b4bafdc",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Poland. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Poland / Poland",
+    "posted_at": "2026-08-06T05:30:41.970000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "B2B"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за професією",
+      "Непідходить за місцем роботи"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/f0cc60cb-a1dc-4b45-bbfb-7d84c829cf98": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/f0cc60cb-a1dc-4b45-bbfb-7d84c829cf98",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Luxembourg. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Luxembourg / Luxembourg",
+    "posted_at": "2026-08-06T05:32:09.485000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "B2B"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за професією",
+      "Непідходить за місцем роботи"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
+  },
+  "https://jobs.lever.co/jobgether/f7b1cd37-0178-404b-a7e1-3b2287ade085": {
+    "title": "Maintenance Integration Engineer",
+    "url": "https://jobs.lever.co/jobgether/f7b1cd37-0178-404b-a7e1-3b2287ade085",
+    "source": "Lever",
+    "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Maintenance Integration Engineer based in Netherlands. This role offers the opportunity to contribute to the development of advanced engineering projects within a highly technical environment. The Maintenance Integration Engineer will support the design and lifecycle optimization of complex systems, ensuring reliability, maintainability, and operational excellence. You will collaborate with multidisciplinary teams of engineers, operators, technicians, and scientists to integrate maintenance strategies into innovative facility designs. The position focuses on developing solutions that improve equipment performance, simplify operations, and enhance long-term plant sustainability. You will apply engineering expertise, maintenance principles, and industry best practices to support cutting-edge nuclear and industrial projects. This role provides the opportunity to make a meaningful impact on the future of advanced energy systems while working with experienced technical teams.",
+    "location": "Netherlands / Netherlands",
+    "posted_at": "2026-08-06T05:26:55.516000+00:00",
+    "score": 1,
+    "tags": [
+      "Engineering",
+      "Manufacturing",
+      "B2B"
+    ],
+    "role_type": "Maintenance Integration Engineer",
+    "company_type": "Product company",
+    "salary": "Не вказана",
+    "remote": "Не вказано",
+    "region": "Закордон",
+    "pros": [],
+    "cons": [
+      "Непідходить за професією",
+      "Непідходить за місцем роботи"
+    ],
+    "first_seen": "2026-08-06T05:21:01.315923+00:00"
   }
 }
