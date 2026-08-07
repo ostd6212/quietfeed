@@ -4859,7 +4859,8 @@
       "Низька зарплата",
       "Неповна інформація про компанію"
     ],
-    "first_seen": "2026-08-06T08:25:20.274265+00:00"
+    "first_seen": "2026-08-06T08:25:20.274265+00:00",
+    "link_checked_at": "2026-08-07T02:20:32.142260+00:00"
   },
   "https://jobicy.com/jobs/148711-senior-product-manager-hris-integrations": {
     "title": "Senior Product Manager, HRIS Integrations",
@@ -4888,7 +4889,8 @@
     "cons": [
       "Низька інформація про компанію"
     ],
-    "first_seen": "2026-08-06T08:25:20.274265+00:00"
+    "first_seen": "2026-08-06T08:25:20.274265+00:00",
+    "link_checked_at": "2026-08-07T02:20:32.142260+00:00"
   },
   "https://himalayas.app/companies/did-global/jobs/account-manager": {
     "title": "Account manager",
@@ -4916,6 +4918,7 @@
       "Низька інформація про компанію",
       "Неповна інформація про завдання"
     ],
-    "first_seen": "2026-08-06T08:25:20.274265+00:00"
+    "first_seen": "2026-08-06T08:25:20.274265+00:00",
+    "link_checked_at": "2026-08-07T02:20:32.142260+00:00"
   }
 }
