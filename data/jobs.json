@@ -4034,7 +4034,8 @@
       "Низька зарплата"
     ],
     "first_seen": "2026-08-05T05:03:42.163161+00:00",
-    "link_checked_at": "2026-08-09T01:11:07.731902+00:00"
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00",
+    "hidden": true
   },
   "https://jobs.lever.co/jobgether/f556ff66-9192-48f9-8582-b9077a68c961": {
     "title": "Technical Support Analyst",
@@ -4061,7 +4062,8 @@
       "Низька зарплата"
     ],
     "first_seen": "2026-08-05T05:03:42.163161+00:00",
-    "link_checked_at": "2026-08-09T01:11:07.731902+00:00"
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00",
+    "hidden": true
   },
   "https://www.arbeitnow.co.uk/jobs/companies/jumbo-group/us-key-account-manager-toys-games-manchester-227755": {
     "title": "US Key Account Manager (Toys & Games)",
@@ -4089,7 +4091,7 @@
       "Office-only"
     ],
     "first_seen": "2026-08-05T08:27:17.613767+00:00",
-    "link_checked_at": "2026-08-09T03:27:13.676340+00:00"
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://djinni.co/jobs/824968-account-manager-kyc-kyb/": {
     "title": "Account Manager Kyc Kyb",
@@ -5059,7 +5061,7 @@
       "Незрозуміла компанія"
     ],
     "first_seen": "2026-08-09T01:13:08.835410+00:00",
-    "link_checked_at": "2026-08-09T03:27:13.676340+00:00"
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.dou.ua/companies/netforce-ukraine/vacancies/371241/": {
     "title": "Account Manager / Customer Success Manager (Outsourcing/Outstaffing)",
@@ -6020,7 +6022,8 @@
     "source": "Djinni",
     "description": "Compensation: $1500-2500 . Middle/Senior System Analyst (Integration/Data) в PrivatBank – Djinni Помилка Відкрити в застосунку Djinni Приват Банк — є найбільшим банком України та одним з найбільш інноваційних банків світу. Займає лідируючі позиції за всіма фінансовими показниками в галузі та складає близько чверті всієї банківської системи країни. Ми шукаємо Системного аналітика Напрямку з проєктування та впровадження дата-продуктів , який прагне працювати в динамічному середовищі та розділяє цінності взаємної довіри, відкритості та ініціативності. Мета посади: забезпечення детального аналізу та проєктування логіки обробки даних для створення технічних специфікацій сервісів, з метою формування точних інструкцій для розробки інтеграційних рішень, на підставі архітектурних стандартів Банку та методології SDLC. Про проєкт: робота над критично важливим проєктом “Виписка фізичних осіб”. Це високонавантажена система, яка обробляє великі обсяги фінансових даних. Ваша роль полягатиме у проектуванні архітектури. інтеграцій, розробці ефективних схем даних та забезпеченні безшовної взаємодії між фронтенд- та бекенд-частинами системи. ЩО ПОТРІБНО РОБИТИ: Збирає та деталізує функціональні і нефункціональні вимоги Моделює бізнес-процеси та архітектуру рішень (BPMN, UML, ER-діаграми) Бере участь у проєктуванні інтеграційних архітектур та виборі технологічного стеку Розробляє контракти взаємодії (OpenAPI/Swagger) Забезпечує версіонування та зворотну сумісність (Backward Compatibility) Проєктує структури баз даних (SQL та NoSQL) Забезпечує цілісність та оптимізацію запитів для високопродуктивної системи Проєктує системи взаємодії між компонентами додатку Обирає оптимальні методи передачі даних (REST, черги повідомлень, асинхронні запити) Тісно співпрацює з командами розробки (Backend/Frontend), тестувальниками та бізнес-стейкхолдерами ОСНОВНІ ВИМОГИ: Вища освіта Досвід роботи на позиції System Analyst 2+ роки Досвід побудови Sequence Diagrams (UML) для складних інтеграцій Глибоке розуміння RESTful архітектури, знання принципів проектування API Розуміння життєвого циклу запиту, кешування, обробка помилок на стороні клієнта та сервера Розуміння концепцій брокерів повідомлень (Kafka/RabbitMQ) та протоколів передачі даних Впевнене володіння SQL: проектування складних схем, використання JOIN, агрегатних функцій, оптимізація запитів Розуміння відмінностей між типами NoSQL БД (документоорієнтовані, ключові-значення, графові). Вміння обґрунтовано обирати тип БД під архітектурні завдання. Оптимізація продуктивності БД під високі навантаження Вільне володіння українською мовою (у т.ч. діловою) БУДЕ ЗНАЧНОЮ ПЕРЕВАГОЮ: Досвід роботи з міграцією даних між різними типами БД Досвід технічного аудиту архітектурних рішень Розуміння принципів мікросервісної архітектури Досвід роботи з високопродуктивними системами звітності Досвід роботи з High-load системами (системи, що обробляють тисячі запитів за секунду / RPS) МИ ПРОПОНУЄМО: Роботу в найбільшому та інноваційному банку України Офіційне працевлаштування та 24+4 календарні дні відпустки Компенсацію лікарняних у повному обсязі Конкурентну заробітну плату Медичне страхування та корпоративний мобільний зв’язок Корпоративне навчання Віддалену роботу або сучасні офіси в Києві, Дніпрі та Львові, оснащені генераторами й Starlink ПриватБанк відкритий до підтримки та працевлаштування ветеранів і ветеранок, а також людей з інвалідністю. Для нас неприйнятною є дискримінація за станом здоров’я, фізичними можливостями, віком, расовою чи етнічною належністю, статтю та сімейним станом. Ми готові навчати ветеранів і кандидатів з інвалідністю без досвіду роботи в банківській сфері. Якщо ви маєте статус людини з інвалідністю або ветерана, звертайтеся. Фахівці ПриватБанку нададуть консультацію й супровід упродовж процесу відбору та після працевлаштування. Необхідний досвід з навичками Системний Аналіз 2 роки UML 2 роки Проектування API 2 роки RabbitMQ 2 роки Kafka 2 роки SQL початковий рівень 2 роки + ще 1 Вимоги до володіння м",
     "region": "Україна",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobicy.com/jobs/152951-major-account-manager-emea": {
     "title": "Major Account Manager (EMEA)",
@@ -6029,7 +6032,8 @@
     "description": "The Datadog Major Accounts Team is focused on driving new business and expanding the current Datadog footprint with our largest and most strategic clients. The success of the Major Accounts Team directly impacts the success of Datadog and is a highly visible position with bold revenue targets. We are searching for seasoned and successful Account…",
     "location": "France,  Switzerland",
     "posted_at": "2026-09-09T17:27:55+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/netomi/ff39ff91-8781-4a16-bc69-2bb57778d23e": {
     "title": "Principal Account Manager, Strategic Accounts",
@@ -6038,7 +6042,8 @@
     "description": "About the Company:\nNetomi is the leading agentic AI platform for enterprise customer experience. We work with the largest global brands like Delta Airlines, MetLife, MGM, United, and others to enable agentic automation at scale across the entire customer journey. Our no-code platform delivers the fastest time to market, lowest total cost of ownership, and simple, scalable management of AI agents for any CX use case. Backed by WndrCo, Y Combinator, and Index Ventures, we help enterprises drive efficiency, lower costs, and deliver higher quality customer experiences. \n\nWant to be part of the AI revolution and transform how the world’s largest global brands do business? Join us!\n\n\nAbout the Role: \n \nThe Principal Account Manager, Strategic Accounts is a highly influential, individual contributor role responsible for driving the long-term success and expansion within Netomi’s most complex Strategic and Enterprise (Fortune 100) accounts. This role demands a relentless mentality—someone who can get on the ground, navigate large, siloed organizations, secure buy-in across multiple executives and departments, and execute a program to deliver transformative business value. This is an opportunity to help shape the future of Enterprise GenAI.\n\nYou'll be working with cutting-edge technology, a collaborative team, and real-world challenges that matter.",
     "location": "New York / New York",
     "posted_at": "2026-09-09T19:07:57.487000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/0e835801-82b0-4fa5-8f8e-b234ba89a119": {
     "title": "Technical Account Manager",
@@ -6047,7 +6052,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Portugal. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Portugal / Portugal",
     "posted_at": "2026-09-09T08:47:18.754000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/1909b675-1af4-4702-a73e-f7f2c85664b3": {
     "title": "Technical Account Manager",
@@ -6056,7 +6062,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Switzerland. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Switzerland / Switzerland",
     "posted_at": "2026-09-09T08:48:47.105000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/1d3c065c-02f3-4a78-933c-f99e486bf244": {
     "title": "Technical Account Manager",
@@ -6065,7 +6072,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Italy. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Italy / Italy",
     "posted_at": "2026-09-09T08:46:52.400000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/2bcfd357-c4c4-4819-979d-1483808f83b6": {
     "title": "Technical Account Manager",
@@ -6074,7 +6082,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Germany. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Germany / Germany",
     "posted_at": "2026-09-09T08:50:15.576000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/31b092eb-e178-4c4e-b39b-07327512269f": {
     "title": "Technical Account Manager",
@@ -6083,7 +6092,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Spain. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Spain / Spain",
     "posted_at": "2026-09-09T08:50:40.479000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/4be8780d-ca34-437f-bbf1-087acf9f0d80": {
     "title": "Technical Account Manager",
@@ -6092,7 +6102,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Ireland. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Ireland / Ireland",
     "posted_at": "2026-09-09T08:48:18.465000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/7a8048db-4fd4-476f-93e4-3a10d5211b00": {
     "title": "Technical Account Manager",
@@ -6101,7 +6112,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Netherlands. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Netherlands / Netherlands",
     "posted_at": "2026-09-09T08:47:53.097000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/a71e151b-0596-4b67-805a-cfcd03d28462": {
     "title": "Technical Account Manager",
@@ -6110,7 +6122,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in Romania.\nThis is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts.\nYou will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform.\nThe role combines hands-on technical depth with senior stakeholder management across complex enterprise environments.\nYou will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes.\nAs the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function.\nThe environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity.\nThis is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "Romania / Romania",
     "posted_at": "2026-09-09T08:45:37.892000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.lever.co/jobgether/ddb9888e-145b-4bc2-bd39-bbf9af271515": {
     "title": "Technical Account Manager",
@@ -6119,7 +6132,8 @@
     "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Technical Account Manager based in France. This is a high-impact post-sales role focused on becoming the technical owner of strategic enterprise customer accounts. You will lead onboarding, integrations, adoption, escalations, and renewals while ensuring customers realize meaningful value from the platform. The role combines hands-on technical depth with senior stakeholder management across complex enterprise environments. You will work closely with customers, Sales, Engineering, and other internal teams to solve technical challenges and drive successful outcomes. As the first dedicated post-sales hire, you will also build the processes, playbooks, and operating rhythms needed to scale the function. The environment is fast-moving, highly autonomous, and collaborative, with significant exposure to enterprise security, cloud infrastructure, and AI-powered cybersecurity. This is an opportunity to shape both customer success and the foundations of a new post-sales organization from the ground up.",
     "location": "France / France",
     "posted_at": "2026-09-09T08:49:11.747000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
   },
   "https://jobs.ashbyhq.com/replit/0a94327b-52c0-41d1-931f-b2aca5e90c1f": {
     "title": "Premium Support Engineer (NYC, Weekend Shift)",
@@ -6128,6 +6142,16 @@
     "description": "Replit is the agentic software creation platform that enables anyone to build applications using natural language. With millions of users worldwide, Replit is democratizing software development by removing traditional barriers to application creation.\n\n\nAs a Premium Support Engineer at Replit, you’ll be the front line for our highest-value customers — delivering fast, expert, and reliable technical support when it matters most. You’ll handle complex product issues, guide customers through critical incidents, and ensure every interaction meets the highest standard of quality and speed.\n\nReplit is at the forefront of AI-driven software development, and how we support customers is constantly evolving. You’ll play a critical role in shaping how Premium Support adapts to new products, new customer expectations, and AI-assisted workflows, operating effectively in ambiguity and driving clarity for your team.\n\nYou’ll combine deep technical troubleshooting with calm, confident communication to keep builders moving — whether it’s an enterprise team deploying at scale or a top-tier developer relying on Replit to power their business.\n\n\n\n\n\n\nIN THIS ROLE YOU WILL:\n\n - Provide swift, high-priority support to Premium customers, responding within strict SLAs.\n\n - Diagnose, reproduce, and resolve complex technical issues across the Replit platform.\n\n - Escalate and track high-impact issues with Product and Engineering, ensuring timely fixes and transparent communication.\n\n - Lead customer-fac",
     "location": "NYC (SoHo)",
     "posted_at": "2026-09-09T16:15:13.588000+00:00",
-    "first_seen": "2026-09-10T02:35:46.723504+00:00"
+    "first_seen": "2026-09-10T02:35:46.723504+00:00",
+    "link_checked_at": "2026-09-10T08:33:32.236134+00:00"
+  },
+  "https://jobicy.com/jobs/150355-senior-account-manager-emea": {
+    "title": "Senior Account Manager - EMEA",
+    "url": "https://jobicy.com/jobs/150355-senior-account-manager-emea",
+    "source": "Jobicy",
+    "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage international teams. With our core values at heart and future focused work culture, our team works tirelessly on ambitious problems, asynchronously, around the world. You…",
+    "location": "EMEA",
+    "posted_at": "2026-09-10T04:30:14+00:00",
+    "first_seen": "2026-09-10T08:36:00.378815+00:00"
   }
 }
